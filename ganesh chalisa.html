@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "containerheader">
+          <a href = "index.html" class = "navbar-brand">Aatmgyaan</a>
+          <div class = "navbar-nav">
+            <label for="drop" class="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="drop" />
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-1" class="toggle">Strotam</label>
+                        <a href="#">Strotam</a>
+                        <input type="checkbox" id="drop-1"/>
+                        <ul>
+                            <li><a href="#">Meaning</a></li>
+                            <li><a href="#">Rashi</a></li>
+                            <li><a href="#">Jyotish Upay</a></li>
+                            
+                        </ul> 
+        
+                    </li>
+                    <li>
+        
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-2" class="toggle"></label>
+                    <a href="#">Bhakti Sangrah</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a href="#">Puja Vidhi</a></li>
+                        <li><a href="#">Vrat Katha</a></li>
+                        <li><a href="#">Stuthi</a></li>
+                        <li><a href="#">Kavacham</a></li>
+                        <li><a href="#">Shashtranam</a></li>
+                        <li><a href="#">Chalisa</a></li>
+                        <li><a href="#">Shatnamavli</a></li>
+                        <li>
+                           
+                        <!-- Second Tier Drop Down -->        
+                        <label for="drop-3" class="toggle">Blog Aricles +</label>
+                        <a href="#">Blog Articles</a>         
+                        <input type="checkbox" id="drop-3"/>
+        
+                        <ul>
+                            <li><a href="#">Rochak Jankari</a></li>
+                            <li><a href="#">12 Jyotiling</a></li>
+                            <li><a href="#">Sadhna</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Mantra</a></li>
+                    <li><a href="#">Aarti</a></li>
+                    <li>
+                      <!-- First Tier Drop Down -->
+                      <label for="drop-1" class="toggle">Bhajan</label>
+                      <a href="#">Bhajan</a>
+                      <input type="checkbox" id="drop-1"/>
+                      <ul>
+                          <li><a href="#">Shiv Bhajan</a></li>
+                          <li><a href="#">Hanuman Bhajan</a></li>
+                          <li><a href="#">Krishna Bhajan</a></li>
+                          <li><a href="#">Santoshi Maa Bhajan</a></li>
+                          <li><a href="#">Maa Durga Bhajan</a></li>
+                          <li><a href="#">Khatu Shyam Bhajan</a></li>
+                          <li><a href="#">Marwadi Bhajan</a></li>
+                          
+                      </ul> 
+        
+                  </li>
+                   
+                    <li><a href="#">About</a></li>
+                </ul>
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./chalisa.html">Chalisa »</a> श्री गणेश चालीसा | Ganesh chalisa</h4> 
+    <br><br>
+   <img src="./ganesh ji chalisa.png" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>श्री गणेश चालीसा | Ganesh chalisa</h1><br>
+    <p><strong>श्री गणेश चालीसा | Shree Ganesh chalisa</strong> —> गणेश चालीसा का प्रतिरोज़ पाठ करने से भगवIन गणपति की कृपा सदैव बनी रहती है और सभी विघ्न दूर हो जाते है इस में गणेश की स्तुति की है गणेश जी प्रथम पूज्ये की नाम से भी जाने है |</p><br>
+
+
+<p>जय गणपति सद्गुण सदन कविवर बदन कृपाल।<br>
+विघ्न हरण मंगल करण जय जय गिरिजालाल॥</p><br>
+
+<p>जय जय जय गणपति राजू। मंगल भरण करण शुभ काजू॥<br>
+जय गजबदन सदन सुखदाता। विश्व विनायक बुद्धि विधाता॥</p><br>
+
+<p>वक्र तुण्ड शुचि शुण्ड सुहावन। तिलक त्रिपुण्ड भाल मन भावन॥<br>
+राजित मणि मुक्तन उर माला। स्वर्ण मुकुट शिर नयन विशाला॥</p><br>
+
+<p>पुस्तक पाणि कुठार त्रिशूलं। मोदक भोग सुगन्धित फूलं॥<br>
+सुन्दर पीताम्बर तन साजित। चरण पादुका मुनि मन राजित॥</p><br>
+
+<p>धनि शिवसुवन षडानन भ्राता। गौरी ललन विश्व-विधाता॥<br>
+ऋद्धि सिद्धि तव चँवर डुलावे। मूषक वाहन सोहत द्वारे॥</p><br>
+
+<p>कहौ जन्म शुभ कथा तुम्हारी। अति शुचि पावन मंगल कारी॥<br>
+एक समय गिरिराज कुमारी। पुत्र हेतु तप कीन्हा भारी॥</p><br>
+
+<p>भयो यज्ञ जब पूर्ण अनूपा। तब पहुंच्यो तुम धरि द्विज रूपा।<br>
+अतिथि जानि कै गौरी सुखारी। बहु विधि सेवा करी तुम्हारी॥</p><br>
+
+<p>अति प्रसन्न ह्वै तुम वर दीन्हा। मातु पुत्र हित जो तप कीन्हा॥<br>
+मिलहि पुत्र तुहि बुद्धि विशाला। बिना गर्भ धारण यहि काला॥</p><br>
+
+<p>गणनायक गुण ज्ञान निधाना। पूजित प्रथम रूप भगवाना॥<br>
+अस कहि अन्तर्धान रूप ह्वै। पलना पर बालक स्वरूप ह्वै॥</p><br>
+
+<p>बनि शिशु रुदन जबहि तुम ठाना। लखि मुख सुख नहिं गौरि समाना॥<br>
+सकल मगन सुख मंगल गावहिं। नभ ते सुरन सुमन वर्षावहिं॥</p><br>
+
+<p>शम्भु उमा बहुदान लुटावहिं। सुर मुनि जन सुत देखन आवहिं॥<br>
+लखि अति आनन्द मंगल साजा। देखन भी आए शनि राजा॥</p><br>
+
+<p>निज अवगुण गुनि शनि मन माहीं। बालक देखन चाहत नाहिं॥<br>
+गिरजा कछु मन भेद बढ़ायो। उत्सव मोर न शनि तुहि भायो॥</p><br>
+
+<p>कहन लगे शनि मन सकुचाई। का करिहौ शिशु मोहि दिखाई॥<br>
+नहिं विश्वास उमा कर भयऊ। शनि सों बालक देखन कह्यऊ॥</p><br>
+
+<p>पड़तहिं शनि दृग कोण प्रकाशा। बालक शिर उड़ि गयो आकाशा॥<br>
+गिरजा गिरीं विकल ह्वै धरणी। सो दुख दशा गयो नहिं वरणी॥</p><br>
+
+<p>हाहाकार मच्यो कैलाशा। शनि कीन्ह्यों लखि सुत को नाशा॥<br>
+तुरत गरुड़ चढ़ि विष्णु सिधाए। काटि चक्र सो गज शिर लाए॥</p><br>
+
+<p>बालक के धड़ ऊपर धारयो। प्राण मन्त्र पढ़ शंकर डारयो॥<br>
+नाम गणेश शम्भु तब कीन्हे। प्रथम पूज्य बुद्धि निधि वर दीन्हे॥</p><br>
+
+<p>बुद्धि परीक्षा जब शिव कीन्हा। पृथ्वी की प्रदक्षिणा लीन्हा॥<br>
+चले षडानन भरमि भुलाई। रची बैठ तुम बुद्धि उपाई॥</p><br>
+
+<p>चरण मातु-पितु के धर लीन्हें। तिनके सात प्रदक्षिण कीन्हें॥<br>
+धनि गणेश कहि शिव हिय हरषे। नभ ते सुरन सुमन बहु बरसे॥</p><br>
+
+<p>तुम्हरी महिमा बुद्धि बड़ाई। शेष सहस मुख सकै न गाई॥<br>
+मैं मति हीन मलीन दुखारी। करहुँ कौन बिधि विनय तुम्हारी॥</p><br>
+
+<p>भजत रामसुन्दर प्रभुदासा। लख प्रयाग ककरा दुर्वासा॥<br>
+अब प्रभु दया दीन पर कीजै। अपनी शक्ति भक्ति कुछ दीजै॥</p><br>
+
+<p>दोहा</p>
+<p>श्री गणेश यह चालीसा पाठ करें धर ध्यान।<br>
+नित नव मंगल गृह बसै लहे जगत सन्मान॥<br>
+सम्वत् अपन सहस्र दश ऋषि पंचमी दिनेश।<br>
+पूरण चालीसा भयो मंगल मूर्ति गणेश॥</p>
+
+
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">afiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+ <div class="footer-bottom">
+  <p>Copyright &copy;2023 Aatmgyaan. All right resevered  </p>
+ </div> 
+
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>
