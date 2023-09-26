@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "containerheader">
+          <a href = "index.html" class = "navbar-brand">Aatmgyaan</a>
+          <div class = "navbar-nav">
+            <label for="drop" class="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="drop" />
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-1" class="toggle">Strotam</label>
+                        <a href="#">Strotam</a>
+                        <input type="checkbox" id="drop-1"/>
+                        <ul>
+                            <li><a href="#">Meaning</a></li>
+                            <li><a href="#">Rashi</a></li>
+                            <li><a href="#">Jyotish Upay</a></li>
+                            
+                        </ul> 
+        
+                    </li>
+                    <li>
+        
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-2" class="toggle"></label>
+                    <a href="#">Bhakti Sangrah</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a href="#">Puja Vidhi</a></li>
+                        <li><a href="#">Vrat Katha</a></li>
+                        <li><a href="#">Stuthi</a></li>
+                        <li><a href="#">Kavacham</a></li>
+                        <li><a href="#">Shashtranam</a></li>
+                        <li><a href="#">Chalisa</a></li>
+                        <li><a href="#">Shatnamavli</a></li>
+                        <li>
+                           
+                        <!-- Second Tier Drop Down -->        
+                        <label for="drop-3" class="toggle">Blog Aricles +</label>
+                        <a href="#">Blog Articles</a>         
+                        <input type="checkbox" id="drop-3"/>
+        
+                        <ul>
+                            <li><a href="#">Rochak Jankari</a></li>
+                            <li><a href="#">12 Jyotiling</a></li>
+                            <li><a href="#">Sadhna</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Mantra</a></li>
+                    <li><a href="#">Aarti</a></li>
+                    <li>
+                      <!-- First Tier Drop Down -->
+                      <label for="drop-1" class="toggle">Bhajan</label>
+                      <a href="#">Bhajan</a>
+                      <input type="checkbox" id="drop-1"/>
+                      <ul>
+                          <li><a href="#">Shiv Bhajan</a></li>
+                          <li><a href="#">Hanuman Bhajan</a></li>
+                          <li><a href="#">Krishna Bhajan</a></li>
+                          <li><a href="#">Santoshi Maa Bhajan</a></li>
+                          <li><a href="#">Maa Durga Bhajan</a></li>
+                          <li><a href="#">Khatu Shyam Bhajan</a></li>
+                          <li><a href="#">Marwadi Bhajan</a></li>
+                          
+                      </ul> 
+        
+                  </li>
+                   
+                    <li><a href="#">About</a></li>
+                </ul>
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./strotam.html">Strotam »</a> ललिता सहस्त्रनाम स्त्रोत (Lalitha Sahasranama Stotram) </h4> <br><br>
+   <img src="./lalita sahasranaman strotam.jpg" style="width: 480px; height: 360px;">
+    <br><br>
+    
+  <h1>ललिता सहस्त्रनाम स्त्रोत (Lalitha Sahasranama Stotram)</h1><br><br>
+
+            <p>॥ हरिः ॐ ॥
+                <br/>
+    अस्य श्री ललिता सहस्रनाम स्तोत्र मालामन्त्रस्य, वशिन्यादि वाग्देवता ऋषयः, अनुष्टुप् छन्दः, श्री ललिता पराभट्टारिका महा त्रिपुर सुन्दरी देवता, श्रीमद्वाग़्भवकूटेति बीजं, शक्ति कूटेति शक्तिः,कामराजेति कीलकं, मम धर्मार्थ काम मोक्ष चतुर्विध फलपुरुषार्थ सिद्ध्यर्थे ललिता त्रिपुरसुन्दरी पराभट्टारिका प्रित्यर्थे सहस्र नाम जपे विनियोगः॥
+                <br/>
+                <br/>
+    ॥ ऋष्यादि न्यास ॥ (षडांग)
+                <br/>
+    वशिन्यादि वाग्देवता ऋषिभ्यो नमः शिरशे (दक्षिणा हस्ते स्पर्श)
+                <br/>
+    अनुष्टुप् छन्दसे नमः मुखे (दक्षिणा हस्ते स्पर्श) ललिता पराभट्टारिका महा त्रिपुर सुन्दरी देवताभ्यो नमः ह्रदये (दक्षिणा हस्ते स्पर्श)
+                <br/>
+    श्रीमद्वाग़्भवकूटेति बीजाय नमः गुह्ये (वाम हस्ते स्पर्श, हस्त प्रक्षालयम)
+                <br/>
+    शक्ति कूटेति शक्तये नमः पाध्यो (द्वयम हस्ते स्पर्श)
+                <br/>
+    कामराजेति कीलकाय नमः नाभौ(दक्षिणा हस्ते स्पर्श)
+                <br/>
+    श्री ललिता त्रिपुरसुन्दरी पराभट्टारिका प्रित्यर्थे सहस्र नाम जपे विनियोगः नमः सर्वाँगे (द्वयम हस्ते स्पर्श)
+                <br/>
+                <br/>
+    ॥ कर न्यास॥
+                <br/>
+    कूटत्रयेण द्विरावृत्या करषडंगौ विधाय
+                <br/>
+                <br/>
+    ॥ ध्यानं ॥
+                <br/>
+    सिन्धूरारुण विग्रहां त्रिणयनां माणिक्य मौलिस्फुर-
+                <br/>
+    त्तारानायक शेखरां स्मितमुखी मापीन वक्षोरुहाम् ।
+                <br/>
+    पाणिभ्या मलिपूर्ण रत्न चषकं रक्तोत्पलं बिभ्रतीं
+                <br/>
+    सौम्यां रत्नघटस्थ रक्त चरणां ध्यायेत्परामम्बिकाम् ॥
+                <br/>
+                <br/>
+    ॥ लमित्यादि पञ्च्हपूजां विभावयेत् ॥
+                <br/>
+    लं पृथिवी तत्त्वात्मिकायै श्री ललितादेव्यै गन्धं परिकल्पयामि
+                <br/>
+    हम् आकाश तत्त्वात्मिकायै श्री ललितादेव्यै पुष्पं परिकल्पयामि
+                <br/>
+    यं वायु तत्त्वात्मिकायै श्री ललितादेव्यै धूपं परिकल्पयामि
+                <br/>
+    रं वह्नि तत्त्वात्मिकायै श्री ललितादेव्यै दीपं परिकल्पयामि
+                <br/>
+    वम् अमृत तत्त्वात्मिकायै श्री ललितादेव्यै अमृत नैवेद्यं परिकल्पयामि
+                <br/>
+    सं सर्व तत्त्वात्मिकायै श्री ललितादेव्यै ताम्बूलादि सर्वोपचारान् परिकल्पयामि
+                <br/>
+    गुरुर्ब्रह्म गुरुर्विष्णुः गुरुर्देवो महेश्वरः ।
+                <br/>
+    गुरुर्‍स्साक्षात् परब्रह्म तस्मै श्री गुरवे नमः ॥
+                <br/>
+                <br/>
+    ॥ हरिः ॐ ॥
+                <br/>
+    श्री माता, श्री महाराज्ञी, श्रीमत्-सिंहासनेश्वरी ।
+                <br/>
+    चिदग्नि कुण्डसम्भूता, देवकार्यसमुद्यता ॥ 1 ॥
+                <br/>
+                <br/>
+    उद्यद्भानु सहस्राभा, चतुर्बाहु समन्विता ।
+                <br/>
+    रागस्वरूप पाशाढ्या, क्रोधाकाराङ्कुशोज्ज्वला ॥ 2 ॥
+                <br/>
+                <br/>
+    मनोरूपेक्षुकोदण्डा, पञ्चतन्मात्र सायका ।
+                <br/>
+    निजारुण प्रभापूर मज्जद्-ब्रह्माण्डमण्डला ॥ 3 ॥
+                <br/>
+                <br/>
+    चम्पकाशोक पुन्नाग सौगन्धिक लसत्कचा ।
+                <br/>
+    कुरुविन्द मणिश्रेणी कनत्कोटीर मण्डिता ॥ 4 ॥
+                <br/>
+                <br/>
+    अष्टमी चन्द्र विभ्राज दलिकस्थल शोभिता ।
+                <br/>
+    मुखचन्द्र कलङ्काभ मृगनाभि विशेषका ॥ 5 ॥
+                <br/>
+                <br/>
+    वदनस्मर माङ्गल्य गृहतोरण चिल्लिका ।
+                <br/>
+    वक्त्रलक्ष्मी परीवाह चलन्मीनाभ लोचना ॥ 6 ॥
+                <br/>
+                <br/>
+    नवचम्पक पुष्पाभ नासादण्ड विराजिता ।
+                <br/>
+    ताराकान्ति तिरस्कारि नासाभरण भासुरा ॥ 7 ॥
+                <br/>
+                <br/>
+    कदम्ब मञ्जरीक्लुप्त कर्णपूर मनोहरा ।
+                <br/>
+    ताटङ्क युगलीभूत तपनोडुप मण्डला ॥ 8 ॥
+                <br/>
+                <br/>
+    पद्मराग शिलादर्श परिभावि कपोलभूः ।
+                <br/>
+    नवविद्रुम बिम्बश्रीः न्यक्कारि रदनच्छदा ॥ 9 ॥
+                <br/>
+                <br/>
+    शुद्ध विद्याङ्कुराकार द्विजपङ्क्ति द्वयोज्ज्वला ।
+                <br/>
+    कर्पूरवीटि कामोद समाकर्ष द्दिगन्तरा ॥ 10 ॥
+                <br/>
+                <br/>
+    निजसल्लाप माधुर्य विनिर्भर्-त्सित कच्छपी ।
+                <br/>
+    मन्दस्मित प्रभापूर मज्जत्-कामेश मानसा ॥ 11 ॥
+                <br/>
+                <br/>
+    अनाकलित सादृश्य चुबुक श्री विराजिता ।
+                <br/>
+    कामेशबद्ध माङ्गल्य सूत्रशोभित कन्थरा ॥ 12 ॥
+                <br/>
+                <br/>
+    कनकाङ्गद केयूर कमनीय भुजान्विता ।
+                <br/>
+    रत्नग्रैवेय चिन्ताक लोलमुक्ता फलान्विता ॥ 13 ॥
+                <br/>
+                <br/>
+    कामेश्वर प्रेमरत्न मणि प्रतिपणस्तनी ।
+                <br/>
+    नाभ्यालवाल रोमालि लताफल कुचद्वयी ॥ 14 ॥
+                <br/>
+                <br/>
+    लक्ष्यरोमलता धारता समुन्नेय मध्यमा ।
+                <br/>
+    स्तनभार दलन्-मध्य पट्टबन्ध वलित्रया ॥ 15 ॥
+                <br/>
+                <br/>
+    अरुणारुण कौसुम्भ वस्त्र भास्वत्-कटीतटी ।
+                <br/>
+    रत्नकिङ्किणि कारम्य रशनादाम भूषिता ॥ 16 ॥
+                <br/>
+                <br/>
+    कामेश ज्ञात सौभाग्य मार्दवोरु द्वयान्विता ।
+                <br/>
+    माणिक्य मकुटाकार जानुद्वय विराजिता ॥ 17 ॥
+                <br/>
+                <br/>
+    इन्द्रगोप परिक्षिप्त स्मर तूणाभ जङ्घिका ।
+                <br/>
+    गूढगुल्भा कूर्मपृष्ठ जयिष्णु प्रपदान्विता ॥ 18 ॥
+                <br/>
+                <br/>
+    नखदीधिति संछन्न नमज्जन तमोगुणा ।
+                <br/>
+    पदद्वय प्रभाजाल पराकृत सरोरुहा ॥ 19 ॥
+                <br/>
+                <br/>
+    शिञ्जान मणिमञ्जीर मण्डित श्री पदाम्बुजा ।
+                <br/>
+    मराली मन्दगमना, महालावण्य शेवधिः ॥ 20 ॥
+                <br/>
+                <br/>
+    सर्वारुणा‌नवद्याङ्गी सर्वाभरण भूषिता ।
+                <br/>
+    शिवकामेश्वराङ्कस्था, शिवा, स्वाधीन वल्लभा ॥ 21 ॥
+                <br/>
+                <br/>
+    सुमेरु मध्यशृङ्गस्था, श्रीमन्नगर नायिका ।
+                <br/>
+    चिन्तामणि गृहान्तस्था, पञ्चब्रह्मासनस्थिता ॥ 22 ॥
+                <br/>
+                <br/>
+    महापद्माटवी संस्था, कदम्ब वनवासिनी ।
+                <br/>
+    सुधासागर मध्यस्था, कामाक्षी कामदायिनी ॥ 23 ॥
+                <br/>
+                <br/>
+    देवर्षि गणसङ्घात स्तूयमानात्म वैभवा ।
+                <br/>
+    भण्डासुर वधोद्युक्त शक्तिसेना समन्विता ॥ 24 ॥
+                <br/>
+                <br/>
+    सम्पत्करी समारूढ सिन्धुर व्रजसेविता ।
+                <br/>
+    अश्वारूढाधिष्ठिताश्व कोटिकोटि भिरावृता ॥ 25 ॥
+                <br/>
+                <br/>
+    चक्रराज रथारूढ सर्वायुध परिष्कृता ।
+                <br/>
+    गेयचक्र रथारूढ मन्त्रिणी परिसेविता ॥ 26 ॥
+                <br/>
+                <br/>
+    किरिचक्र रथारूढ दण्डनाथा पुरस्कृता ।
+                <br/>
+    ज्वालामालिनि काक्षिप्त वह्निप्राकार मध्यगा ॥ 27 ॥
+                <br/>
+                <br/>
+    भण्डसैन्य वधोद्युक्त शक्ति विक्रमहर्षिता ।
+                <br/>
+    नित्या पराक्रमाटोप निरीक्षण समुत्सुका ॥ 28 ॥
+                <br/>
+                <br/>
+    भण्डपुत्र वधोद्युक्त बालाविक्रम नन्दिता ।
+                <br/>
+    मन्त्रिण्यम्बा विरचित विषङ्ग वधतोषिता ॥ 29 ॥
+                <br/>
+                <br/>
+    विशुक्र प्राणहरण वाराही वीर्यनन्दिता ।
+                <br/>
+    कामेश्वर मुखालोक कल्पित श्री गणेश्वरा ॥ 30 ॥
+                <br/>
+                <br/>
+    महागणेश निर्भिन्न विघ्नयन्त्र प्रहर्षिता ।
+                <br/>
+    भण्डासुरेन्द्र निर्मुक्त शस्त्र प्रत्यस्त्र वर्षिणी ॥ 31 ॥
+                <br/>
+                <br/>
+    कराङ्गुलि नखोत्पन्न नारायण दशाकृतिः ।
+                <br/>
+    महापाशुपतास्त्राग्नि निर्दग्धासुर सैनिका ॥ 32 ॥
+                <br/>
+                <br/>
+    कामेश्वरास्त्र निर्दग्ध सभण्डासुर शून्यका ।
+                <br/>
+    ब्रह्मोपेन्द्र महेन्द्रादि देवसंस्तुत वैभवा ॥ 33 ॥
+                <br/>
+                <br/>
+    हरनेत्राग्नि सन्दग्ध काम सञ्जीवनौषधिः ।
+                <br/>
+    श्रीमद्वाग्भव कूटैक स्वरूप मुखपङ्कजा ॥ 34 ॥
+                <br/>
+                <br/>
+    कण्ठाधः कटिपर्यन्त मध्यकूट स्वरूपिणी ।
+                <br/>
+    शक्तिकूटैक तापन्न कट्यथोभाग धारिणी ॥ 35 ॥
+                <br/>
+                <br/>
+    मूलमन्त्रात्मिका, मूलकूट त्रय कलेबरा ।
+                <br/>
+    कुलामृतैक रसिका, कुलसङ्केत पालिनी ॥ 36 ॥
+                <br/>
+                <br/>
+    कुलाङ्गना, कुलान्तःस्था, कौलिनी, कुलयोगिनी ।
+                <br/>
+    अकुला, समयान्तःस्था, समयाचार तत्परा ॥ 37 ॥
+                <br/>
+                <br/>
+    मूलाधारैक निलया, ब्रह्मग्रन्थि विभेदिनी ।
+                <br/>
+    मणिपूरान्त रुदिता, विष्णुग्रन्थि विभेदिनी ॥ 38 ॥
+                <br/>
+                <br/>
+    आज्ञा चक्रान्तरालस्था, रुद्रग्रन्थि विभेदिनी ।
+                <br/>
+    सहस्राराम्बुजा रूढा, सुधासाराभि वर्षिणी ॥ 39 ॥
+                <br/>
+                <br/>
+    तटिल्लता समरुचिः, षट्-चक्रोपरि संस्थिता ।
+                <br/>
+    महाशक्तिः, कुण्डलिनी, बिसतन्तु तनीयसी ॥ 40 ॥
+                <br/>
+                <br/>
+    भवानी, भावनागम्या, भवारण्य कुठारिका ।
+                <br/>
+    भद्रप्रिया, भद्रमूर्ति, र्भक्तसौभाग्य दायिनी ॥ 41 ॥
+                <br/>
+                <br/>
+    भक्तिप्रिया, भक्तिगम्या, भक्तिवश्या, भयापहा ।
+                <br/>
+    शाम्भवी, शारदाराध्या, शर्वाणी, शर्मदायिनी ॥ 42 ॥
+                <br/>
+                <br/>
+    शाङ्करी, श्रीकरी, साध्वी, शरच्चन्द्रनिभानना ।
+                <br/>
+    शातोदरी, शान्तिमती, निराधारा, निरञ्जना ॥ 43 ॥
+                <br/>
+                <br/>
+    निर्लेपा, निर्मला, नित्या, निराकारा, निराकुला ।
+                <br/>
+    निर्गुणा, निष्कला, शान्ता, निष्कामा, निरुपप्लवा ॥ 44 ॥
+                <br/>
+                <br/>
+    नित्यमुक्ता, निर्विकारा, निष्प्रपञ्चा, निराश्रया ।
+                <br/>
+    नित्यशुद्धा, नित्यबुद्धा, निरवद्या, निरन्तरा ॥ 45 ॥
+                <br/>
+                <br/>
+    निष्कारणा, निष्कलङ्का, निरुपाधि, र्निरीश्वरा ।
+                <br/>
+    नीरागा, रागमथनी, निर्मदा, मदनाशिनी ॥ 46 ॥
+                <br/>
+                <br/>
+    निश्चिन्ता, निरहङ्कारा, निर्मोहा, मोहनाशिनी ।
+                <br/>
+    निर्ममा, ममताहन्त्री, निष्पापा, पापनाशिनी ॥ 47 ॥
+                <br/>
+                <br/>
+    निष्क्रोधा, क्रोधशमनी, निर्लोभा, लोभनाशिनी ।
+                <br/>
+    निःसंशया, संशयघ्नी, निर्भवा, भवनाशिनी ॥ 48 ॥
+                <br/>
+                <br/>
+    निर्विकल्पा, निराबाधा, निर्भेदा, भेदनाशिनी ।
+                <br/>
+    निर्नाशा, मृत्युमथनी, निष्क्रिया, निष्परिग्रहा ॥ 49 ॥
+                <br/>
+                <br/>
+    निस्तुला, नीलचिकुरा, निरपाया, निरत्यया ।
+                <br/>
+    दुर्लभा, दुर्गमा, दुर्गा, दुःखहन्त्री, सुखप्रदा ॥ 50 ॥
+                <br/>
+                <br/>
+    दुष्टदूरा, दुराचार शमनी, दोषवर्जिता ।
+                <br/>
+    सर्वज्ञा, सान्द्रकरुणा, समानाधिकवर्जिता ॥ 51 ॥
+                <br/>
+                <br/>
+    सर्वशक्तिमयी, सर्वमङ्गला, सद्गतिप्रदा ।
+                <br/>
+    सर्वेश्वरी, सर्वमयी, सर्वमन्त्र स्वरूपिणी ॥ 52 ॥
+                <br/>
+                <br/>
+    सर्वयन्त्रात्मिका, सर्वतन्त्ररूपा, मनोन्मनी ।
+                <br/>
+    माहेश्वरी, महादेवी, महालक्ष्मी, र्मृडप्रिया ॥ 53 ॥
+                <br/>
+                <br/>
+    महारूपा, महापूज्या, महापातक नाशिनी ।
+                <br/>
+    महामाया, महासत्त्वा, महाशक्ति र्महारतिः ॥ 54 ॥
+                <br/>
+                <br/>
+    महाभोगा, महैश्वर्या, महावीर्या, महाबला ।
+                <br/>
+    महाबुद्धि, र्महासिद्धि, र्महायोगेश्वरेश्वरी ॥ 55 ॥
+                <br/>
+                <br/>
+    महातन्त्रा, महामन्त्रा, महायन्त्रा, महासना ।
+                <br/>
+    महायाग क्रमाराध्या, महाभैरव पूजिता ॥ 56 ॥
+                <br/>
+                <br/>
+    महेश्वर महाकल्प महाताण्डव साक्षिणी ।
+                <br/>
+    महाकामेश महिषी, महात्रिपुर सुन्दरी ॥ 57 ॥
+                <br/>
+                <br/>
+    चतुःषष्ट्युपचाराढ्या, चतुष्षष्टि कलामयी ।
+                <br/>
+    महा चतुष्षष्टि कोटि योगिनी गणसेविता ॥ 58 ॥
+                <br/>
+                <br/>
+    मनुविद्या, चन्द्रविद्या, चन्द्रमण्डलमध्यगा ।
+                <br/>
+    चारुरूपा, चारुहासा, चारुचन्द्र कलाधरा ॥ 59 ॥
+                <br/>
+                <br/>
+    चराचर जगन्नाथा, चक्रराज निकेतना ।
+                <br/>
+    पार्वती, पद्मनयना, पद्मराग समप्रभा ॥ 60 ॥
+                <br/>
+                <br/>
+    पञ्चप्रेतासनासीना, पञ्चब्रह्म स्वरूपिणी ।
+                <br/>
+    चिन्मयी, परमानन्दा, विज्ञान घनरूपिणी ॥ 61 ॥
+                <br/>
+                <br/>
+    ध्यानध्यातृ ध्येयरूपा, धर्माधर्म विवर्जिता ।
+                <br/>
+    विश्वरूपा, जागरिणी, स्वपन्ती, तैजसात्मिका ॥ 62 ॥
+                <br/>
+                <br/>
+    सुप्ता, प्राज्ञात्मिका, तुर्या, सर्वावस्था विवर्जिता ।
+                <br/>
+    सृष्टिकर्त्री, ब्रह्मरूपा, गोप्त्री, गोविन्दरूपिणी ॥ 63 ॥
+                <br/>
+                <br/>
+    संहारिणी, रुद्ररूपा, तिरोधानकरीश्वरी ।
+                <br/>
+    सदाशिवानुग्रहदा, पञ्चकृत्य परायणा ॥ 64 ॥
+                <br/>
+                <br/>
+    भानुमण्डल मध्यस्था, भैरवी, भगमालिनी ।
+                <br/>
+    पद्मासना, भगवती, पद्मनाभ सहोदरी ॥ 65 ॥
+                <br/>
+                <br/>
+    उन्मेष निमिषोत्पन्न विपन्न भुवनावलिः ।
+                <br/>
+    सहस्रशीर्षवदना, सहस्राक्षी, सहस्रपात् ॥ 66 ॥
+                <br/>
+                <br/>
+    आब्रह्म कीटजननी, वर्णाश्रम विधायिनी ।
+                <br/>
+    निजाज्ञारूपनिगमा, पुण्यापुण्य फलप्रदा ॥ 67 ॥
+                <br/>
+                <br/>
+    श्रुति सीमन्त सिन्धूरीकृत पादाब्जधूलिका ।
+                <br/>
+    सकलागम सन्दोह शुक्तिसम्पुट मौक्तिका ॥ 68 ॥
+                <br/>
+                <br/>
+    पुरुषार्थप्रदा, पूर्णा, भोगिनी, भुवनेश्वरी ।
+                <br/>
+    अम्बिका,‌ नादि निधना, हरिब्रह्मेन्द्र सेविता ॥ 69 ॥
+                <br/>
+                <br/>
+    नारायणी, नादरूपा, नामरूप विवर्जिता ।
+                <br/>
+    ह्रीङ्कारी, ह्रीमती, हृद्या, हेयोपादेय वर्जिता ॥ 70 ॥
+                <br/>
+                <br/>
+    राजराजार्चिता, राज्ञी, रम्या, राजीवलोचना ।
+                <br/>
+    रञ्जनी, रमणी, रस्या, रणत्किङ्किणि मेखला ॥ 71 ॥
+                <br/>
+                <br/>
+    रमा, राकेन्दुवदना, रतिरूपा, रतिप्रिया ।
+                <br/>
+    रक्षाकरी, राक्षसघ्नी, रामा, रमणलम्पटा ॥ 72 ॥
+                <br/>
+                <br/>
+    काम्या, कामकलारूपा, कदम्ब कुसुमप्रिया ।
+                <br/>
+    कल्याणी, जगतीकन्दा, करुणारस सागरा ॥ 73 ॥
+                <br/>
+                <br/>
+    कलावती, कलालापा, कान्ता, कादम्बरीप्रिया ।
+                <br/>
+    वरदा, वामनयना, वारुणीमदविह्वला ॥ 74 ॥
+                <br/>
+                <br/>
+    विश्वाधिका, वेदवेद्या, विन्ध्याचल निवासिनी ।
+                <br/>
+    विधात्री, वेदजननी, विष्णुमाया, विलासिनी ॥ 75 ॥
+                <br/>
+                <br/>
+    क्षेत्रस्वरूपा, क्षेत्रेशी, क्षेत्र क्षेत्रज्ञ पालिनी ।
+                <br/>
+    क्षयवृद्धि विनिर्मुक्ता, क्षेत्रपाल समर्चिता ॥ 76 ॥
+                <br/>
+                <br/>
+    विजया, विमला, वन्द्या, वन्दारु जनवत्सला ।
+                <br/>
+    वाग्वादिनी, वामकेशी, वह्निमण्डल वासिनी ॥ 77 ॥
+                <br/>
+                <br/>
+    भक्तिमत्-कल्पलतिका, पशुपाश विमोचनी ।
+                <br/>
+    संहृताशेष पाषण्डा, सदाचार प्रवर्तिका ॥ 78 ॥
+                <br/>
+                <br/>
+    तापत्रयाग्नि सन्तप्त समाह्लादन चन्द्रिका ।
+                <br/>
+    तरुणी, तापसाराध्या, तनुमध्या, तमो‌पहा ॥ 79 ॥
+                <br/>
+                <br/>
+    चिति, स्तत्पदलक्ष्यार्था, चिदेक रसरूपिणी ।
+                <br/>
+    स्वात्मानन्दलवीभूत ब्रह्माद्यानन्द सन्ततिः ॥ 80 ॥
+                <br/>
+                <br/>
+    परा, प्रत्यक्चिती रूपा, पश्यन्ती, परदेवता ।
+                <br/>
+    मध्यमा, वैखरीरूपा, भक्तमानस हंसिका ॥ 81 ॥
+                <br/>
+                <br/>
+    कामेश्वर प्राणनाडी, कृतज्ञा, कामपूजिता ।
+                <br/>
+    शृङ्गार रससम्पूर्णा, जया, जालन्धरस्थिता ॥ 82 ॥
+                <br/>
+                <br/>
+    ओड्याण पीठनिलया, बिन्दुमण्डल वासिनी ।
+                <br/>
+    रहोयाग क्रमाराध्या, रहस्तर्पण तर्पिता ॥ 83 ॥
+                <br/>
+                <br/>
+    सद्यः प्रसादिनी, विश्वसाक्षिणी, साक्षिवर्जिता ।
+                <br/>
+    षडङ्गदेवता युक्ता, षाड्गुण्य परिपूरिता ॥ 84 ॥
+                <br/>
+                <br/>
+    नित्यक्लिन्ना, निरुपमा, निर्वाण सुखदायिनी ।
+                <br/>
+    नित्या, षोडशिकारूपा, श्रीकण्ठार्ध शरीरिणी ॥ 85 ॥
+                <br/>
+                <br/>
+    प्रभावती, प्रभारूपा, प्रसिद्धा, परमेश्वरी ।
+                <br/>
+    मूलप्रकृति रव्यक्ता, व्यक्ता‌व्यक्त स्वरूपिणी ॥ 86 ॥
+                <br/>
+                <br/>
+    व्यापिनी, विविधाकारा, विद्या‌विद्या स्वरूपिणी ।
+                <br/>
+    महाकामेश नयना, कुमुदाह्लाद कौमुदी ॥ 87 ॥
+                <br/>
+                <br/>
+    भक्तहार्द तमोभेद भानुमद्-भानुसन्ततिः ।
+                <br/>
+    शिवदूती, शिवाराध्या, शिवमूर्ति, श्शिवङ्करी ॥ 88 ॥
+                <br/>
+                <br/>
+    शिवप्रिया, शिवपरा, शिष्टेष्टा, शिष्टपूजिता ।
+                <br/>
+    अप्रमेया, स्वप्रकाशा, मनोवाचाम गोचरा ॥ 89 ॥
+                <br/>
+                <br/>
+    चिच्छक्ति, श्चेतनारूपा, जडशक्ति, र्जडात्मिका ।
+                <br/>
+    गायत्री, व्याहृति, स्सन्ध्या, द्विजबृन्द निषेविता ॥ 90 ॥
+                <br/>
+                <br/>
+    तत्त्वासना, तत्त्वमयी, पञ्चकोशान्तरस्थिता ।
+                <br/>
+    निस्सीममहिमा, नित्ययौवना, मदशालिनी ॥ 91 ॥
+                <br/>
+                <br/>
+    मदघूर्णित रक्ताक्षी, मदपाटल गण्डभूः ।
+                <br/>
+    चन्दन द्रवदिग्धाङ्गी, चाम्पेय कुसुम प्रिया ॥ 92 ॥
+                <br/>
+                <br/>
+    कुशला, कोमलाकारा, कुरुकुल्ला, कुलेश्वरी ।
+                <br/>
+    कुलकुण्डालया, कौल मार्गतत्पर सेविता ॥ 93 ॥
+                <br/>
+                <br/>
+    कुमार गणनाथाम्बा, तुष्टिः, पुष्टि, र्मति, र्धृतिः ।
+                <br/>
+    शान्तिः, स्वस्तिमती, कान्ति, र्नन्दिनी, विघ्ननाशिनी ॥ 94 ॥
+                <br/>
+                <br/>
+    तेजोवती, त्रिनयना, लोलाक्षी कामरूपिणी ।
+                <br/>
+    मालिनी, हंसिनी, माता, मलयाचल वासिनी ॥ 95 ॥
+                <br/>
+                <br/>
+    सुमुखी, नलिनी, सुभ्रूः, शोभना, सुरनायिका ।
+                <br/>
+    कालकण्ठी, कान्तिमती, क्षोभिणी, सूक्ष्मरूपिणी ॥ 96 ॥
+                <br/>
+                <br/>
+    वज्रेश्वरी, वामदेवी, वयो‌உवस्था विवर्जिता ।
+                <br/>
+    सिद्धेश्वरी, सिद्धविद्या, सिद्धमाता, यशस्विनी ॥ 97 ॥
+                <br/>
+                <br/>
+    विशुद्धि चक्रनिलया,‌रक्तवर्णा, त्रिलोचना ।
+                <br/>
+    खट्वाङ्गादि प्रहरणा, वदनैक समन्विता ॥ 98 ॥
+                <br/>
+                <br/>
+    पायसान्नप्रिया, त्वक्‍स्था, पशुलोक भयङ्करी ।
+                <br/>
+    अमृतादि महाशक्ति संवृता, डाकिनीश्वरी ॥ 99 ॥
+                <br/>
+                <br/>
+    अनाहताब्ज निलया, श्यामाभा, वदनद्वया ।
+                <br/>
+    दंष्ट्रोज्ज्वला,‌क्षमालाधिधरा, रुधिर संस्थिता ॥ 100 ॥
+                <br/>
+                <br/>
+    कालरात्र्यादि शक्त्योघवृता, स्निग्धौदनप्रिया ।
+                <br/>
+    महावीरेन्द्र वरदा, राकिण्यम्बा स्वरूपिणी ॥ 101 ॥
+                <br/>
+                <br/>
+    मणिपूराब्ज निलया, वदनत्रय संयुता ।
+                <br/>
+    वज्राधिकायुधोपेता, डामर्यादिभि रावृता ॥ 102 ॥
+                <br/>
+                <br/>
+    रक्तवर्णा, मांसनिष्ठा, गुडान्न प्रीतमानसा ।
+                <br/>
+    समस्त भक्तसुखदा, लाकिन्यम्बा स्वरूपिणी ॥ 103 ॥
+                <br/>
+                <br/>
+    स्वाधिष्ठानाम्बु जगता, चतुर्वक्त्र मनोहरा ।
+                <br/>
+    शूलाद्यायुध सम्पन्ना, पीतवर्णा,‌तिगर्विता ॥ 104 ॥
+                <br/>
+                <br/>
+    मेदोनिष्ठा, मधुप्रीता, बन्दिन्यादि समन्विता ।
+                <br/>
+    दध्यन्नासक्त हृदया, काकिनी रूपधारिणी ॥ 105 ॥
+                <br/>
+                <br/>
+    मूला धाराम्बुजारूढा, पञ्चवक्त्रा,‌स्थिसंस्थिता ।
+                <br/>
+    अङ्कुशादि प्रहरणा, वरदादि निषेविता ॥ 106 ॥
+                <br/>
+                <br/>
+    मुद्गौदनासक्त चित्ता, साकिन्यम्बास्वरूपिणी ।
+                <br/>
+    आज्ञा चक्राब्जनिलया, शुक्लवर्णा, षडानना ॥ 107 ॥
+                <br/>
+                <br/>
+    मज्जासंस्था, हंसवती मुख्यशक्ति समन्विता ।
+                <br/>
+    हरिद्रान्नैक रसिका, हाकिनी रूपधारिणी ॥ 108 ॥
+                <br/>
+                <br/>
+    सहस्रदल पद्मस्था, सर्ववर्णोप शोभिता ।
+                <br/>
+    सर्वायुधधरा, शुक्ल संस्थिता, सर्वतोमुखी ॥ 109 ॥
+                <br/>
+                <br/>
+    सर्वौदन प्रीतचित्ता, याकिन्यम्बा स्वरूपिणी ।
+                <br/>
+    स्वाहा, स्वधा,‌मति, र्मेधा, श्रुतिः, स्मृति, रनुत्तमा ॥ 110 ॥
+                <br/>
+                <br/>
+    पुण्यकीर्तिः, पुण्यलभ्या, पुण्यश्रवण कीर्तना ।
+                <br/>
+    पुलोमजार्चिता, बन्धमोचनी, बन्धुरालका ॥ 111 ॥
+                <br/>
+                <br/>
+    विमर्शरूपिणी, विद्या, वियदादि जगत्प्रसूः ।
+                <br/>
+    सर्वव्याधि प्रशमनी, सर्वमृत्यु निवारिणी ॥ 112 ॥
+                <br/>
+                <br/>
+    अग्रगण्या,‌चिन्त्यरूपा, कलिकल्मष नाशिनी ।
+                <br/>
+    कात्यायिनी, कालहन्त्री, कमलाक्ष निषेविता ॥ 113 ॥
+                <br/>
+                <br/>
+    ताम्बूल पूरित मुखी, दाडिमी कुसुमप्रभा ।
+                <br/>
+    मृगाक्षी, मोहिनी, मुख्या, मृडानी, मित्ररूपिणी ॥ 114 ॥
+                <br/>
+                <br/>
+    नित्यतृप्ता, भक्तनिधि, र्नियन्त्री, निखिलेश्वरी ।
+                <br/>
+    मैत्र्यादि वासनालभ्या, महाप्रलय साक्षिणी ॥ 115 ॥
+                <br/>
+                <br/>
+    पराशक्तिः, परानिष्ठा, प्रज्ञान घनरूपिणी ।
+                <br/>
+    माध्वीपानालसा, मत्ता, मातृका वर्ण रूपिणी ॥ 116 ॥
+                <br/>
+                <br/>
+    महाकैलास निलया, मृणाल मृदुदोर्लता ।
+                <br/>
+    महनीया, दयामूर्ती, र्महासाम्राज्यशालिनी ॥ 117 ॥
+                <br/>
+                <br/>
+    आत्मविद्या, महाविद्या, श्रीविद्या, कामसेविता ।
+                <br/>
+    श्रीषोडशाक्षरी विद्या, त्रिकूटा, कामकोटिका ॥ 118 ॥
+                <br/>
+                <br/>
+    कटाक्षकिङ्करी भूत कमला कोटिसेविता ।
+                <br/>
+    शिरःस्थिता, चन्द्रनिभा, फालस्थेन्द्र धनुःप्रभा ॥ 119 ॥
+                <br/>
+                <br/>
+    हृदयस्था, रविप्रख्या, त्रिकोणान्तर दीपिका ।
+                <br/>
+    दाक्षायणी, दैत्यहन्त्री, दक्षयज्ञ विनाशिनी ॥ 120 ॥
+                <br/>
+                <br/>
+    दरान्दोलित दीर्घाक्षी, दरहासोज्ज्वलन्मुखी ।
+                <br/>
+    गुरुमूर्ति, र्गुणनिधि, र्गोमाता, गुहजन्मभूः ॥ 121 ॥
+                <br/>
+                <br/>
+    देवेशी, दण्डनीतिस्था, दहराकाश रूपिणी ।
+                <br/>
+    प्रतिपन्मुख्य राकान्त तिथिमण्डल पूजिता ॥ 122 ॥
+                <br/>
+                <br/>
+    कलात्मिका, कलानाथा, काव्यालाप विनोदिनी ।
+                <br/>
+    सचामर रमावाणी सव्यदक्षिण सेविता ॥ 123 ॥
+                <br/>
+                <br/>
+    आदिशक्ति, रमेयात्मा, परमा, पावनाकृतिः ।
+                <br/>
+    अनेककोटि ब्रह्माण्ड जननी, दिव्यविग्रहा ॥ 124 ॥
+                <br/>
+                <br/>
+    क्लीङ्कारी, केवला, गुह्या, कैवल्य पददायिनी ।
+                <br/>
+    त्रिपुरा, त्रिजगद्वन्द्या, त्रिमूर्ति, स्त्रिदशेश्वरी ॥ 125 ॥
+                <br/>
+                <br/>
+    त्र्यक्षरी, दिव्यगन्धाढ्या, सिन्धूर तिलकाञ्चिता ।
+                <br/>
+    उमा, शैलेन्द्रतनया, गौरी, गन्धर्व सेविता ॥ 126 ॥
+                <br/>
+                <br/>
+    विश्वगर्भा, स्वर्णगर्भा,‌உवरदा वागधीश्वरी ।
+                <br/>
+    ध्यानगम्या,‌ परिच्छेद्या, ज्ञानदा, ज्ञानविग्रहा ॥ 127 ॥
+                <br/>
+                <br/>
+    सर्ववेदान्त संवेद्या, सत्यानन्द स्वरूपिणी ।
+                <br/>
+    लोपामुद्रार्चिता, लीलाक्लुप्त ब्रह्माण्डमण्डला ॥ 128 ॥
+                <br/>
+                <br/>
+    अदृश्या, दृश्यरहिता, विज्ञात्री, वेद्यवर्जिता ।
+                <br/>
+    योगिनी, योगदा, योग्या, योगानन्दा, युगन्धरा ॥ 129 ॥
+                <br/>
+                <br/>
+    इच्छाशक्ति ज्ञानशक्ति क्रियाशक्ति स्वरूपिणी ।
+                <br/>
+    सर्वधारा, सुप्रतिष्ठा, सदसद्-रूपधारिणी ॥ 130 ॥
+                <br/>
+                <br/>
+    अष्टमूर्ति, रजाजैत्री, लोकयात्रा विधायिनी ।
+                <br/>
+    एकाकिनी, भूमरूपा, निर्द्वैता, द्वैतवर्जिता ॥ 131 ॥
+                <br/>
+                <br/>
+    अन्नदा, वसुदा, वृद्धा, ब्रह्मात्मैक्य स्वरूपिणी ।
+                <br/>
+    बृहती, ब्राह्मणी, ब्राह्मी, ब्रह्मानन्दा, बलिप्रिया ॥ 132 ॥
+                <br/>
+                <br/>
+    भाषारूपा, बृहत्सेना, भावाभाव विवर्जिता ।
+                <br/>
+    सुखाराध्या, शुभकरी, शोभना सुलभागतिः ॥ 133 ॥
+                <br/>
+                <br/>
+    राजराजेश्वरी, राज्यदायिनी, राज्यवल्लभा ।
+                <br/>
+    राजत्-कृपा, राजपीठ निवेशित निजाश्रिताः ॥ 134 ॥
+                <br/>
+                <br/>
+    राज्यलक्ष्मीः, कोशनाथा, चतुरङ्ग बलेश्वरी ।
+                <br/>
+    साम्राज्यदायिनी, सत्यसन्धा, सागरमेखला ॥ 135 ॥
+                <br/>
+                <br/>
+    दीक्षिता, दैत्यशमनी, सर्वलोक वशङ्करी ।
+                <br/>
+    सर्वार्थदात्री, सावित्री, सच्चिदानन्द रूपिणी ॥ 136 ॥
+                <br/>
+                <br/>
+    देशकाला‌ परिच्छिन्ना, सर्वगा, सर्वमोहिनी ।
+                <br/>
+    सरस्वती, शास्त्रमयी, गुहाम्बा, गुह्यरूपिणी ॥ 137 ॥
+                <br/>
+                <br/>
+    सर्वोपाधि विनिर्मुक्ता, सदाशिव पतिव्रता ।
+                <br/>
+    सम्प्रदायेश्वरी, साध्वी, गुरुमण्डल रूपिणी ॥ 138 ॥
+                <br/>
+                <br/>
+    कुलोत्तीर्णा, भगाराध्या, माया, मधुमती, मही ।
+                <br/>
+    गणाम्बा, गुह्यकाराध्या, कोमलाङ्गी, गुरुप्रिया ॥ 139 ॥
+                <br/>
+                <br/>
+    स्वतन्त्रा, सर्वतन्त्रेशी, दक्षिणामूर्ति रूपिणी ।
+                <br/>
+    सनकादि समाराध्या, शिवज्ञान प्रदायिनी ॥ 140 ॥
+                <br/>
+                <br/>
+    चित्कला,‌ नन्दकलिका, प्रेमरूपा, प्रियङ्करी ।
+                <br/>
+    नामपारायण प्रीता, नन्दिविद्या, नटेश्वरी ॥ 141 ॥
+                <br/>
+                <br/>
+    मिथ्या जगदधिष्ठाना मुक्तिदा, मुक्तिरूपिणी ।
+                <br/>
+    लास्यप्रिया, लयकरी, लज्जा, रम्भादि वन्दिता ॥ 142 ॥
+                <br/>
+                <br/>
+    भवदाव सुधावृष्टिः, पापारण्य दवानला ।
+                <br/>
+    दौर्भाग्यतूल वातूला, जराध्वान्त रविप्रभा ॥ 143 ॥
+                <br/>
+                <br/>
+    भाग्याब्धिचन्द्रिका, भक्तचित्तकेकि घनाघना ।
+                <br/>
+    रोगपर्वत दम्भोलि, र्मृत्युदारु कुठारिका ॥ 144 ॥
+                <br/>
+                <br/>
+    महेश्वरी, महाकाली, महाग्रासा, महा‌உशना ।
+                <br/>
+    अपर्णा, चण्डिका, चण्ड मुण्डा‌सुर निषूदिनी ॥ 145 ॥
+                <br/>
+                <br/>
+    क्षराक्षरात्मिका, सर्वलोकेशी, विश्वधारिणी ।
+                <br/>
+    त्रिवर्गदात्री, सुभगा, त्र्यम्बका, त्रिगुणात्मिका ॥ 146 ॥
+                <br/>
+                <br/>
+    स्वर्गापवर्गदा, शुद्धा, जपापुष्प निभाकृतिः ।
+                <br/>
+    ओजोवती, द्युतिधरा, यज्ञरूपा, प्रियव्रता ॥ 147 ॥
+                <br/>
+                <br/>
+    दुराराध्या, दुरादर्षा, पाटली कुसुमप्रिया ।
+                <br/>
+    महती, मेरुनिलया, मन्दार कुसुमप्रिया ॥ 148 ॥
+                <br/>
+                <br/>
+    वीराराध्या, विराड्रूपा, विरजा, विश्वतोमुखी ।
+                <br/>
+    प्रत्यग्रूपा, पराकाशा, प्राणदा, प्राणरूपिणी ॥ 149 ॥
+                <br/>
+                <br/>
+    मार्ताण्ड भैरवाराध्या, मन्त्रिणी न्यस्तराज्यधूः ।
+                <br/>
+    त्रिपुरेशी, जयत्सेना, निस्त्रैगुण्या, परापरा ॥ 150 ॥
+                <br/>
+                <br/>
+    सत्यज्ञाना‌உनन्दरूपा, सामरस्य परायणा ।
+                <br/>
+    कपर्दिनी, कलामाला, कामधुक्,कामरूपिणी ॥ 151 ॥
+                <br/>
+                <br/>
+    कलानिधिः, काव्यकला, रसज्ञा, रसशेवधिः ।
+                <br/>
+    पुष्टा, पुरातना, पूज्या, पुष्करा, पुष्करेक्षणा ॥ 152 ॥
+                <br/>
+                <br/>
+    परञ्ज्योतिः, परन्धाम, परमाणुः, परात्परा ।
+                <br/>
+    पाशहस्ता, पाशहन्त्री, परमन्त्र विभेदिनी ॥ 153 ॥
+                <br/>
+                <br/>
+    मूर्ता,‌ मूर्ता,‌ नित्यतृप्ता, मुनि मानस हंसिका ।
+                <br/>
+    सत्यव्रता, सत्यरूपा, सर्वान्तर्यामिनी, सती ॥ 154 ॥
+                <br/>
+                <br/>
+    ब्रह्माणी, ब्रह्मजननी, बहुरूपा, बुधार्चिता ।
+                <br/>
+    प्रसवित्री, प्रचण्डा‌ज्ञा, प्रतिष्ठा, प्रकटाकृतिः ॥ 155 ॥
+                <br/>
+                <br/>
+    प्राणेश्वरी, प्राणदात्री, पञ्चाशत्-पीठरूपिणी ।
+                <br/>
+    विशृङ्खला, विविक्तस्था, वीरमाता, वियत्प्रसूः ॥ 156 ॥
+                <br/>
+                <br/>
+    मुकुन्दा, मुक्ति निलया, मूलविग्रह रूपिणी ।
+                <br/>
+    भावज्ञा, भवरोगघ्नी भवचक्र प्रवर्तिनी ॥ 157 ॥
+                <br/>
+                <br/>
+    छन्दस्सारा, शास्त्रसारा, मन्त्रसारा, तलोदरी ।
+                <br/>
+    उदारकीर्ति, रुद्दामवैभवा, वर्णरूपिणी ॥ 158 ॥
+                <br/>
+                <br/>
+    जन्ममृत्यु जरातप्त जन विश्रान्ति दायिनी ।
+                <br/>
+    सर्वोपनिष दुद्घुष्टा, शान्त्यतीत कलात्मिका ॥ 159 ॥
+                <br/>
+                <br/>
+    गम्भीरा, गगनान्तःस्था, गर्विता, गानलोलुपा ।
+                <br/>
+    कल्पनारहिता, काष्ठा, कान्ता, कान्तार्ध विग्रहा ॥ 160 ॥
+                <br/>
+                <br/>
+    कार्यकारण निर्मुक्ता, कामकेलि तरङ्गिता ।
+                <br/>
+    कनत्-कनकताटङ्का, लीलाविग्रह धारिणी ॥ 161 ॥
+                <br/>
+                <br/>
+    अजाक्षय विनिर्मुक्ता, मुग्धा क्षिप्रप्रसादिनी ।
+                <br/>
+    अन्तर्मुख समाराध्या, बहिर्मुख सुदुर्लभा ॥ 162 ॥
+                <br/>
+                <br/>
+    त्रयी, त्रिवर्ग निलया, त्रिस्था, त्रिपुरमालिनी ।
+                <br/>
+    निरामया, निरालम्बा, स्वात्मारामा, सुधासृतिः ॥ 163 ॥
+                <br/>
+                <br/>
+    संसारपङ्क निर्मग्न समुद्धरण पण्डिता ।
+                <br/>
+    यज्ञप्रिया, यज्ञकर्त्री, यजमान स्वरूपिणी ॥ 164 ॥
+                <br/>
+                <br/>
+    धर्माधारा, धनाध्यक्षा, धनधान्य विवर्धिनी ।
+                <br/>
+    विप्रप्रिया, विप्ररूपा, विश्वभ्रमण कारिणी ॥ 165 ॥
+                <br/>
+                <br/>
+    विश्वग्रासा, विद्रुमाभा, वैष्णवी, विष्णुरूपिणी ।
+                <br/>
+    अयोनि, र्योनिनिलया, कूटस्था, कुलरूपिणी ॥ 166 ॥
+                <br/>
+                <br/>
+    वीरगोष्ठीप्रिया, वीरा, नैष्कर्म्या, नादरूपिणी ।
+                <br/>
+    विज्ञान कलना, कल्या विदग्धा, बैन्दवासना ॥ 167 ॥
+                <br/>
+                <br/>
+    तत्त्वाधिका, तत्त्वमयी, तत्त्वमर्थ स्वरूपिणी ।
+                <br/>
+    सामगानप्रिया, सौम्या, सदाशिव कुटुम्बिनी ॥ 168 ॥
+                <br/>
+                <br/>
+    सव्यापसव्य मार्गस्था, सर्वापद्वि निवारिणी ।
+                <br/>
+    स्वस्था, स्वभावमधुरा, धीरा, धीर समर्चिता ॥ 169 ॥
+                <br/>
+                <br/>
+    चैतन्यार्घ्य समाराध्या, चैतन्य कुसुमप्रिया ।
+                <br/>
+    सदोदिता, सदातुष्टा, तरुणादित्य पाटला ॥ 170 ॥
+                <br/>
+                <br/>
+    दक्षिणा, दक्षिणाराध्या, दरस्मेर मुखाम्बुजा ।
+                <br/>
+    कौलिनी केवला,‌ नर्घ्या कैवल्य पददायिनी ॥ 171 ॥
+                <br/>
+                <br/>
+    स्तोत्रप्रिया, स्तुतिमती, श्रुतिसंस्तुत वैभवा ।
+                <br/>
+    मनस्विनी, मानवती, महेशी, मङ्गलाकृतिः ॥ 172 ॥
+                <br/>
+                <br/>
+    विश्वमाता, जगद्धात्री, विशालाक्षी, विरागिणी।
+                <br/>
+    प्रगल्भा, परमोदारा, परामोदा, मनोमयी ॥ 173 ॥
+                <br/>
+                <br/>
+    व्योमकेशी, विमानस्था, वज्रिणी, वामकेश्वरी ।
+                <br/>
+    पञ्चयज्ञप्रिया, पञ्चप्रेत मञ्चाधिशायिनी ॥ 174 ॥
+                <br/>
+                <br/>
+    पञ्चमी, पञ्चभूतेशी, पञ्च सङ्ख्योपचारिणी ।
+                <br/>
+    शाश्वती, शाश्वतैश्वर्या, शर्मदा, शम्भुमोहिनी ॥ 175 ॥
+                <br/>
+                <br/>
+    धरा, धरसुता, धन्या, धर्मिणी, धर्मवर्धिनी ।
+                <br/>
+    लोकातीता, गुणातीता, सर्वातीता, शमात्मिका ॥ 176 ॥
+                <br/>
+                <br/>
+    बन्धूक कुसुम प्रख्या, बाला, लीलाविनोदिनी ।
+                <br/>
+    सुमङ्गली, सुखकरी, सुवेषाड्या, सुवासिनी ॥ 177 ॥
+                <br/>
+                <br/>
+    सुवासिन्यर्चनप्रीता, शोभना, शुद्ध मानसा ।
+                <br/>
+    बिन्दु तर्पण सन्तुष्टा, पूर्वजा, त्रिपुराम्बिका ॥ 178 ॥
+                <br/>
+                <br/>
+    दशमुद्रा समाराध्या, त्रिपुरा श्रीवशङ्करी ।
+                <br/>
+    ज्ञानमुद्रा, ज्ञानगम्या, ज्ञानज्ञेय स्वरूपिणी ॥ 179 ॥
+                <br/>
+                <br/>
+    योनिमुद्रा, त्रिखण्डेशी, त्रिगुणाम्बा, त्रिकोणगा ।
+                <br/>
+    अनघाद्भुत चारित्रा, वांछितार्थ प्रदायिनी ॥ 180 ॥
+                <br/>
+                <br/>
+    अभ्यासाति शयज्ञाता, षडध्वातीत रूपिणी ।
+                <br/>
+    अव्याज करुणामूर्ति, रज्ञानध्वान्त दीपिका ॥ 181 ॥
+                <br/>
+                <br/>
+    आबालगोप विदिता, सर्वानुल्लङ्घ्य शासना ।
+                <br/>
+    श्री चक्रराजनिलया, श्रीमत्त्रिपुर सुन्दरी ॥ 182 ॥
+                <br/>
+                <br/>
+    श्री शिवा, शिवशक्त्यैक्य रूपिणी, ललिताम्बिका ।
+                <br/>
+    एवं श्रीललितादेव्या नाम्नां साहस्रकं जगुः ॥ 183 ॥
+                <br/>
+                <br/>
+    ॥ इति श्री ब्रह्माण्डपुराणे, उत्तरखण्डे, श्री हयग्रीवागस्त्य संवादे, श्रीललितारहस्यनाम श्री ललिता रहस्यनाम साहस्रस्तोत्र कथनं नाम द्वितीयो‌ध्यायः ॥
+                <br/>
+    यह भी जानें
+                <br/>
+    ललिता पञ्चमीनवरात्रिआरती: जय अम्बे गौरी, मैया जय श्यामा गौरीमाता के भजनदुर्गा चालीसामाँ दुर्गा देव्यापराध क्षमा प्रार्थना स्तोत्रंदिल्ली में माता के प्रसिद्ध मंदिरशारदीय नवरात्रि विशेष
+                <br/>
+    
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">afiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+ <div class="footer-bottom">
+  <p>Copyright &copy;2023 Aatmgyaan. All right resevered  </p>
+ </div> 
+
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>
