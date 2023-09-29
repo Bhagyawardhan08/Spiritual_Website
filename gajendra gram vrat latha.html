@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./vrat katha.html">Vrat Katha »</a>  गजेंद्र और ग्राह मुक्ति कथा (Gajendra And Grah Mukti Katha)</h4> <br><br>
+   <img src="./gajendra vrat katha.jpg" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1> गजेंद्र और ग्राह मुक्ति कथा (Gajendra And Grah Mukti Katha)</h1><br>
+   <p>वैकुण्ठ के द्वारपाल जय और विजय पूर्व जन्म में कौन थे?
+    <br/>
+क्षीरसागर में एक त्रिकूट नामक एक प्रसिद्ध एवं श्रेष्ठ पर्वत था। उसकी ऊँचाई आसमान छूती थी। उसकी लम्बाई-चौड़ाई भी चारों ओर काफी विस्तृत थी। उसके तीन शिखर थे, पहला सोने का, दूसरा चाँदी का तीसरा लोहे का। इनकी चमक से समुद्र, आकाश और दिशाएँ जगमगाती रहती थीं।
+    <br/>
+इनके अलावा उसकी और कई छोटी चोटियाँ थीं जो रत्नों और कीमती धातुओं से बनी हुई थीं। सब ओर से समुद्र की लहरें आकर इस पर्वत के निचले भाग से टकरातीं जिससे प्रतीत होता कि समुद्र इनके पाँव पखार रहा था।
+    <br/>
+    <br/>
+पर्वत की तलहटी में तरह-तरह के जंगली जानवर बसेरा बनाए हुए थे। इसके ऊपर बहुत सी नदियाँ और सरोवर भी थे।
+    <br/>
+    <br/>
+इस पर्वतराज त्रिकूट की तराई में एक तपस्वी महात्मा रहते थे जिनका नाम वरुण था। महात्मा वरुण ने एक अत्यन्त सुन्दर उद्यान में अपनी कुटी बनाई थी। इस उद्यान का नाम ऋतुमान था। इसमें सब ओर अत्यन्त ही दिव्य वृक्ष शोभा पा रहे थे, जो सदा फलों-फूलों से लदे रहते थे।
+    <br/>
+    <br/>
+इस उद्यान में एक बड़ा-सा सरोवर भी था जिसमें सुनहले कमल भी खिले रहते थे तथा विविध जाति के कुमुद, उत्पल, शतदल कमल अपनी अनूठी छटा बिखराते थे। हंस, चक्रवाक और सारस आदि पक्षी झुण्ड के झुण्ड भरे हुए थे। मछली और कछुवों के खिलवाड़ से कमल के फूल जो हिलते थे उससे उसका पराग झड़कर सरोवर जल को अत्यन्त सुगन्धित कर देता था।
+    <br/>
+    <br/>
+कदम्ब, नरकुल, बेंत, बेन आदि वृक्षों से यह घिरा रहता था। कुन्द कुरबक, अशोक, सिरस, वनमल्लिका, सोनजूही, नाग, हरसिंहार, मल्लिका शतपत्र, माधवी और मोगरा आदि सुन्दर-सुन्दर पुष्प वृक्षों से प्रत्येक ऋतु में यह महात्मा वरुण का सरोवर शोभायमान रहता था।
+    <br/>
+    <br/>
+क्षीरसागर से त्रिकूट पर्वत पर सबकुछ ठीक-ठाक चल रहा था। एक बार एक दर्दनाक घटना घट गई। इस पर्वत के घोर जंगल में एक विशाल मतवाला हाथी रहता था। वह कई शक्तिशाली हाथियों का सरदार था। उसके पीछे बड़े-बड़े हाथियों के झुण्ड के झुण्ड चलते थे।
+    <br/>
+    <br/>
+इस गजराज से, उसके महान् बल के कारण बड़े से बड़े हिंसक जानवर भी डरते थे किन्तु एक बात यह भी थी कि उसकी कृपा से लंगूर, भैंसे, भेड़िए, हिरण, रीछ, वनैले कुत्ते, खरगोश आदि छोटे जीव निर्भय होकर घूमा करते थे क्योंकि उसके रहते कोई भी हिंसक जानवर उस पर आक्रमण करने का साहस नहीं कर सकता था।
+    <br/>
+गजराज मदमस्त था। उसके सिर के पास से टपकते मद का पान करने के लिए भँवरे उसके साथ गूँजते जाते थे।
+    <br/>
+    <br/>
+एक दिन बड़े जोर की धूप थी। वह प्यास से व्याकुल हो गया। अपने झुण्ड के साथ वह उसी सरोवर में उतर पड़ा जो त्रिकूट की तराई में स्थित था। जल उस समय अत्यन्त शीतल एवं अमृत के समान मधुर था। पहले तो उस गजराज ने अपनी सूँड़ से उठा-उठा जी भरकर इस अमृत-सदृश्य जल का पान किया। फिर उसमें स्नान करके अपनी थकान मिटाई।
+    <br/>
+    <br/>
+इसके पश्चात उसका ध्यान जलक्रीड़ा की ओर गया। वह सूँड़ से पानी भर-भर अन्य हाथियों पर फेंकने लगा और दूसरे भी वही करने लगे। मदमस्त गजराज सबकुछ भूलकर जल क्रीड़ा का आनन्द उठाता रहा। उसे पता नहीं था कि उस सरोवर में एक बहुत बलवान ग्राह भी रहता था।
+    <br/>
+    <br/>
+उस ग्राह ने क्रोधित होकर उस गजराज के पैर को जोरों से पकड़ लिया और उसे खींचकर सरोवर के अन्दर ले जाने लगे। उसके पैने दातों के गड़ने से गजराज के पैर से रक्त का प्रवाह निकल पड़ा जिससे वहाँ का पानी लाल हो आया।
+    <br/>
+    <br/>
+उसके साथ के हाथियों और हथिनियों को गजराज की इस स्थिति पर बहुत चिंता हुई। उन्होंने एक साथ मिलकर गजराज को जल के बाहर खींचने का प्रयास किया किंतु वे इसमें सफल नहीं हुए। वे घबराकर ज़ोर-ज़ोर से चिंघाड़ने लगे। इस पर दूर-दूर से आकर हाथियों के कई झुण्डों ने गजराज के झुण्डों से मिलकर उसे बाहर खींचना चाहा किन्तु यह सम्मिलित प्रयास भी विफल रहा।
+    <br/>
+    <br/>
+सभी हाथी शान्त होकर अलग हो गए। अब ग्राह और गजराज में घोर युद्ध चलने लगा दोनों अपने रूप में काफी बलशाली थे और हार मानने वाले नहीं थे।
+    <br/>
+    <br/>
+कभी गजराज ग्राह को खींचकर पानी से बाहर लाता तो कभी ग्राह गजराज को खींचकर पानी के अन्दर ले जाता किन्तु गजराज का पैर किसी तरह ग्राह के मुँह से नहीं छूट रहा था बल्कि उसके दाँत गजराज के पैर में और गड़ते ही जा रहे थे और सरोवर का पानी जैसे पूरी तरह लाल हो आया था।
+    <br/>
+    <br/>
+गज और ग्राह के बीच युद्ध कई दिनों तक चला। अन्त में अधिक रक्त बह जाने के कारण गजराज शिथिल पड़ने लगा। उसे लगा कि अब वह ग्राह के हाथों परास्त हो जाएगा।
+    <br/>
+    <br/>
+उसको इस समय कोई उपाय नहीं सूझा और अपनी मृत्यु को समीप पाकर उसे भगवान नारायण की याद आयी। पूर्व जन्म की निरंतर भगवद आराधना के फलस्वरूप उसे भगवत्स्मृति हो आई।
+    <br/>
+    <br/>
+उसने निश्चय किया कि मैं कराल काल के भय से चराचर प्राणियों के शरण्य सर्वसमर्थ प्रभु की शरण ग्रहण करता हूँ। इस निश्चय के साथ गजेन्द्र मन को एकाग्र कर पूर्वजन्म में सीखे श्रेष्ठ स्त्रोत द्वारा गजेंद्र मोक्ष स्तुति करने लगा।
+    <br/>
+    <br/>
+उसने एक कमल का फूल तोड़ा और उसे आसमान की ओर इस तरह उठाया जैसे वह उसे भगवान को अर्पित कर रहा हो। अब तक वह ग्राह द्वारा खींचे जाने से सरोवर के मध्य गहरे जल में चला गया था और उसकी सूड़ का मात्र वह भाग ही ऊपर बचा था जिसमें उसने लाल कमल-पुष्प पकड़ रखा था।
+    <br/>
+    <br/>
+उसने अपनी शक्ति को पूरी तरह से भूलकर और अपने को पूरी तरह असहाय घोषित कर नारायण को पुकारा। भगवान समझ गए कि इसे अपनी शक्ति का मद जाता रहा और वह पूरी तरह से मेरा शरणागत है।
+    <br/>
+    <br/>
+जब नारायण ने देखा कि मेरे अतिरिक्त यह किसी को अपना पक्षक नहीं मानता तो नारायण के `ना` के उच्चारण के साथ ही वह गरुण पर सवार होकर चक्र धारण किए हुए सरोवर के किनारे पहुँच गए। उन्होंने देखा कि गजेन्द्र डूबने ही वाला है। वह शीघ्रता से गरुण से कूद पड़े।
+    <br/>
+    <br/>
+इस समय तक बहुत से देवी-देवता भी भगवान के आगमन को समझकर वहाँ उपस्थित हो गए थे। सभी के देखते ही देखते भगवान ने गजराज और गजेन्द्र को एक क्षण में सरोवर से खींचकर बाहर निकाला। देवताओं ने आश्चर्य से देखा, उन्होंने सुदर्शन से इस तरह ग्राह का मुँह फाड़ दिया कि गजराज के पैर को कोई क्षति नहीं पहुँची।
+    <br/>
+    <br/>
+ग्राह देखते-देखते तड़प कर मर गया और गजराज भगवान की कृपा-दृष्टि से पहले की तरह स्वस्थ हो गया।
+    <br/>
+ब्रह्मादि देवगण श्री हरि की प्रशंसा करते हुए उनके ऊपर स्वर्गिक सुमनों की वृष्टि करने लगे। सिद्ध और ऋषि-महर्षि परब्रह्म भगवान विष्णु का गुणगान करने लगे।
+    <br/>
+    <br/>
+ग्राह दिव्य शरीर-धारी हो गया। उसने भगवान विष्णु के चरणो में सिर रखकर प्रणाम किया और भगवान विष्णु के गुणों की प्रशंसा करने लगा।
+    <br/>
+    <br/>
+भगवान विष्णु के मंगलमय वरद हस्त के स्पर्श से पाप मुक्त होकर अभिशप्त गन्धर्व ने प्रभु की परिक्रमा की और उनके त्रेलोक्य वन्दित चरण-कमलों में प्रणाम कर अपने लोक चला गया।
+    <br/>
+    <br/>
+भगवान विष्णु ने गजेन्द्र का उद्धार कर उसे अपना पार्षद बना लिया। गन्धर्व, सिद्ध और देवगण उनकी लीला का गान करने लगे।
+    <br/>
+गजेन्द्र की स्तुति से प्रसन्न होकर भगवान विष्णु ने सबके समक्ष कहा: प्यारे गजेन्द्र ! जो लोग ब्रह्म मुहूर्त में उठकर तुम्हारी की हुई स्तुति से मेरा स्तवन करेंगे, उन्हें मैं मृत्यु के समय निर्मल बुद्धि का दान करूँगा।
+    <br/>
+    <br/>
+यह कहकर भगवान विष्णु ने पार्षद रूप में गजेन्द्र को साथ लिया और गरुडारुड़ होकर अपने दिव्य धाम को चले गए।
+    <br/>
+    <br/>
+गज-ग्राह दोनों की अगले जन्मो की कहानी?
+    <br/>
+गज-ग्राह को अपनी भक्ति और विष्णु के हाथों मुक्ति के चलते वैकुण्ठ में स्थान मिला दोनों इस लोक में द्वारपाल हुए जिनका ही नाम जय और विजय हुआ। आगे सनत कुमारो के श्राप के चलते दोनों हिरण्याक्ष - हिरण्यकश्यपु, रावण - कुम्भकर्ण और शिशुपाल - दन्तवक्र हुए थे।
+    <br/>
+    <br/>
+गज-ग्राह दोनों की पूर्व जन्मो की कहानी?
+    <br/>
+ऋषि कपिल का नाम तो सबने सुन ही रखा है जिनके वंशज ऋषभ देव से जैन धर्म का प्रादुर्भाव हुआ था, वो कपिल मुनि महर्षि कर्दम के पुत्र थे। कर्दम ऋषि की पत्नी का नाम देवहुति था, उन्ही के गर्भ से कपिल मुनि जन्मे थे लेकिन उन्ही देवहुति को कर्दम जी से पहले और भी संताने थी।
+    <br/>
+    <br/>
+उन्ही कर्दम और देवहुति के कपिल मुनि से दो बड़े पुत्र और थे जो कि वेदज्ञ थे, एक बार एक राजा के यहाँ यज्ञ संपन्न कर आये दोनों को जब धन मिला तो उसके लिए विवाद हो गया था। तब दोनों ने एक दूसरे को ग्राह और गज होने का श्राप दे दिया, दोनों विष्णु भक्त थे और दोनों की बात सच भी हुई।
+    <br/>
+    <br/>
+लेकिन मौत से पहले उन्होंने तपस्या कर विष्णु जी को प्रसन्न कर लिया और वरदान में मुक्ति माँग ली और इसीलिए अगले जन्म में उन्हें पूर्व जन्म का स्मरण था और दोनों ने भगवान विष्णु के हाथो मुक्ति पाई।
+    <br/>
+॥ जय श्री विष्णु हरि ॥
+    <br/>
+</p>
+    
+
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./vrat katha.html">Vrat Katha »</a> शुक्रवार संतोषी माता व्रत कथा (Shukravar Santoshi Mata Vrat Katha)</h4> <br><br>
+   <img src="./shukravar vrat katha.jpg" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>शुक्रवार संतोषी माता व्रत कथा (Shukravar Santoshi Mata Vrat Katha)</h1><br>
+    
+   <p>शुक्रवार के दिन माँ संतोषी का व्रत-पूजन किया जाता है। इस पूजा के दौरान माता की आरती, पूजन तथा अंत में माता की कथा सुनी जाती है। आइए जानें! शुक्रवार के दिन की जाने वाली संतोषी माता व्रत कथा..
+    <br/>
+संतोषी माता व्रत कथा-
+    <br/>
+एक बुढ़िया थी, उसके सात बेटे थे। 6 कमाने वाले थे जबकि एक निक्कमा था। बुढ़िया छहों बेटों की रसोई बनाती, भोजन कराती और उनसे जो कुछ जूठन बचती वह सातवें को दे देती।
+    <br/>
+    <br/>
+एक दिन वह पत्नी से बोला- देखो मेरी माँ को मुझ पर कितना प्रेम है।
+    <br/>
+वह बोली- क्यों नहीं, सबका झूठा जो तुमको खिलाती है।
+    <br/>
+वह बोला- ऐसा नहीं हो सकता है। मैं जब तक आँखों से न देख लूं मान नहीं सकता।
+    <br/>
+बहू हंस कर बोली- देख लोगे तब तो मानोगे।
+    <br/>
+    <br/>
+कुछ दिन बाद त्यौहार आया। घर में सात प्रकार के भोजन और चूरमे के लड्डू बने। वह जांचने को सिर दुखने का बहाना कर पतला वस्त्र सिर पर ओढ़े रसोई घर में सो गया। वह कपड़े में से सब देखता रहा। छहों भाई भोजन करने आए। उसने देखा, माँ ने उनके लिए सुन्दर आसन बिछा नाना प्रकार की रसोई परोसी और आग्रह करके उन्हें जमाया। वह देखता रहा।
+    <br/>
+    <br/>
+छहों भोजन करके उठे तब माँ ने उनकी झूठी थालियों में से लड्डुओं के टुकड़े उठाकर एक लड्डू बनाया।
+    <br/>
+जूठन साफ कर बुढ़िया माँ ने उसे पुकारा- बेटा, छहों भाई भोजन कर गए अब तू ही बाकी है, उठ तू कब खाएगा।
+    <br/>
+वह कहने लगा- माँ मुझे भोजन नहीं करना, मैं अब परदेश जा रहा हूँ।
+    <br/>
+माँ ने कहा- कल जाता हो तो आज चला जा।
+    <br/>
+वह बोला- हाँ आज ही जा रहा हूँ। यह कह कर वह घर से निकल गया।
+    <br/>
+    <br/>
+सातवें बेटे का परदेश जाना-
+    <br/>
+चलते समय पत्नी की याद आ गई। वह गौशाला में कण्डे (उपले) थाप रही थी।
+    <br/>
+वहाँ जाकर बोला-
+    <br/>
+हम जावे परदेश आवेंगे कुछ काल,
+    <br/>
+तुम रहियो संतोष से धर्म आपनो पाल।
+    <br/>
+    <br/>
+वह बोली-
+    <br/>
+जाओ पिया आनन्द से हमारो सोच हटाय,
+    <br/>
+राम भरोसे हम रहें ईश्वर तुम्हें सहाय।
+    <br/>
+दो निशानी आपन देख धरूं में धीर,
+    <br/>
+सुधि मति हमारी बिसारियो रखियो मन गम्भीर।
+    <br/>
+    <br/>
+वह बोला- मेरे पास तो कुछ नहीं, यह अंगूठी है सो ले और अपनी कुछ निशानी मुझे दे।
+    <br/>
+वह बोली- मेरे पास क्या है, यह गोबर भरा हाथ है। यह कह कर उसकी पीठ पर गोबर के हाथ की थाप मार दी। वह चल दिया, चलते-चलते दूर देश पहुँचा।
+    <br/>
+    <br/>
+परदेश मे नौकरी-
+    <br/>
+वहाँ एक साहूकार की दुकान थी। वहाँ जाकर कहने लगा- भाई मुझे नौकरी पर रख लो।
+    <br/>
+साहूकार को जरूरत थी, बोला- रह जा।
+    <br/>
+लड़के ने पूछा- तनखा क्या दोगे।
+    <br/>
+साहूकार ने कहा- काम देख कर दाम मिलेंगे। साहूकार की नौकरी मिली, वह सुबह 7 बजे से 10 बजे तक नौकरी बजाने लगा। कुछ दिनों में दुकान का सारा लेन-देन, हिसाब-किताब, ग्राहकों को माल बेचना सारा काम करने लगा। साहूकार के सात-आठ नौकर थे, वे सब चक्कर खाने लगे, यह तो बहुत होशियार बन गया।
+    <br/>
+    <br/>
+सेठ ने भी काम देखा और तीन महीने में ही उसे आधे मुनाफे का हिस्सेदार बना लिया। वह कुछ वर्ष में ही नामी सेठ बन गया और मालिक सारा कारोबार उसपर छोड़कर चला गया।
+    <br/>
+    <br/>
+पति की अनुपस्थिति में सास का अत्याचार-
+    <br/>
+इधर उसकी पत्नी को सास ससुर दु:ख देने लगे, सारी गृहस्थी का काम कराके उसे लकड़ी लेने जंगल में भेजते। इस बीच घर के आटे से जो भूसी निकलती उसकी रोटी बनाकर रख दी जाती और फूटे नारियल की नारेली में पानी। एक दिन वह लकड़ी लेने जा रही थी, रास्ते में बहुत सी स्त्रियां संतोषी माता का व्रत करती दिखाई दी।
+    <br/>
+    <br/>
+संतोषी माता का व्रत-
+    <br/>
+वह वहाँ खड़ी होकर कथा सुनने लगी और पूछा- बहिनों तुम किस देवता का व्रत करती हो और उसके करने से क्या फल मिलता है। यदि तुम इस व्रत का विधान मुझे समझा कर कहोगे तो मैं तुम्हारा बड़ा अहसान मानूंगी।
+    <br/>
+    <br/>
+तब उनमें से एक स्त्री बोली- सुनो, यह संतोषी माता का व्रत है। इसके करने से निर्धनता, दरिद्रता का नाश होता है और जो कुछ मन में कामना हो, सब संतोषी माता की कृपा से पूरी होती है। तब उसने उससे व्रत की विधि पूछी।
+    <br/>
+    <br/>
+संतोषी माता व्रत विधि-
+    <br/>
+वह भक्तिनि स्त्री बोली- सवा आने का गुड़ चना लेना, इच्छा हो तो सवा पांच आने का लेना या सवा रुपए का भी सहूलियत के अनुसार लाना। बिना परेशानी और श्रद्धा व प्रेम से जितना भी बन पड़े सवाया लेना। प्रत्येक शुक्रवार को निराहार रह कर कथा सुनना, इसके बीच क्रम टूटे नहीं, लगातार नियम पालन करना, सुनने वाला कोई न मिले तो धी का दीपक जला उसके आगे या जल के पात्र को सामने रख कर कथा कहना। जब कार्य सिद्ध न हो नियम का पालन करना और कार्य सिद्ध हो जाने पर व्रत का उद्यापन करना।
+    <br/>
+    <br/>
+तीन मास में माता फल पूरा करती है। यदि किसी के ग्रह खोटे भी हों, तो भी माता वर्ष भर में कार्य सिद्ध करती है, फल सिद्ध होने पर उद्यापन करना चाहिए बीच में नहीं। उद्यापन में अढ़ाई सेर आटे का खाजा तथा इसी परिमाण से खीर तथा चने का साग करना। आठ लड़कों को भोजन कराना, जहाँ तक मिलें देवर, जेठ, भाई-बंधु के हों, न मिले तो रिश्तेदारों और पास-पड़ोसियों को बुलाना। उन्हें भोजन करा यथा शक्ति दक्षिणा दे माता का नियम पूरा करना। उस दिन घर में खटाई न खाना। यह सुन बुढ़िया के लड़के की बहू चल दी।
+    <br/>
+    <br/>
+व्रत का प्रण करना और माँ संतोषी का दर्शन देना-
+    <br/>
+रास्ते में लकड़ी के बोझ को बेच दिया और उन पैसों से गुड़-चना ले माता के व्रत की तैयारी कर आगे चली और सामने मंदिर देखकर पूछने लगी- यह मंदिर किसका है।
+    <br/>
+सब कहने लगे संतोषी माता का मंदिर है, यह सुनकर माता के मंदिर में जाकर चरणों में लोटने लगी।
+    <br/>
+दीन हो विनती करने लगी- माँ मैं निपट अज्ञानी हूँ, व्रत के कुछ भी नियम नहीं जानती, मैं दु:खी हूँ। हे माता ! जगत जननी मेरा दु:ख दूर कर मैं तेरी शरण में हूँ।
+    <br/>
+    <br/>
+माता को दया आई- एक शुक्रवार बीता कि दूसरे को उसके पति का पत्र आया और तीसरे शुक्रवार को उसका भेजा हुआ पैसा आ पहुँचा। यह देख जेठ-जिठानी मुंह सिकोडऩे लगे।
+    <br/>
+लड़के ताने देने लगे- काकी के पास पत्र आने लगे, रुपया आने लगा, अब तो काकी की खातिर बढ़ेगी।
+    <br/>
+बेचारी सरलता से कहती- भैया कागज आवे रुपया आवे हम सब के लिए अच्छा है। ऐसा कह कर आँखों में आँसू भरकर संतोषी माता के मंदिर में आ मातेश्वरी के चरणों में गिरकर रोने लगी। माँ मैंने तुमसे पैसा कब माँगा है।
+    <br/>
+    <br/>
+मुझे पैसे से क्या काम है। मुझे तो अपने सुहाग से काम है। मैं तो अपने स्वामी के दर्शन माँगती हूँ। तब माता ने प्रसन्न होकर कहा- जा बेटी, तेरा स्वामी आयेगा।
+    <br/>
+    <br/>
+यह सुनकर खुशी से बावली होकर घर में जा काम करने लगी। अब संतोषी माँ विचार करने लगी, इस भोली पुत्री को मैंने कह तो दिया कि तेरा पति आयेगा लेकिन कैसे? वह तो इसे स्वप्न में भी याद नहीं करता।
+    <br/>
+    <br/>
+उसे याद दिलाने को मुझे ही जाना पड़ेगा। इस तरह माता जी उस बुढ़िया के बेटे के पास जा स्वप्न में प्रकट हो कहने लगी- साहूकार के बेटे, सो रहा है या जागता है।
+    <br/>
+वह कहने लगा- माता सोता भी नहीं, जागता भी नहीं हूँ कहो क्या आज्ञा है?
+    <br/>
+माँ कहने लगी- तेरे घर-बार कुछ है कि नहीं।
+    <br/>
+वह बोला- मेरे पास सब कुछ है माँ-बाप है बहू है क्या कमी है।
+    <br/>
+माँ बोली- भोले पुत्र तेरी बहू घोर कष्ट उठा रही है, तेरे माँ-बाप उसे परेशानी दे रहे हैं। वह तेरे लिए तरस रही है, तू उसकी सुध ले।
+    <br/>
+वह बोला- हाँ माता जी यह तो मालूम है, परंतु जाऊं तो कैसे? परदेश की बात है, लेन-देन का कोई हिसाब नहीं, कोई जाने का रास्ता नहीं आता, कैसे चला जाऊं?
+    <br/>
+माँ कहने लगी- मेरी बात मान, सवेरे नहा धोकर संतोषी माता का नाम ले, घी का दीपक जला दण्डवत कर दुकान पर जा बैठ।
+    <br/>
+    <br/>
+देखते-देखते सारा लेन-देन चुक जाएगा, जमा का माल बिक जाएगा, सांझ होते-होते धन का भारी ठेर लग जाएगा। अब बूढ़े की बात मानकर वह नहा धोकर संतोषी माता को दण्डवत धी का दीपक जला दुकान पर जा बैठा। थोड़ी देर में देने वाले रुपया लाने लगे, लेने वाले हिसाब लेने लगे। कोठे में भरे सामान के खरीददार नकद दाम दे सौदा करने लगे। शाम तक धन का भारी ठेर लग गया। मन में माता का नाम ले चमत्कार देख प्रसन्न हो घर ले जाने के वास्ते गहना, कपड़ा सामान खरीदने लगा। यहाँ काम से निपट तुरंत घर को रवाना हुआ।
+    <br/>
+    <br/>
+उधर उसकी पत्नी जंगल में लकड़ी लेने जाती है, लौटते वक्त माताजी के मंदिर में विश्राम करती। वह तो उसके प्रतिदिन रुकने का जो स्थान ठहरा, धूल उड़ती देख वह माता से पूछती है- हे माता! यह धूल कैसे उड़ रही है?
+    <br/>
+माता कहती है- हे पुत्री तेरा पति आ रहा है। अब तू ऐसा कर लकड़ियों के तीन बोझ बना ले, एक नदी के किनारे रख और दूसरा मेरे मंदिर पर व तीसरा अपने सिर पर।
+    <br/>
+    <br/>
+तेरे पति को लकड़ियों का गट्ठर देख मोह पैदा होगा, वह यहाँ रुकेगा, नाश्ता-पानी खाकर माँ से मिलने जाएगा, तब तू लकड़ियों का बोझ उठाकर जाना और चौक में गट्ठर डालकर जोर से आवाज लगाना- लो सासूजी, लकडिय़ों का गट्ठर लो, भूसी की रोटी दो, नारियल के खेपड़े में पानी दो, आज मेहमान कौन आया है? माताजी से बहुत अच्छा कहकर वह प्रसन्न मन से लकड़ियों के तीन गट्ठर बनाई। एक नदी के किनारे पर और एक माताजी के मंदिर पर रखा।
+    <br/>
+    <br/>
+इतने में मुसाफिर आ पहुँचा। सूखी लकड़ी देख उसकी इच्छा उत्पन्न हुई कि हम यही पर विश्राम करें और भोजन बनाकर खा-पीकर गाँव जाएं। इसी तरह रुक कर भोजन बना, विश्राम करके गाँव को गया। सबसे प्रेम से मिला। उसी समय सिर पर लकड़ी का गट्ठर लिए वह उतावली सी आती है। लकड़ियों का भारी बोझ आंगन में डालकर जोर से तीन आवाज देती है- लो सासूजी, लकड़ियों का गट्ठर लो, भूसी की रोटी दो। आज मेहमान कौन आया है।
+    <br/>
+    <br/>
+यह सुनकर उसकी सास बाहर आकर अपने दिए हुए कष्टों को भुलाने हेतु कहती है- बहु ऐसा क्यों कहती है? तेरा मालिक ही तो आया है। आ बैठ, मीठा भात खा, भोजन कर, कपड़े-गहने पहिन। उसकी आवाज सुन उसका पति बाहर आता है। अंगूठी देख व्याकुल हो जाता है।
+    <br/>
+माँ से पूछता है- माँ यह कौन है?
+    <br/>
+माँ बोली- बेटा यह तेरी बहु है। जब से तू गया है तब से सारे गाँव में भटकती फिरती है। घर का काम-काज कुछ करती नहीं, चार पहर आकर खा जाती है।
+    <br/>
+    <br/>
+वह बोला- ठीक है माँ मैंने इसे भी देखा और तुम्हें भी, अब दूसरे घर की ताली दो, उसमें रहूँगा।
+    <br/>
+माँ बोली- ठीक है, जैसी तेरी मरजी। तब वह दूसरे मकान की तीसरी मंजिल का कमरा खोल सारा सामान जमाया। एक दिन में राजा के महल जैसा ठाट-बाट बन गया। अब क्या था? बहु सुख भोगने लगी। इतने में शुक्रवार आया।
+    <br/>
+    <br/>
+शुक्रवार व्रत के उद्यापन में हुई भूल, किया खटाई का इस्तेमाल-
+    <br/>
+उसने पति से कहा- मुझे संतोषी माता के व्रत का उद्यापन करना है।
+    <br/>
+पति बोला- खुशी से कर लो। वह उद्यापन की तैयारी करने लगी। जिठानी के लड़कों को भोजन के लिए कहने गई। उन्होंने मंजूर किया परन्तु पीछे से जिठानी ने अपने बच्चों को सिखाया, देखो, भोजन के समय खटाई माँगना, जिससे उसका उद्यापन पूरा न हो।
+    <br/>
+    <br/>
+लड़के जीमने आए खीर खाना पेट भर खाया, परंतु बाद में खाते ही कहने लगे- हमें खटाई दो, खीर खाना हमको नहीं भाता, देखकर अरुचि होती है।
+    <br/>
+वह कहने लगी- भाई खटाई किसी को नहीं दी जाएगी। यह तो संतोषी माता का प्रसाद है।
+    <br/>
+लड़के उठ खड़े हुए, बोले- पैसा लाओ, भोली बहू कुछ जानती नहीं थी, उन्हें पैसे दे दिए।
+    <br/>
+    <br/>
+लड़के उसी समय हठ करके इमली खटाई ले खाने लगे। यह देखकर बहु पर माताजी ने कोप किया। राजा के दूत उसके पति को पकड़ कर ले गए। जेठ जेठानी मन-माने वचन कहने लगे। लूट-लूट कर धन इकट्ठा कर लाया है, अब सब मालूम पड़ जाएगा जब जेल की मार खाएगा। बहू से यह सहन नहीं हुए।
+    <br/>
+    <br/>
+माँ संतोषी से माँगी माफी-
+    <br/>
+रोती हुई माताजी के मंदिर गई, कहने लगी- हे माता! तुमने क्या किया, हंसा कर अब भक्तों को रुलाने लगी।
+    <br/>
+माता बोली- बेटी तूने उद्यापन करके मेरा व्रत भंग किया है।
+    <br/>
+वह कहने लगी- माता मैंने कुछ अपराध किया है, मैंने तो भूल से लड़कों को पैसे दे दिए थे, मुझे क्षमा करो। मैं फिर तुम्हारा उद्यापन करूँगी।
+    <br/>
+माँ बोली- अब भूल मत करना।
+    <br/>
+    <br/>
+वह कहती है- अब भूल नहीं होगी, अब बतलाओ वे कैसे आवेंगे?
+    <br/>
+माँ बोली- जा पुत्री तेरा पति तुझे रास्ते में आता मिलेगा। वह निकली, राह में पति आता मिला।
+    <br/>
+वह पूछी- कहाँ गए थे?
+    <br/>
+वह कहने लगा- इतना धन जो कमाया है उसका टैक्स राजा ने माँगा था, वह भरने गया था।
+    <br/>
+वह प्रसन्न हो बोली- भला हुआ, अब घर को चलो। कुछ दिन बाद फिर शुक्रवार आया..
+    <br/>
+    <br/>
+फिर किया व्रत का उद्यापन-
+    <br/>
+वह बोली- मुझे फिर माता का उद्यापन करना है।
+    <br/>
+पति ने कहा- करो, बहु फिर जेठ के लड़कों को भोजन को कहने गई। जेठानी ने एक दो बातें सुनाई और सब लड़कों को सिखाने लगी। तुम सब लोग पहले ही खटाई माँगना।
+    <br/>
+लड़के भोजन से पहले कहने लगे- हमें खीर नहीं खानी, हमारा जी बिगड़ता है, कुछ खटाई खाने को दो।
+    <br/>
+वह बोली- खटाई किसी को नहीं मिलेगी, आना हो तो आओ, वह ब्राह्मण के लड़के लाकर भोजन कराने लगी, यथा शक्ति दक्षिणा की जगह एक-एक फल उन्हें दिया। संतोषी माता प्रसन्न हुई।
+    <br/>
+    <br/>
+संतोषी माता का फल-
+    <br/>
+माता की कृपा होते ही नवमें मास में उसके चन्द्रमा के समान सुन्दर पुत्र प्राप्त हुआ। पुत्र को पाकर प्रतिदिन माता जी के मंदिर को जाने लगी।
+    <br/>
+माँ ने सोचा- यह रोज आती है, आज क्यों न इसके घर चलूं। यह विचार कर माता ने भयानक रूप बनाया, गुड़-चने से सना मुख, ऊपर सूंड के समान होठ, उस पर मक्खियां भिन-भिन कर रही थी।
+    <br/>
+देहली पर पैर रखते ही उसकी सास चिल्लाई- देखो रे, कोई चुड़ैल डाकिन चली आ रही है, लड़कों इसे भगाओ, नहीं तो किसी को खा जाएगी। लड़के भगाने लगे, चिल्लाकर खिड़की बंद करने लगे।
+    <br/>
+    <br/>
+बहु रौशनदान में से देख रही थी, प्रसन्नता से पगली बन चिल्लाने लगी- आज मेरी माता जी मेरे घर आई है। वह बच्चे को दूध पीने से हटाती है। इतने में सास का क्रोध फट पड़ा।
+    <br/>
+वह बोली- क्या उतावली हुई है? बच्चे को पटक दिया। इतने में माँ के प्रताप से लड़के ही लड़के नजर आने लगे।
+    <br/>
+वह बोली- माँ मैं जिसका व्रत करती हूँ यह संतोषी माता है।
+    <br/>
+    <br/>
+सबने माता जी के चरण पकड़ लिए और विनती कर कहने लगे- हे माता! हम मूर्ख हैं, अज्ञानी हैं, तुम्हारे व्रत की विधि हम नहीं जानते, व्रत भंग कर हमने बड़ा अपराध किया है, जग माता आप हमारा अपराध क्षमा करो। इस प्रकार माता प्रसन्न हुई। बहू को प्रसन्न हो जैसा फल दिया, वैसा माता सबको दे, जो पढ़े उसका मनोरथ पूर्ण हो।
+    <br/>
+बोलो संतोषी माता की जय।
+    <br/>
+    <br/>
+जय सन्तोषी माता की आरती | आरती: जय अम्बे गौरी, मैया जय श्यामा गौरी
+    <br/>
+</p>
+
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>
