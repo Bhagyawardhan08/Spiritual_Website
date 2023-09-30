@@ -9,6 +9,552 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
   </head>
+
+  <style>
+     body {
+			background: #ece8e8;
+			color: #000;
+			
+		}
+
+		body * {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			border: 0;
+			margin-left: auto;
+			margin-right: auto;
+			letter-spacing: -.3px;
+			font-size: 14px;
+		}
+
+		a img,
+		:link img,
+		:visited img {
+			border: none;
+      width: 29%;
+      
+		}
+
+		a {
+			text-decoration: none;
+			color: #265C98;
+      
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #ff0000;
+		}
+
+		html,
+		body,
+		div,
+		span,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		a,
+		em,
+		img,
+		strong,
+		b,
+		u,
+		i,
+		center,
+		ol,
+		ul,
+		li,
+		form,
+		label,
+		article,
+		aside,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section,
+		td {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+      overflow-x: hidden;
+		}
+
+		i {
+			font: inherit;
+		}
+
+		b {
+			font-weight: bold;
+		}
+
+		textarea {
+			font-size: small;
+		}
+
+		main {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.tCenter {
+			text-align: center;
+			padding: 5px;
+		}
+
+		header {
+			width: 100%;
+			background: black;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.vd {
+			width: 100%;
+		}
+
+		.bg {
+			background: #fff;
+		}
+
+		input[type=submit],
+		input[type=text] {
+			padding: 2px;
+			border: 1px solid #cdcdcd;
+			border-color: rgba(0, 0, 0, .15);
+			border-radius: 3px;
+			background-color: #eee;
+			margin: 0px;
+		}
+
+		.l {
+			padding: 5px;
+		}
+
+		.cnt {
+			background: #b0abab;
+		}
+
+		.track-icon::before {
+			content: '\266B';
+			color: #DB0707;
+			font-size: 40px;
+		}
+
+		.nw {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		ul.breadcrumb,
+		ul.breadcrumb a {
+			color: #333;
+		}
+
+		ul.breadcrumb li {
+			display: inline;
+			font-size: 18px;
+			padding: 0 !important;
+			background: transparent !important;
+			color: #666;
+			font-size: 15px;
+		}
+
+		ul.breadcrumb li a {
+			color: #333;
+			text-decoration: none;
+			font-size: 15px;
+		}
+
+		ul.breadcrumb li+li:before {
+			color: black;
+			content: "\203A";
+			padding-right: 4px;
+			position: relative;
+			top: 1px;
+			padding-left: 4px;
+			font-size: 19px;
+		}
+
+		.list li a {
+			display: block
+		}
+
+		.gy A:link,
+		.gy A:visited,
+		.gy A:active,
+		.gy A:hover {
+			color: #5a5a5a;
+			outline: 0;
+			text-decoration: none;
+		}
+
+		.list {
+			list-style: none;
+			clear: both;
+		}
+
+		.list li {
+			color: #333;
+			border-bottom: 1px solid #d8d1d1;
+			margin: 3px 3px 0px 3px;
+			padding: 0px 15px 0px 2px;
+			overflow: hidden;
+		}
+
+		.list li:hover {
+			box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.45);
+			cursor: pointer;
+		}
+
+		.list>img {
+			width: 100%;
+			display: inline-flex;
+			margin: -9px 0px 0px 0px;
+		}
+
+		.list li img {
+			display: block;
+			width: 80px;
+			height: 80px;
+			display: block;
+			margin: 2px 10px 3px 0px;
+			border: 0;
+			float: left;
+			border-radius: 5px
+		}
+
+		.block {
+			display: inline-block;
+			width: 100%;
+			box-sizing: border-box;
+			background: #fff;
+			margin: 0px 0 0px;
+		}
+
+		.form-wrapper {
+			width: 91%;
+			margin-top: 6px;
+			float: right;
+		}
+
+		.form-wrapper input {
+			width: 66%;
+			height: 30px;
+			float: left;
+			padding: 0px 10px;
+			border: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.form-wrapper input focus {
+			outline: 0;
+			background: #fff;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+		}
+
+		.form-wrapper input {
+			font-size: 17px;
+		}
+
+		.form-wrapper button {
+			position: relative;
+			font-size: 15px;
+			margin-top: -1px;
+			width: 65px;
+			height: 31px;
+			border: 0;
+			padding: 0;
+			cursor: pointer;
+			color: #fff;
+			background: #DB0707;
+			border-radius: 0 3px 3px 0;
+		}
+
+		nav {
+			display: inline-table;
+			width: 100%;
+			background: black;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 17px;
+		}
+
+		nav a {
+			width: 33.33%;
+			background: black;
+			text-align: center;
+			color: #fefefe;
+			padding: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			border: 1px solid #666;
+			border-bottom: 0;
+			border-right: 0;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+
+		nav i {
+			width: 15px;
+			margin-left: -6px;
+			float: left;
+		}
+
+		.search-bar {
+			width: 99.5%;
+			padding-top: 15px;
+			height: 50px;
+			background: black;
+			border: 1px solid #666;
+			float: left;
+      
+		}
+
+		.xl {
+			font-size: 18px
+		}
+
+		.ht {
+			font-size: 17px;
+		}
+
+		.xxl {
+			font-size: 20px;
+		}
+
+		.c {
+			text-align: center
+		}
+
+		.tr {
+			width: 100%;
+			display: inline-table;
+		}
+
+		.td {
+			width: 22%;
+			max-width: 120px;
+		}
+
+		tr.tr td {
+			border-bottom: 1px solid #d8cdd5;
+			padding: 3px;
+		}
+
+		.mpan {
+			padding: 10px;
+			background: #fff;
+			margin: 4px 0 2px 0;
+		}
+
+		@supports (-webkit-overflow-scrolling: touch) {
+			body {
+				font-size: 15px;
+				line-height: 1.3;
+			}
+		}
+
+		@media only screen and (max-width:320px) {
+			body {
+				font-size: 13.5px;
+				min-width: 200px;
+			}
+
+			nav {
+				width: 100%;
+				font-size: 13px;
+			}
+
+			.form-wrapper input {
+				width: 50%;
+			}
+
+			.vd {
+				width: 250px;
+				height: 160px
+			}
+
+			.search-bar {
+				width: 99%;
+			}
+
+			.form-wrapper {
+				width: 93%;
+			}
+
+			nav a {
+				width: 50%;
+			}
+
+			.icon {
+				display: none
+			}
+
+			.heading {
+				font-size: 15px;
+			}
+
+			tr.tr td {
+				width: 100%;
+				float: left
+			}
+
+			.td {
+				width: 100%;
+				max-width: 100%
+			}
+
+			.imgs {
+				width: 100%;
+				height: auto;
+			}
+
+			.expend+.smalldesc {
+				max-height: 240px;
+			}
+		}
+
+		@media only screen and (min-width:768px) {
+			header {
+				background: black;
+			}
+
+			nav {
+				width: 100%;
+				font-size: 15px;
+			}
+
+			nav a {
+				width: 16.666%;
+			}
+
+			.vd {
+				width: 520px;
+			}
+
+			.form-wrapper {
+				width: 84%;
+			}
+
+			.form-wrapper input {
+				width: 68%;
+			}
+
+			.form-wrapper button {
+				height: 31px;
+				top: 0px
+			}
+
+			.search-bar {
+				width: 99.8%;
+			}
+
+			.list li {
+				display: inline-table;
+				width: 47%;
+			}
+
+			.tab {
+				width: 30%
+			}
+
+			.imgs {
+				display: table;
+				margin: 20px 15px 0 10px;
+				float: left;
+			}
+
+			table {
+				display: block;
+				min-height: 207px;
+			}
+
+			.cd {
+				text-align: left
+			}
+
+			.mpan {
+				padding: 0px;
+				background: #fff;
+				margin: 0;
+			}
+
+			.heading {
+				font-size: 17px;
+			}
+
+			.xxxl {
+				font-size: 26px;
+			}
+
+			.expend+.smalldesc {
+				max-height: 220px;
+			}
+		}
+
+		@media only screen and (min-width:1024px) {
+			header {
+				max-width: 1049px;
+				width: 81%;
+			}
+
+			main {
+				max-width: 1049px;
+				width: 81%
+			}
+
+			nav {
+				display: flex;
+				max-width: 1049px;
+				width: 81%;
+				font-size: 14px
+			}
+
+			nav a {
+				width: 35%;
+			}
+
+			.search-bar {
+				width: 96%;
+				padding-top: 0px;
+				height: 42px;
+			}
+
+			.form-wrapper {
+				width: 96%;
+			}
+
+			.form-wrapper input {
+				width: 60%;
+			}
+		}
+
+    .pjain{
+      position: relative;
+    }
+
+    .pjain .center{
+      position: relative;
+      left: 34%;
+    }
+  </style>
   <body>
 
     <!-- loader-start -->
@@ -16,328 +562,32 @@
     <div id="pre-loader"></div>
 
     <!-- header -->
-    <header>
-      <nav class = "navbar">
-        <div class = "containerheader">
-          <a href = "index.html" class = "navbar-brand">Aatmgyaan</a>
-          <div class = "navbar-nav">
-            <label for="drop" class="toggle"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="drop" />
-                <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li>
-                        <!-- First Tier Drop Down -->
-                        <label for="drop-1" class="toggle">Strotam</label>
-                        <a href="./strotam.html">Strotam</a>
-                        <input type="checkbox" id="drop-1"/>
-                        <ul>
-                            <li><a href="./Mantra.html">Mantra</a></li>
-                            <li><a href="./rashi.html">Rashi</a></li>
-                            <li><a href="#">Dharmik News</a></li>
-                            
-                        </ul> 
-        
-                    </li>
-                    <li>
-        
-                    <!-- First Tier Drop Down -->
-                    <label for="drop-2" class="toggle"></label>
-                    <a href="#">Bhakti Sangrah</a>
-                    <input type="checkbox" id="drop-2"/>
-                    <ul>
-                        <!-- <li><a href="#">Puja Vidhi</a></li> -->
-                        <li><a href="./vrat katha.html">Vrat Katha</a></li>
-                        <!-- <li><a href="#">Stuthi</a></li> -->
-                        <li><a href="./kavacham.html">Kavacham</a></li>
-                        <!-- <li><a href="#">Shashtranam</a></li> -->
-                        <!-- <li><a href="./chalisa.html">Chalisa</a></li> -->
-                        <!-- <li><a href="#">Shatnamavli</a></li> -->
-                        <li>
-                           
-                        <!-- Second Tier Drop Down -->        
-                        <label for="drop-3" class="toggle">Blog Aricles +</label>
-                        <a href="#">Blog Articles</a>         
-                        <input type="checkbox" id="drop-3"/>
-        
-                        <ul>
-                            <!-- <li><a href="#">Rochak Jankari</a></li> -->
-                            <li><a href="./12 jyotiling.html">12 Jyotiling</a></li>
-                            <li><a href="#">Sadhna</a></li>
-                        </ul>
-                        </li>
-                    </ul>
-                    </li>
-                    <li><a href="./bhajan.html">Bhajan</a></li>
-                    <li><a href="./mandir.html">Mandir</a></li>
-                    <li><a href="./aarti.html">Aarti</a></li>
-                    <li>
-                      <!-- First Tier Drop Down -->
-                      <!-- <label for="drop-1" class="toggle">Bhajan</label>
-                      <a href="#">Bhajan</a>
-                      <input type="checkbox" id="drop-1"/>
-                      <ul>
-                          <li><a href="#">Shiv Bhajan</a></li>
-                          <li><a href="#">Hanuman Bhajan</a></li>
-                          <li><a href="#">Krishna Bhajan</a></li>
-                          <li><a href="#">Santoshi Maa Bhajan</a></li>
-                          <li><a href="#">Maa Durga Bhajan</a></li>
-                          <li><a href="#">Khatu Shyam Bhajan</a></li>
-                          <li><a href="#">Marwadi Bhajan</a></li>
-                          
-                      </ul> 
-        
-                  </li> -->
-                   
-                    <li><a href="./chalisa.html">Chalisa</a></li>
-                </ul>
-            <style>
- 
-.toggle,
-[id^=drop] {
-	display: none;
-}
-
-/* Giving a background-color to the nav container. */
-nav { 
-	margin:0;
-	padding: 0;
-	background-color: black;
-}
-
-#logo {
-	display: block;
-	padding: 0 30px;
-	float: left;
-	font-size:20px;
-	line-height: 60px;
-  
-}
-
-#logo img {
-  max-width: 100px; /* Set the maximum width for the logo */
-  height: auto; /* Maintain the logo's aspect ratio */
-}
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
-nav:after {
-	content:"";
-	display:table;
-	clear:both;
-}
-
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
-nav ul {
-	float: right;
-	padding:0;
-	margin:0;
-	list-style: none;
-	position: relative;
-	}
-	
-/* Positioning the navigation items inline */
-nav ul li {
-	margin: 0px;
-	display:inline-block;
-	float: left;
-	background-color: black;
-	}
-
-/* Styling the links */
-nav a {
-	display:block;
-	padding:14px 20px;	
-	color:#FFF;
-	font-size:17px;
-	text-decoration:none;
-}
-
-
-nav ul li ul li:hover { background: #000000; }
-
-/* Background color change on Hover */
-nav a:hover { 
-	/* background-color: #000000;  */
-}
-
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
-nav ul ul {
-	display: none;
-	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
-}
-	
-/* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
-}
-	
-/* Fisrt Tier Dropdown */
-nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
-nav ul ul ul li {
-	position: relative;
-	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
-}
-
-	
-/* Change ' +' in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
-
-
-/* Media Queries
---------------------------------------------- */
-
-@media all and (max-width : 768px) {
-
-	#logo {
-		display: block;
-		padding: 0;
-		width: 100%;
-		text-align: center;
-		float: none;
-	}
-
-	nav {
-		margin: 0;
-	}
-
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
-	.toggle + a,
-	.menu {
-		display: none;
-	}
-
-	/* Stylinf the toggle lable */
-	.toggle {
-		display: block;
-		/* background-color: black; */
-		/* padding:14px 20px;	 */
-    padding-bottom: -10px;
-		color:#FFF;
-		font-size:17px;
-		text-decoration:none;
-		border:none;
-    
-	}
-
-	.toggle:hover {
-		background-color: #000000;
-	}
-
-	/* Display Dropdown when clicked on Parent Lable */
-	[id^=drop]:checked + ul {
-		display: block;
-	}
-
-	/* Change menu item's width to 100% */
-	nav ul li {
-		display: block;
-		width: 100%;
-		}
-
-	nav ul ul .toggle,
-	nav ul ul a {
-		padding: 0 40px;
-	}
-
-	nav ul ul ul a {
-		padding: 0 80px;
-	}
-
-	nav a:hover,
- 	nav ul ul ul a {
-		background-color: #000000;
-	}
-  
-	nav ul li ul li .toggle,
-	nav ul ul a,
-  nav ul ul ul a{
-		padding:14px 20px;	
-		color:#FFF;
-		font-size:17px; 
-	}
-  
-  
-	nav ul li ul li .toggle,
-	nav ul ul a {
-		background-color: #212121; 
-	}
-
-	/* Hide Dropdowns by Default */
-	nav ul ul {
-		float: none;
-		position:static;
-		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
-	}
-		
-	/* Hide menus on hover */
-	nav ul ul li:hover > ul,
-	nav ul li:hover > ul {
-		display: none;
-	}
-		
-	/* Fisrt Tier Dropdown */
-	nav ul ul li {
-		display: block;
-		width: 100%;
-	}
-
-	nav ul ul ul li {
-		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
-
-	}
-
-}
-
-@media all and (max-width : 330px) {
-
-	nav ul li {
-		display:block;
-		width: 94%;
-	}
-
-} 
-            </style>
-            <!-- <a href = "">home</a>
-            <a href = "">design</a>
-            <a href = "">blog</a>
-            <a href = "">about</a>
-          </div> -->
-        </div>
-      </nav>
-      <div class = "banner">
-        <div class = "container">
-          <h1 class = "banner-title">
-            <span></span>
-          </h1>
-          <form>
-            <input type = "text" class = "search-input" placeholder="find your peace. . .">
-            <button type = "submit" class = "search-btn">
-              <i class = "fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-      </div>
+    <header class="pjain">
+      <a href="index.html" class="center"><img width="194" height="55" alt="Logo"src="Aatmgyaan (1).png" /></a>
     </header>
+    <nav>
+      <a href="/cat/bollywood-song-/1.html">Bollywood</a>
+      <a href="/cat/punjabi-mp3--/1.html">Punjabi</a>
+      <a href="/cat/all-type-mp3-song/1.html">All Mp3</a>
+      <a href="/cat/dj-song/1.html">Dj Remix</a>
+      <a href="/cat/bollywod-cover-song/1.html">Cover Songs</a>
+      <a href="/status/home">Status Video</a>
+      
+      <div class="search-bar">
+        <form class="form-wrapper" method="get" action="/files/singer">
+          <table>
+            <tr>
+              <td>
+                <input type="text" placeholder="Search Name..." required name="search" size="25"
+                  maxlength="255" onfocus="if(this.value==this.defaultValue)this.value=''; "
+                  onblur="if(this.value=='')this.value=this.defaultValue; " />
+                <button type="submit">Search</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </nav>
 
     
     <!-- end of header -->
@@ -559,18 +809,6 @@ li > a:only-child:after { content: ''; }
       </div>
     </section>
     <!-- end of about -->
-
-    <!-- footer -->
-    <!-- <footer>
-      <div class = "social-links">
-        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
-        <a href = "#"><i class = "fab fa-twitter"></i></a>
-        <a href = "#"><i class = "fab fa-instagram"></i></a>
-        <a href = "#"><i class = "fab fa-pinterest"></i></a>
-      </div>
-      <span>Art.Design Blog Page</span>
-    </footer>
-    end of footer -->
     
      <!-- footer start -->
   <footer class="footer">
@@ -589,8 +827,6 @@ li > a:only-child:after { content: ''; }
           <h4>get help</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
-            <!-- <li><a href="#">Contact Us</a></li> -->
-            <!-- <li><a href="#">E-mail</a></li> -->
             <li><a href="#">Live Talk</a></li>
             <li><a href="#">Get Expert Astro Talk</a></li>
           </ul>
@@ -622,12 +858,7 @@ li > a:only-child:after { content: ''; }
 
   <!-- footer end -->
 <style>
-  
-/* footer start */
-/* .container{
-	max-width: 1170px;
-	margin:auto;
-} */
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
