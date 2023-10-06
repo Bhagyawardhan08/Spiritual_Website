@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> Durga-Saptashti-Chapter-11 दुर्गा सप्तशती ग्यारहवाँ अध्याय 
+    </h4> <br><br>
+   <img src="./durga saptashati adhyay-11.png" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1> Durga-Saptashti-Chapter-11 दुर्गा सप्तशती ग्यारहवाँ अध्याय </h1>
+
+            <p>महर्षि मेघा कहते है- दैत्य के मारे जाने पर इन्द्रादि देवता अग्नि को आगे करके कात्यायनी  देवी की स्तुति करने लगे, उस समय अभीष्ट की प्राप्ति के कारन उनके मुख खिले हुए थे। देवताओं ने कहा- हे शरणागतों के दुःख दूर करने वाली देवी! तुम प्रसन्न होओ, हे सम्पूर्ण जगत की माता! तुम प्रसन्न होओ । विश्वेश्वरि ! तुम विश्व की रक्षा करो क्योंकि तुम इस चर और अचर की ईश्वरी हो। हे देवी! तुम सम्पूर्ण जगत की आधार रूप हो, क्योंकि तुम पृथ्वी रूप में भी स्थित हो और अत्यंत पराक्रम वाली देवी हो, तुम विष्णु की शक्ति हो और विश्व की बीज परममाया हो और तुमने ही इस सम्पूर्ण जगत को मोहित कर रखा है। तुम्हारे प्रसन्न होने पर ही यह पृथ्वी मोक्ष को प्राप्त होती है, हे देवी! सम्पूर्ण विद्याएँ तुम्हारे ही भिन्न-२ स्वरुप है। इस जगत में जितने स्त्रियां हैं वह सब तुम्हारी ही मूर्तियां हैं। एक मात्र तुमने ही इस जगत को वयाप्त कर रखा है। तुम्हारी स्तुति किस प्रकार हो सकती है, क्योंकि तुम परमबुद्धि रूप हो और सम्पूर्ण प्राणीरूप स्वर्ग और मुक्ति देने वाली हो, अतः इसी रूप में तुम्हारी स्तुति की गई है । तुम्हारी स्तुति के लिए इससे बढ़कर और क्या युक्तियां हो सकती हैं, सम्पूर्ण जनों के ह्रदय में बुद्धिरूप होकर निवास करने वाली, स्वर्ग तथा मोक्ष प्रदान करने वाली है नारायणी देवी! तुमको नमस्कार है । कलाकाष्ठा आदि रूप से अवस्थाओं को परिवर्तन ओर ले जाने वाली तथा प्राणियों का अंत करने वाली नारायणी तुमको नमस्कार है।
+                <br/>
+                <br/>
+    हे नारायणी ! सम्पूर्ण मंगलों के मंगलरूप वाली! हे शिवे,  सम्पूर्ण प्रयोजनों को सिद्ध करने वाली! हे शरणागतवत्सला, तीन नेत्रों वाली गौरी! तुमको नमस्कार है, सृष्टि, स्थिति तथा संहार की शक्तिभूता, सनातनी देवी, गुणों का आधार तथा सर्व सुखमयी नारायणी तुमको नमस्कार है ! हे शरण में आये हुए शरणागतों दीन दुखियों की रक्षा में तत्पर, सम्पूर्ण पीड़ाओं के हरने वाली हे नारायणी ! से जुते हुए विमान पर बैठती हो तथा कुश से अभिमंत्रित जल छिड़कती रहती हो, तुम्हें नमस्कार है, माहेश्वरी रूप से त्रिशूल, चंद्रमा और सर्पों को धारण करने वाली हे महा वृषभ वाहन वाली नारायणी ! तुम्हें नमस्कार है। मोरों तथा कुक्कुटों से घिरी रहने वाली, महाशक्ति को धारण करने वाली हे कौमारी रूपधारिणी ! निष्पाप नारायणी ! तुम्हें नमस्कार है । हे शंख, चक्र, गदा और शाङ्र्ग धनुष रूप आयुधों को धारण करने वाली वैष्णवी शक्ति रूपा नारायणी ! तुम हम पर प्रसन्न होओ, तुम्हें नमस्कार है । हे दाँतो पर पृथ्वी धारण करने वाली वराह रूपिणी कल्याणमयी नारायणी ! तुम्हें नमस्कार है। हे उग्र नृसिंह रूप से दैत्यों को मारने वाली, त्रिभुवन की रक्षा में संलग्न रहने वाली नारायणी ! तुम्हें नमस्कार है। हे मस्तक पर किरीट और हाथ में महावज्र धारण करने वाली, सहस्त्र नेत्रों के कारण उज्जवल, वृत्रासुर के प्राण हरने वाली एन्द्रिशक्ति, हे नारायणी! तुम्हें नमस्कार है, हे शिवदूती स्वरुप से दैत्यों के महामद को नष्ट करने वाली, हे घोररूप वाली ! हे मुख वाली, मुण्डमाला से विभूषित मुण्डमर्दिनी चामुण्डा रूपा नारायणी ! तुम्हें नमस्कार है। हे लक्ष्मी, लज्जा, महाविद्या, श्रद्धा, पुष्टि, स्वधा, ध्रुवा, महारात्रि तथा महाविद्यारूपा नारायणी ! तुमको नमस्कार है। हे मेघा, सरस्वती, सर्वोत्कृष्ट, ऐश्वर्य रूपिणी, पार्वती, महाकाली, नियन्ता तथा इशारूपिणी नारायणी ! तुम्हें नमस्कार है। हे सर्वस्वरूप सवेर्श्वरी, सर्वशक्ति युक्त देवी! हमारी भय से रक्षा करो, तुम्हें नमस्कार है। हे कात्यायनी ! तीनों नेत्रों से भूषित यह तेरा सौम्यमुख सब तरह के डरों से हमारी रक्षा कर, तुम्हें नमस्कार है। हे भद्रकाली ! ज्वालाओं के समान भयंकर, अति उग्र एवं सम्पूर्ण असुरों को नष्ट करने वाला तुम्हारा त्रिशूल हमें भयों से बचावे, तुमको नमस्कार है। 
+                <br/>
+                <br/>
+    हे देवी ! जो अपने शब्द से इस जगत को पूरित करके दैत्यों के तेज को नष्ट करता है, वह आपका घंटा इस प्रकार हमारी रक्षा कर, जैसे कि माता अपने पुत्रों की रक्षा करती है। हे चण्डिके! असुरों के रक्त और चर्बी से चर्चित जो आपकी तलवार है, वह हमारा मंगल करें! हम तुमको नमस्कार करते हैं| हे देवी ! तुम जब प्रसन्न होती हो तो सम्पूर्ण रोगों को नष्ट कर देती हो अरु जब रुष्ट हो जाती हो तो सम्पूर्ण वांछित कामनाओं को नष्ट कर देती हो और जो मनुष्य तुम्हारी शरण में जाते हैं उन पर कभी विपत्ति नहीं आती। बल्कि तुम्हारी शरण में गए हुए मनुष्य दूसरों को आश्रय देने योग्य हो जाते हैं। अनेक रूपों से बहुत प्रकार की मूर्तियों को धारण करके इन धर्मद्रोही असुरों को तुम्हें संहार किया है, वह तुम्हारे सिवा और कौन कर सकता था? चतुदर्श विद्याएं षट्शास्त्र और चरों वेद तुम्हारे ही प्रकाश से प्रकाशित हैं, उनमें तुम्हारा ही वर्णन है, और जहाँ राक्षस, विषैले सर्प शत्रुगण हैं, वहाँ और समुद्र के बीच में भी तुम साथ रहकर इस विश्व की रक्षा करती हो। हे विश्वेश्वरि! तुम विश्व का पालन करने वाली विश्वरूपा हो, इसलिए सम्पूर्ण विश्व को धारण करती हो । इसीलिए ब्रह्म, विष्णु, महेश को भी वंदनीया हो। जो भक्ति पूर्वक तुमको नमस्कार करते हैं, वह विश्व को आश्रय देने वाले बन जाते हैं। हे देवी! तुम प्रसन्न होओ और असुरों को मारकर जिस प्रकार हमारी रक्षा की है, ऐसे ही हमारे शत्रुओं से सदा हमारी रक्षा करती रहो । सम्पूर्ण जगत के पाप नष्ट कर दो और पापों तथा उनके फल स्वरूप होने वाली महामारी आदि बड़े-२ उपद्रवों को शीघ्र ही दूर कर दो। विश्व की पीड़ा दूर करने वाली देवी ! शरण में पड़े हुओं पर प्रसन्न होओ। त्रिलोक निवासियों की पूजनीय परमेश्वरी हम लोगों को वरदान दो। देवी ने कहा- हे देवताओं ! मैं तुमको वर देने के लिए तैयार हूँ । आपकी जैसी इच्छा हो, वैसा वर माँगा लो मैं तुमको दूँगी। देवताओं ने कहा- हे सर्वेश्वरी! त्रिलोकी की निवासियों की समस्त पीड़ाओं को तुम इसी प्रकार हारती रहो और हमारे शत्रओं को इसी प्रकार नष्ट करती रहो । देवी ने कहा- वैवस्वत मन्वन्तर के अठ्ठाईसवे युग में दो और महा- असुर शुम्भ और निशुम्भ उत्पन्न होंगे। उस समय मैं नन्द गोप के घर से यशोदा के गर्भ  उत्पन्न होकर विन्ध्याचल पर्वत पर शुम्भ और निशुम्भ का संहार करूगीं, फिर अत्यंत भंयकर रूप से पृथ्वी पर अवतीर्ण  वैप्रचिति नामक दानवों का नाश करुँगी।  उन भयंकर महा असुरों का भक्षण करते समय मेरे दन्त अनार के पुष के समान लाल होगें, इसके पश्चात स्वर्ग में देवता और पृथ्वी पर मनुष्य मेरी स्तुति करते हुए मुझे रक्तदंतिका कहेंगे, फिर जब सौ वर्षों तक वर्षा न होगी तो मैं ऋषियों के स्तुति करने पर आयोनिज नाम से प्रकट होउंगी और अपने सौ नेत्रों से ऋषियों की ओर देखूंगी । अतः  मनुष्य शताक्षी नाम से मेरा कीर्तन करेंगे। उसी समय मैं अपने शरीर से उत्पन्न हुए, प्राणों की रक्षा करने वाले शकों द्वारा सब प्राणियों का पालन करुँगी और तब इस पृथ्वी पर शाकम्भरी के नाम से विख्यात होउंगी और इसी अवतार में मैं दुर्गा नामक महा असुर का वध करुँगी, और इससे मैं दुर्गा देवी के नाम से प्रसिद्ध होउंगी। इसके पश्चात जब मैं भयानक रूप धारण करके हिमालय निवासी ऋषियों महाऋषियों की रक्षा करुँगी, तब भीम देवी के नाम से मेरी ख्यति होगी और जब फिर अरुण नमक असुर तीनों लोकों को पीड़ित करेगा, तब मैं असंख्य भ्रमरों का रूप धारण करके उस महादैत्य का वध करुँगी। तब स्वर्ग में देवता और मृत्यु लोक में मनुष्य मेरी स्तुति करते हुए मुझे भ्रामरी नाम से पुकारेंगे। इस प्रकार जब-जब पृथ्वी राक्षसों से पीड़ित होगी, तब -तब मैं अवतरित होकर शत्रओं का नाश करुँगी। 
+            </p>
+     
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

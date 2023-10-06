@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> नवरात्रि स्कंदमाता की पूजा : Navratri Skandmata Ki Puja
+    </h4> <br><br>
+   <img src="./shakand-mata.webp" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>नवरात्रि स्कंदमाता की पूजा : Navratri Skandmata Ki Puja </h1>
+
+            <p>नवरात्री  दुर्गा पूजा पंचमी तिथि – स्कंदमाता की पूजा
+                <br/>
+    माँ दुर्गा का पंचम रूप स्कन्दमाता के रूप में जाना जाता है. भगवान स्कन्द कुमार (कार्तिकेय)की माता होने के कारण दुर्गा जी के इस पांचवे स्वरूप को स्कंद माता नाम प्राप्त हुआ है. भगवान स्कन्द जी बालरूप में माता की गोद में बैठे होते हैं इस दिन साधक का मन विशुध्द चक्र में अवस्थित होता है. स्कन्द मातृस्वरूपिणी देवी की चार भुजायें हैं, ये दाहिनी ऊपरी भुजा में भगवान स्कन्द को गोद में पकडे हैं और दाहिनी निचली भुजा जो ऊपर को उठी है, उसमें कमल पकडा हुआ है। माँ का वर्ण पूर्णतः शुभ्र है और कमल के पुष्प पर विराजित रहती हैं। इसी से इन्हें पद्मासना की देवी और विद्यावाहिनी दुर्गा देवी भी कहा जाता है। इनका वाहन भी सिंह है|
+                <br/>
+                <br/>
+    माँ स्कंदमाता सूर्यमंडल की अधिष्ठात्री देवी हैं| इनकी उपासना करने से साधक अलौकिक तेज की प्राप्ति करता है | यह अलौकिक प्रभामंडल प्रतिक्षण उसके योगक्षेम का निर्वहन करता है| एकाग्रभाव से मन को पवित्र करके माँ की स्तुति करने से दुःखों से मुक्ति पाकर मोक्ष का मार्ग सुलभ होता है|
+                <br/>
+                <br/>
+                <br/>
+    स्कन्दमाता  की पूजा विधि :
+                <br/>
+    कुण्डलिनी जागरण के उद्देश्य से जो साधक दुर्गा मां की उपासना कर रहे हैं उनके लिए दुर्गा पूजा का यह दिन विशुद्ध चक्र (Visuddha Chakra) की साधना का होता है. इस चक्र का भेदन करने के लिए साधक को पहले मां की विधि सहित पूजा करनी चाहिए. पूजा के लिए कुश अथवा कम्बल के पवित्र आसन पर बैठकर पूजा प्रक्रिया को उसी प्रकार से शुरू करना चाहिए जैसे आपने अब तक के चार दिनों में किया है फिर इस मंत्र से देवी की प्रार्थना करनी चाहिए “सिंहासनगता नित्यं पद्माश्रितकरद्वया. शुभदास्तु सदा देवी स्कन्दमाता यशस्विनी.
+                <br/>
+                <br/>
+    अब पंचोपचार विधि से देवी स्कन्दमाता की पूजा कीजिए. नवरात्रे की पंचमी तिथि को कहीं कहीं भक्त जन उद्यंग ललिता का व्रत (Udyang Lalita Vrat) भी रखते हैं. इस व्रत को फलदायक कहा गया है. जो भक्त देवी स्कन्द माता की भक्ति-भाव सहित पूजन करते हैं उसे देवी की कृपा प्राप्त होती है. देवी की कृपा से भक्त की मुराद पूरी होती है और घर में सुख, शांति एवं समृद्धि रहती है.sankadmata-devi-5day-copy
+                <br/>
+                <br/>
+    स्कन्दमाता की मंत्र :
+                <br/>
+    सिंहासना गता नित्यं पद्माश्रि तकरद्वया |
+                <br/>
+    शुभदास्तु सदा देवी स्कन्दमाता यशस्विनी ||
+                <br/>
+                <br/>
+    या देवी सर्वभू‍तेषु माँ स्कंदमाता रूपेण संस्थिता।
+                <br/>
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                <br/>
+                <br/>
+    3202_original
+                <br/>
+    स्कन्दमाता की ध्यान :
+                <br/>
+    वन्दे वांछित कामार्थे चन्द्रार्धकृतशेखराम्।
+                <br/>
+    सिंहरूढ़ा चतुर्भुजा स्कन्दमाता यशस्वनीम्।।
+                <br/>
+                <br/>
+    धवलवर्णा विशुध्द चक्रस्थितों पंचम दुर्गा त्रिनेत्रम्।
+                <br/>
+    अभय पद्म युग्म करां दक्षिण उरू पुत्रधराम् भजेम्॥
+                <br/>
+                <br/>
+    पटाम्बर परिधानां मृदुहास्या नानांलकार भूषिताम्।
+                <br/>
+    मंजीर, हार, केयूर, किंकिणि रत्नकुण्डल धारिणीम्॥
+                <br/>
+                <br/>
+    प्रफुल्ल वंदना पल्ल्वांधरा कांत कपोला पीन पयोधराम्।
+                <br/>
+    कमनीया लावण्या चारू त्रिवली नितम्बनीम्॥
+                <br/>
+                <br/>
+    स्कन्दमाता की  स्तोत्र पाठ :
+                <br/>
+    नमामि स्कन्दमाता स्कन्दधारिणीम्।
+                <br/>
+    समग्रतत्वसागररमपारपार गहराम्॥
+                <br/>
+                <br/>
+    शिवाप्रभा समुज्वलां स्फुच्छशागशेखराम्।
+                <br/>
+    ललाटरत्नभास्करां जगत्प्रीन्तिभास्कराम्॥
+                <br/>
+                <br/>
+    महेन्द्रकश्यपार्चिता सनंतकुमाररसस्तुताम्।
+                <br/>
+    सुरासुरेन्द्रवन्दिता यथार्थनिर्मलादभुताम्॥
+                <br/>
+                <br/>
+    अतर्क्यरोचिरूविजां विकार दोषवर्जिताम्।
+                <br/>
+    मुमुक्षुभिर्विचिन्तता विशेषतत्वमुचिताम्॥
+                <br/>
+                <br/>
+    नानालंकार भूषितां मृगेन्द्रवाहनाग्रजाम्।
+                <br/>
+    सुशुध्दतत्वतोषणां त्रिवेन्दमारभुषताम्॥
+                <br/>
+                <br/>
+    सुधार्मिकौपकारिणी सुरेन्द्रकौरिघातिनीम्।
+                <br/>
+    शुभां पुष्पमालिनी सुकर्णकल्पशाखिनीम्॥
+                <br/>
+                <br/>
+    तमोन्धकारयामिनी शिवस्वभाव कामिनीम्।
+                <br/>
+    सहस्त्र्सूर्यराजिका धनज्ज्योगकारिकाम्॥
+                <br/>
+                <br/>
+    सुशुध्द काल कन्दला सुभडवृन्दमजुल्लाम्।
+                <br/>
+    प्रजायिनी प्रजावति नमामि मातरं सतीम्॥
+                <br/>
+                <br/>
+    स्वकर्मकारिणी गति हरिप्रयाच पार्वतीम्।
+                <br/>
+    अनन्तशक्ति कान्तिदां यशोअर्थभुक्तिमुक्तिदाम्॥
+                <br/>
+                <br/>
+    पुनःपुनर्जगद्वितां नमाम्यहं सुरार्चिताम्।
+                <br/>
+    जयेश्वरि त्रिलोचने प्रसीद देवीपाहिमाम्॥
+                <br/>
+                <br/>
+    स्कन्दमाता की कवच :
+                <br/>
+    ऐं बीजालिंका देवी पदयुग्मघरापरा।
+                <br/>
+    हृदयं पातु सा देवी कार्तिकेययुता॥
+                <br/>
+                <br/>
+    श्री हीं हुं देवी पर्वस्या पातु सर्वदा।
+                <br/>
+    सर्वांग में सदा पातु स्कन्धमाता पुत्रप्रदा॥
+                <br/>
+                <br/>
+    वाणंवपणमृते हुं फ्ट बीज समन्विता।
+                <br/>
+    उत्तरस्या तथाग्नेव वारुणे नैॠतेअवतु॥
+                <br/>
+                <br/>
+    इन्द्राणां भैरवी चैवासितांगी च संहारिणी।
+                <br/>
+    सर्वदा पातु मां देवी चान्यान्यासु हि दिक्षु वै॥
+                <br/>
+                <br/>
+    वात, पित्त, कफ जैसी बीमारियों से पीड़ित व्यक्ति को स्कंदमाता की पूजा करनी चाहिए और माता को अलसी चढ़ाकर प्रसाद में रूप में ग्रहण करना चाहिए ||
+                <br/>
+                <br/>
+    स्कन्द माता कथा :
+                <br/>
+    दुर्गा पूजा के पांचवे दिन देवताओं के सेनापति कुमार कार्तिकेय की माता की पूजा होती है. कुमार कार्तिकेय को ग्रंथों में सनत-कुमार, स्कन्द कुमार के नाम से पुकारा गया है. माता इस रूप में पूर्णत: ममता लुटाती हुई नज़र आती हैं. माता का पांचवा रूप शुभ्र अर्थात श्वेत है.
+                <br/>
+                <br/>
+    जब अत्याचारी दानवों का अत्याचार बढ़ता है तब माता संत जनों की रक्षा के लिए सिंह पर सवार होकर दुष्टों का अंत करती हैं. देवी स्कन्दमाता की चार भुजाएं हैं, माता अपने दो हाथों में कमल का फूल धारण करती हैं और एक भुजा में भगवान स्कन्द या कुमार कार्तिकेय को सहारा देकर अपनी गोद में लिये बैठी हैं. मां का चौथा हाथ भक्तो को आशीर्वाद देने की मुद्रा मे है.
+                <br/>
+                <br/>
+    देवी स्कन्द माता ही हिमालय की पुत्री पार्वती हैं इन्हें ही माहेश्वरी और गौरी के नाम से जाना जाता है. यह पर्वत राज की पुत्री होने से पार्वती कहलाती हैं, महादेव की वामिनी यानी पत्नी होने से माहेश्वरी कहलाती हैं और अपने गौर वर्ण के कारण देवी गौरी के नाम से पूजी जाती हैं. माता को अपने पुत्र से अधिक प्रेम है अत: मां को अपने पुत्र के नाम के साथ संबोधित किया जाना अच्छा लगता है. जो भक्त माता के इस स्वरूप की पूजा करते है मां उस पर अपने पुत्र के समान स्नेह लुटाती हैं.navratri-maa-skandmata
+                <br/>
+                <br/>
+    नवरात्रि पाँचवा दिन माँ स्कन्दमाता की पूजा
+                <br/>
+    -: स्कन्दमाता की मंत्र :-
+                <br/>
+                <br/>
+    सिंहासना गता नित्यं पद्माश्रि तकरद्वया |
+                <br/>
+    शुभदास्तु सदा देवी स्कन्दमाता यशस्विनी ||
+                <br/>
+    या देवी सर्वभू‍तेषु माँ स्कंदमाता रूपेण संस्थिता।
+                <br/>
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                <br/>
+                <br/>
+    माँ दुर्गा का पंचम रूप स्कन्दमाता के रूप में जाना जाता है। भगवान स्कन्द कुमार (कार्तिकेय) की माता होने के कारण दुर्गा जी के इस पांचवे स्वरूप को स्कंद माता नाम प्राप्त हुआ है। भगवान स्कन्द जी बालरूप में माता की गोद में बैठे होते हैं इस दिन साधक का मन विशुध्द चक्र में अवस्थित होता है। स्कन्द मातृस्वरूपिणी देवी की चार भुजायें हैं, ये दाहिनी ऊपरी भुजा में भगवान स्कन्द को गोद में पकडे हैं और दाहिनी निचली भुजा जो ऊपर को उठी है, उसमें कमल पकडा हुआ है। माँ का वर्ण पूर्णतः शुभ्र है और कमल के पुष्प पर विराजित रहती हैं। इसी से इन्हें पद्मासना की देवी और विद्यावाहिनी दुर्गा देवी भी कहा जाता है। इनका वाहन भी सिंह है|
+                <br/>
+                <br/>
+    माँ स्कंदमाता सूर्यमंडल की अधिष्ठात्री देवी हैं| इनकी उपासना करने से साधक अलौकिक तेज की प्राप्ति करता है | यह अलौकिक प्रभामंडल प्रतिक्षण उसके योगक्षेम का निर्वहन करता है| एकाग्रभाव से मन को पवित्र करके माँ की स्तुति करने से दुःखों से मुक्ति पाकर मोक्ष का मार्ग सुलभ होता है|
+                <br/>
+                <br/>
+            </p>
+     
+      
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

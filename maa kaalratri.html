@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a>नवरात्रि कालरात्रि पूजा : Navratri Kaalratri ki Puja
+    </h4> <br><br>
+   <img src="./Wallpaper-Maa-Kalratri-hd.jpg" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>नवरात्रि कालरात्रि पूजा : Navratri Kaalratri ki Puja </h1>
+
+   
+            <p>दुर्गा पूजा का सातवां दिन –  आश्विन शुक्ल सप्तमी – कालरात्रि पूजा
+                <br/>
+    मां दुर्गा के सातवें स्वरूप या शक्ति को कालरात्रि कहा जाता है, दुर्गा-पूजा के सातवें दिन माँ काल रात्रि की उपासना का विधान है. मां कालरात्रि का स्वरूप देखने में अत्यंत भयानक है, इनका वर्ण अंधकार की भाँति काला है, केश बिखरे हुए हैं, कंठ में विद्युत की चमक वाली माला है, माँ कालरात्रि के तीन नेत्र ब्रह्माण्ड की तरह विशाल व गोल हैं, जिनमें से बिजली की भाँति किरणें निकलती रहती हैं, इनकी नासिका से श्वास तथा निःश्वास से अग्नि की भयंकर ज्वालायें निकलती रहती हैं. माँ का यह भय उत्पन्न करने वाला स्वरूप केवल पापियों का नाश करने के लिए.
+                <br/>
+                <br/>
+                <br/>
+    माँ कालरात्रि अपने भक्तों को सदैव शुभ फल प्रदान करने वाली होती हैं इस कारण इन्हें शुभंकरी भी कहा जाता है. दुर्गा पूजा के सप्तम दिन साधक का मन ‘सहस्रार’ चक्र में अवस्थित होता है.
+                <br/>
+                <br/>
+    कालरात्रिमर्हारात्रिर्मोहरात्रिश्र्च दारूणा. त्वं श्रीस्त्वमीश्र्वरी त्वं ह्रीस्त्वं बुद्धिर्बोधलक्षणा..
+                <br/>
+                <br/>
+    मधु कैटभ नामक महापराक्रमी असुर से जीवन की रक्षा हेतु भगवान विष्णु को निंद्रा से जगाने के लिए ब्रह्मा जी ने इसी मंत्र से मां की स्तुति की थी. यह देवी काल रात्रि ही महामाया हैं और भगवान विष्णु की योगनिद्रा हैं. इन्होंने ही सृष्टि को एक दूसरे से जोड़ रखा है.
+                <br/>
+                <br/>
+    देवी काल-रात्रि का वर्ण काजल के समान काले रंग का है जो अमावस की रात्रि से भी अधिक काला है. मां कालरात्रि के तीन बड़े बड़े उभरे हुए नेत्र हैं जिनसे मां अपने भक्तों पर अनुकम्पा की दृष्टि रखती हैं. देवी की चार भुजाएं हैं दायीं ओर की उपरी भुजा से महामाया भक्तों को वरदान दे रही हैं और नीचे की भुजा से अभय का आशीर्वाद प्रदान कर रही हैं.
+                <br/>
+                <br/>
+    बायीं भुजा में क्रमश: तलवार और खड्ग धारण किया है. देवी कालरात्रि के बाल खुले हुए हैं और हवाओं में लहरा रहे हैं.  देवी काल रात्रि गर्दभ पर सवार हैं. मां का वर्ण काला होने पर भी कांतिमय और अद्भुत दिखाई देता है. देवी कालरात्रि का यह विचित्र रूप भक्तों के लिए अत्यंत शुभ है अत: देवी को शुभंकरी भी कहा गया है.kalratri-devi-7-day-copy
+                <br/>
+                <br/>
+    सप्तमी दिन – कालरात्रि की पूजा विधि :
+                <br/>
+    देवी का यह रूप ऋद्धि सिद्धि प्रदान करने वाला है. दुर्गा पूजा का सातवां दिन तांत्रिक क्रिया की साधना करने वाले भक्तों के लिए अति महत्वपूर्ण होता है (Seventh day of Durga Puja is most important day forTantrik.). सप्तमी पूजा के दिन तंत्र साधना करने वाले साधक मध्य रात्रि में देवी की तांत्रिक विधि से पूजा करते हैं. इस दिन मां की आंखें खुलती हैं. षष्ठी पूजा के दिन जिस विल्व को आमंत्रित किया जाता है उसे आज तोड़कर लाया जाता है और उससे मां की आँखें बनती हैं. दुर्गा पूजा में सप्तमी तिथि का काफी महत्व बताया गया है. इस दिन से भक्त जनों के लिए देवी मां का दरवाज़ा खुल जाता है और भक्तगण पूजा स्थलों पर देवी के दर्शन हेतु पूजा स्थल पर जुटने लगते हैं.
+                <br/>
+                <br/>
+    सप्तमी की पूजा सुबह में अन्य दिनों की तरह ही होती परंतु रात्रि में विशेष विधान के साथ देवी की पूजा की जाती है. इस दिन अनेक प्रकार के मिष्टान एवं कहीं कहीं तांत्रिक विधि से पूजा होने पर मदिरा भी देवी को अर्पित कि जाती है. सप्तमी की रात्रि ‘सिद्धियों’ की रात भी कही जाती है. कुण्डलिनी जागरण हेतु जो साधक साधना में लगे होते हैं आज सहस्त्रसार चक्र का भेदन करते हैं.
+                <br/>
+                <br/>
+    पूजा विधान में शास्त्रों में जैसा वर्णित हैं उसके अनुसार पहले कलश की पूजा करनी चाहिए फिर नवग्रह, दशदिक्पाल, देवी के परिवार में उपस्थित देवी देवता की पूजा करनी चाहिए फिर मां कालरात्रि की पूजा करनी चाहिए. देवी की पूजा से पहले उनका ध्यान करना चाहिए
+                <br/>
+                <br/>
+    ” देव्या यया ततमिदं जगदात्मशक्तया, निश्शेषदेवगणशक्तिसमूहमूर्त्या तामम्बिकामखिलदेवमहर्षिपूज्यां, भक्त नता: स्म विदाधातु शुभानि सा न:..
+                <br/>
+                <br/>
+    देवी कालरात्रि  के मंत्र :
+                <br/>
+    1- या देवी सर्वभू‍तेषु माँ कालरात्रि रूपेण संस्थिता।
+                <br/>
+                <br/>
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                <br/>
+                <br/>
+    2- एक वेधी जपाकर्णपूरा नग्ना खरास्थिता।
+                <br/>
+                <br/>
+    लम्बोष्ठी कर्णिकाकणी तैलाभ्यक्तशरीरिणी।।
+                <br/>
+                <br/>
+    वामपदोल्लसल्लोहलताकण्टक भूषणा।
+                <br/>
+                <br/>
+    वर्धनमूर्धध्वजा कृष्णा कालरात्रिर्भयंकरी।।
+                <br/>
+                <br/>
+    देवी कालरात्रि  के ध्यान :
+                <br/>
+    करालवंदना धोरां मुक्तकेशी चतुर्भुजाम्।
+                <br/>
+                <br/>
+    कालरात्रिं करालिंका दिव्यां विद्युतमाला विभूषिताम॥
+                <br/>
+                <br/>
+    दिव्यं लौहवज्र खड्ग वामोघोर्ध्व कराम्बुजाम्।
+                <br/>
+                <br/>
+    अभयं वरदां चैव दक्षिणोध्वाघः पार्णिकाम् मम॥
+                <br/>
+                <br/>
+    महामेघ प्रभां श्यामां तक्षा चैव गर्दभारूढ़ा।
+                <br/>
+                <br/>
+    घोरदंश कारालास्यां पीनोन्नत पयोधराम्॥
+                <br/>
+                <br/>
+    सुख पप्रसन्न वदना स्मेरान्न सरोरूहाम्।
+                <br/>
+                <br/>
+    एवं सचियन्तयेत् कालरात्रिं सर्वकाम् समृध्दिदाम्॥
+                <br/>
+                <br/>
+    देवी कालरात्रि  के स्तोत्र पाठ :
+                <br/>
+    हीं कालरात्रि श्री कराली च क्लीं कल्याणी कलावती।
+                <br/>
+                <br/>
+    कालमाता कलिदर्पध्नी कमदीश कुपान्विता॥
+                <br/>
+                <br/>
+    कामबीजजपान्दा कमबीजस्वरूपिणी।
+                <br/>
+                <br/>
+    कुमतिघ्नी कुलीनर्तिनाशिनी कुल कामिनी॥
+                <br/>
+                <br/>
+    क्लीं हीं श्रीं मन्त्र्वर्णेन कालकण्टकघातिनी।
+                <br/>
+                <br/>
+    कृपामयी कृपाधारा कृपापारा कृपागमा॥
+                <br/>
+                <br/>
+    देवी कालरात्रि  के कवच :
+                <br/>
+    ऊँ क्लीं मे हृदयं पातु पादौ श्रीकालरात्रि।
+                <br/>
+                <br/>
+    ललाटे सततं पातु तुष्टग्रह निवारिणी॥
+                <br/>
+                <br/>
+    रसनां पातु कौमारी, भैरवी चक्षुषोर्भम।
+                <br/>
+                <br/>
+    कटौ पृष्ठे महेशानी, कर्णोशंकरभामिनी॥
+                <br/>
+                <br/>
+    वर्जितानी तु स्थानाभि यानि च कवचेन हि।
+                <br/>
+                <br/>
+    तानि सर्वाणि मे देवीसततंपातु स्तम्भिनी॥
+                <br/>
+                <br/>
+    देवी की पूजा के बाद शिव और ब्रह्मा जी की पूजा भी अवश्य करनी चाहिए.
+                <br/>
+                <br/>
+    देवी कालरात्रि की  महत्व :
+                <br/>
+    दुर्गा सप्तशती के प्रधानिक रहस्य में बताया गया है कि जब देवी ने इस सृष्टि का निर्माण शुरू किया और ब्रह्मा, विष्णु एवं महेश का प्रकटीकरण हुआ उसस पहले देवी ने अपने स्वरूप से तीन महादेवीयों को उत्पन्न किया. सर्वेश्वरी महालक्ष्मी ने ब्रह्माण्ड को अंधकारमय और तामसी गुणों से भरा हुआ देखकर सबसे पहले तमसी रूप में जिस देवी को उत्पन्न किया वह देवी ही कालरात्रि हैं. देवी कालरात्रि ही अपने गुण और कर्मों द्वारा महामाया, महामारी, महाकाली, क्षुधा, तृषा, निद्रा, तृष्णा, एकवीरा, एवं दुरत्यया कहलाती हैं.
+                <br/>
+                <br/>
+    navratri-maa-kalratri
+                <br/>
+    नवरात्रि सातवां दिन माँ कालरात्रि की पूजा
+                <br/>
+    मां दुर्गा के सातवें स्वरूप या शक्ति को कालरात्रि कहा जाता है, दुर्गा-पूजा के सातवें दिन माँ काल रात्रि की उपासना का विधान है। मां कालरात्रि का स्वरूप देखने में अत्यंत भयानक है, इनका वर्ण अंधकार की भाँति काला है, केश बिखरे हुए हैं, कंठ में विद्युत की चमक वाली माला है, माँ कालरात्रि के तीन नेत्र ब्रह्माण्ड की तरह विशाल व गोल हैं, जिनमें से बिजली की भाँति किरणें निकलती रहती हैं, इनकी नासिका से श्वास तथा निःश्वास से अग्नि की भयंकर ज्वालायें निकलती रहती हैं. माँ का यह भय उत्पन्न करने वाला स्वरूप केवल पापियों का नाश करने के लिए।
+                <br/>
+    माँ कालरात्रि अपने भक्तों को सदैव शुभ फल प्रदान करने वाली होती हैं इस कारण इन्हें शुभंकरी भी कहा जाता है। दुर्गा पूजा के सप्तम दिन साधक का मन ‘सहस्रार’ चक्र में अवस्थित होता है।
+                <br/>
+                <br/>
+    कालरात्रिमर्हारात्रिर्मोहरात्रिश्र्च दारूणा. त्वं श्रीस्त्वमीश्र्वरी त्वं ह्रीस्त्वं बुद्धिर्बोधलक्षणा..
+                <br/>
+                <br/>
+    मधु कैटभ नामक महापराक्रमी असुर से जीवन की रक्षा हेतु भगवान विष्णु को निंद्रा से जगाने के लिए ब्रह्मा जी ने इसी मंत्र से
+                <br/>
+    मां की स्तुति की थी। यह देवी काल रात्रि ही महामाया हैं और भगवान विष्णु की योगनिद्रा हैं। इन्होंने ही सृष्टि को एक दूसरे से जोड़ रखा है।
+                <br/>
+    देवी काल-रात्रि का वर्ण काजल के समान काले रंग का है जो अमावस की रात्रि से भी अधिक काला है।
+                <br/>
+                <br/>
+    मां कालरात्रि के तीन बड़े बड़े उभरे हुए नेत्र हैं जिनसे मां अपने भक्तों पर अनुकम्पा की दृष्टि रखती हैं। देवी की चार भुजाएं हैं दायीं ओर की उपरी भुजा से महामाया भक्तों को वरदान दे रही हैं और नीचे की भुजा से अभय का आशीर्वाद प्रदान कर रही हैं।
+                <br/>
+    बायीं भुजा में क्रमश: तलवार और खड्ग धारण किया है। देवी कालरात्रि के बाल खुले हुए हैं और हवाओं में लहरा रहे हैं। देवी काल रात्रि गर्दभ पर सवार हैं। मां का वर्ण काला होने पर भी कांतिमय और अद्भुत दिखाई देता है। देवी कालरात्रि का यह विचित्र रूप भक्तों के लिए अत्यंत शुभ है अत: देवी को शुभंकरी भी कहा गया है।
+                <br/>
+                <br/>
+            </p>
+      
+      
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

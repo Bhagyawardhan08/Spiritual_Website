@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> नवरात्री माता ब्रह्मचारिणी की पूजा : Navratri Mata Brahmacharini Puja
+    </h4> <br><br>
+   <img src="./2123_brahmacharini-wallpaper-02.webp" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>नवरात्री माता ब्रह्मचारिणी की पूजा : Navratri Mata Brahmacharini Puja </h1>
+
+            <p>नवरात्री  दुर्गा पूजा दूसरे तिथि – माता ब्रह्मचारिणी की पूजा :
+                <br/>
+    नवरात्र के दूसरे दिन माँ ब्रह्मचारिणी की पूजा-अर्चना का विधान है.  देवी दुर्गा का यह दूसरा रूप भक्तों एवं सिद्धों को अमोघ फल देने वाला है. देवी ब्रह्मचारिणी की उपासना से तप, त्याग, वैराग्य, सदाचार, संयम की वृद्धि होती है. माँ ब्रह्मचारिणी की कृपा से मनुष्य को सर्वत्र सिद्धि और विजय की प्राप्ति होती है, तथा जीवन की अनेक समस्याओं एवं परेशानियों का नाश होता है.
+                <br/>
+                <br/>
+    ब्रह्मचारिणी – नवरात्री दूसरा दिन
+                <br/>
+    देवी ब्रह्मचारिणी का स्वरूप पूर्ण ज्योर्तिमय है. मां दुर्गा की नौ शक्तियों में से द्वितीय शक्ति देवी ब्रह्मचारिणी का है. ब्रह्म का अर्थ है तपस्या और चारिणी यानी आचरण करने वाली अर्थात तप का आचरण करने वाली मां ब्रह्मचारिणी. यह देवी शांत और निमग्न होकर तप में लीन हैं. मुख पर कठोर तपस्या के कारण अद्भुत तेज और कांति का ऐसा अनूठा संगम है जो तीनों लोको को उजागर कर रहा है.
+                <br/>
+                <br/>
+    देवी ब्रह्मचारिणी के दाहिने हाथ में अक्ष माला है और बायें हाथ में कमण्डल होता है. देवी ब्रह्मचारिणी साक्षात ब्रह्म का स्वरूप हैं अर्थात तपस्या का मूर्तिमान रूप हैं. इस देवी के कई अन्य नाम हैं जैसे तपश्चारिणी, अपर्णा और उमा (Goddess Brahmcharini is Tapashcharini, Aparna and Uma.). इस दिन साधक का मन ‘स्वाधिष्ठान ’चक्र में स्थित होता है. इस चक्र में अवस्थित साधक मां ब्रह्मचारिणी जी की कृपा और भक्ति को प्राप्त करता है.
+                <br/>
+                <br/>
+    
+                <br/>
+    ब्रह्मचारिणी पूजा विधि :
+                <br/>
+    देवी ब्रह्मचारिणी जी की पूजा का विधान इस प्रकार है, सर्वप्रथम आपने जिन देवी-देवताओ एवं गणों व योगिनियों को कलश में आमत्रित किया है उनकी फूल, अक्षत, रोली, चंदन, से पूजा करें उन्हें दूध, दही, शर्करा, घृत, व मधु से स्नान करायें व देवी को जो कुछ भी प्रसाद अर्पित कर रहे हैं उसमें से एक अंश इन्हें भी अर्पण करें. प्रसाद के पश्चात आचमन और फिर पान, सुपारी भेंट कर इनकी प्रदक्षिणा करें. कलश देवता की पूजा के पश्चात इसी प्रकार नवग्रह, दशदिक्पाल, नगर देवता, ग्राम देवता, की पूजा करें. इनकी पूजा के पश्चात मॉ ब्रह्मचारिणी की पूजा करें.
+                <br/>
+                <br/>
+    देवी की पूजा करते समय सबसे पहले हाथों में एक फूल लेकर प्रार्थना करें “दधाना करपद्माभ्यामक्षमालाकमण्डलू. देवी प्रसीदतु मयि ब्रह्मचारिण्यनुत्तमा”.. इसके पश्चात् देवी को पंचामृत स्नान करायें और फिर भांति भांति से फूल, अक्षत, कुमकुम, सिन्दुर, अर्पित करें देवी को अरूहूल का फूल (लाल रंग का एक विशेष फूल) व कमल काफी पसंद है उनकी माला पहनायें. प्रसाद और आचमन के पश्चात् पान सुपारी भेंट कर प्रदक्षिणा करें और घी व कपूर मिलाकर देवी की आरती करें. अंत में क्षमा प्रार्थना करें “आवाहनं न जानामि न जानामि वसर्जनं, पूजां चैव न जानामि क्षमस्व परमेश्वरी..bhramcharini-mata
+                <br/>
+                <br/>
+    ब्रह्मचारिणी की मंत्र :
+                <br/>
+    या देवी सर्वभू‍तेषु माँ ब्रह्मचारिणी रूपेण संस्थिता।
+                <br/>
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                <br/>
+                <br/>
+    दधाना कर पद्माभ्याम अक्षमाला कमण्डलू।
+                <br/>
+    देवी प्रसीदतु मई ब्रह्मचारिण्यनुत्तमा।।
+                <br/>
+                <br/>
+    ब्रह्मचारिणी की ध्यान :
+                <br/>
+                <br/>
+    वन्दे वांछित लाभायचन्द्रार्घकृतशेखराम्।
+                <br/>
+    जपमालाकमण्डलु धराब्रह्मचारिणी शुभाम्॥
+                <br/>
+                <br/>
+    गौरवर्णा स्वाधिष्ठानस्थिता द्वितीय दुर्गा त्रिनेत्राम।
+                <br/>
+    धवल परिधाना ब्रह्मरूपा पुष्पालंकार भूषिताम्॥
+                <br/>
+                <br/>
+    परम वंदना पल्लवराधरां कांत कपोला पीन।
+                <br/>
+    पयोधराम् कमनीया लावणयं स्मेरमुखी निम्ननाभि नितम्बनीम्॥
+                <br/>
+                <br/>
+    ब्रह्मचारिणी की स्तोत्र पाठ :
+                <br/>
+                <br/>
+    तपश्चारिणी त्वंहि तापत्रय निवारणीम्।
+                <br/>
+    ब्रह्मरूपधरा ब्रह्मचारिणी प्रणमाम्यहम्॥
+                <br/>
+                <br/>
+    शंकरप्रिया त्वंहि भुक्ति-मुक्ति दायिनी।
+                <br/>
+    शान्तिदा ज्ञानदा ब्रह्मचारिणीप्रणमाम्यहम्॥
+                <br/>
+                <br/>
+    ब्रह्मचारिणी की कवच :
+                <br/>
+                <br/>
+    त्रिपुरा में हृदयं पातु ललाटे पातु शंकरभामिनी।
+                <br/>
+    अर्पण सदापातु नेत्रो, अर्धरी च कपोलो॥
+                <br/>
+                <br/>
+    पंचदशी कण्ठे पातुमध्यदेशे पातुमहेश्वरी॥
+                <br/>
+    षोडशी सदापातु नाभो गृहो च पादयो।
+                <br/>
+                <br/>
+    अंग प्रत्यंग सतत पातु ब्रह्मचारिणी।
+                <br/>
+                <br/>
+    नवरात्री में दुर्गा सप्तशती पाठ किया जाता हैं –  सप्तशती पाठ विधि 
+                <br/>
+    भोले शंकर को पति रूप में प्राप्त करने के लिए माता ने महान व्रत किया उस महादेव की पूजा भी आदर पूर्वक करें क्योंकि इनकी पूजा न होने से देवी की कृपा नहीं मिलती है. दक्ष प्रजापति द्वारा शिव की उपेक्षा के कारण माता ने पूर्व जन्म में स्वयं को अग्नि में समर्पित कर दिया और किसी भी देवता ने प्रजापति का प्रसाद ग्रहण नहीं किया जिससे उन्हें महान दोष लगा अत: देवी की प्रसन्नता हेतु शिव जी पूजा आवश्यक कहा गया है.
+                <br/>
+                <br/>
+    सबसे अंत में ब्रह्मा जी के नाम से जल, फूल, अक्षत, सहित सभी सामग्री हाथ में लेकर “ॐ ब्रह्मणे नम:” कहते हुए सामग्री भूमि पर रखें और दोनों हाथ जोड़कर सभी देवी देवताओं को प्रणाम करें.
+                <br/>
+                <br/>
+    इस प्रकार दुर्गा  की  आरती होती है. 
+                <br/>
+                <br/>
+    देवी ब्रह्मचारिणी कथा :
+                <br/>
+    माता ब्रह्मचारिणी हिमालय और मैना की पुत्री हैं. इन्होंने देवर्षि नारद जी के कहने पर भगवान शंकर की ऐसी कठोर तपस्या की जिससे प्रसन्न होकर ब्रह्मा जी ने इन्हें मनोवांछित वरदान दिया. जिसके फलस्वरूप यह देवी भगवान भोले नाथ की वामिनी अर्थात पत्नी बनी. जो व्यक्ति अध्यात्म और आत्मिक आनंद की कामना रखते हैं उन्हें इस देवी की पूजा से सहज यह सब प्राप्त होता है. देवी का दूसरा स्वरूप योग साधक को साधना के केन्द्र के उस सूक्ष्मतम अंश से साक्षात्कार करा देता है जिसके पश्चात व्यक्ति की ऐन्द्रियां अपने नियंत्रण में रहती और साधक मोक्ष का भागी बनता है.
+                <br/>
+                <br/>
+    इस देवी की प्रतिमा की पंचोपचार सहित पूजा करके जो साधक स्वाधिष्ठान चक्र (Swadhisthan Chakra) में मन को स्थापित करता है उसकी साधना सफल हो जाती है और व्यक्ति की कुण्डलनी शक्ति जागृत हो जाती है.  जो व्यक्ति भक्ति भाव एवं श्रद्धादुर्गा पूजा के दूसरे दिन मॉ ब्रह्मचारिणी की पूजा करते हैं उन्हें सुख, आरोग्य की प्राप्ति होती है और प्रसन्न रहता है, उसे किसी प्रकार का भय नहीं सताता है.
+                <br/>
+                <br/>
+    
+                <br/>
+    नवरात्रि दूसरा दिन ब्रह्मचारिणी की पूजा
+                <br/>
+    दधाना करपद्माभ्यामक्षमालाकमण्डलू।
+                <br/>
+    देवी प्रसीदतु मयि ब्रह्मचारिण्यनुत्तमा॥
+                <br/>
+    मां दुर्गा की नवशक्ति का दूसरा स्वरूप ब्रह्मचारिणी का है। भगवान शंकर को पति रूप में प्राप्त करने के लिए घोर तपस्या की थी। इस कठिन तपस्या के कारण इस देवी को तपश्चारिणी अर्थात्‌ माँ ब्रह्मचारिणी नाम से अभिहित किया। यहां ब्रह्म का अर्थ तपस्या से है। मां दुर्गा का यह स्वरूप भक्तों और सिद्धों को अनंत फल देने वाला है। इनकी उपासना से तप, त्याग, वैराग्य, सदाचार और संयम की वृद्धि होती है।
+                <br/>
+                <br/>
+    ब्रह्मचारिणी का अर्थ तप की चारिणी यानी तप का आचरण करने वाली। देवी का यह रूप पूर्ण ज्योतिर्मय और अत्यंत भव्य है। इस देवी के दाएं हाथ में जप की माला है और बाएं हाथ में यह कमण्डल धारण किए हैं।
+                <br/>
+                <br/>
+    पूर्व जन्म में इस देवी ने हिमालय के घर पुत्री रूप में जन्म लिया था और नारदजी के उपदेश से भगवान शंकर को पति रूप में प्राप्त करने के लिए घोर तपस्या की थी। इस कठिन तपस्या के कारण इन्हें तपश्चारिणी अर्थात्‌ ब्रह्मचारिणी नाम से अभिहित किया गया। एक हजार वर्ष तक इन्होंने केवल फल-फूल खाकर बिताए और सौ वर्षों तक केवल जमीन पर रहकर शाक पर निर्वाह किया।
+                <br/>
+                <br/>
+    कुछ दिनों तक कठिन उपवास रखे और खुले आकाश के नीचे वर्षा और धूप के घोर कष्ट सहे। तीन हजार वर्षों तक टूटे हुए बिल्व पत्र खाए और भगवान शंकर की आराधना करती रहीं। इसके बाद तो उन्होंने सूखे बिल्व पत्र खाना भी छोड़ दिए। कई हजार वर्षों तक निर्जल और निराहार रह कर तपस्या करती रहीं। पत्तों को खाना छोड़ देने के कारण ही इनका नाम अपर्णा नाम पड़ गया।
+                <br/>
+                <br/>
+    कठिन तपस्या के कारण देवी का शरीर एकदम क्षीण हो गया। देवता, ऋषि, सिद्धगण, मुनि सभी ने ब्रह्मचारिणी की तपस्या को अभूतपूर्व पुण्य कृत्य बताया, सराहना की और कहा- हे देवी आज तक किसी ने इस तरह की कठोर तपस्या नहीं की। यह तुम्हीं से ही संभव थी। तुम्हारी मनोकामना परिपूर्ण होगी और भगवान चंद्रमौलि शिवजी तुम्हें पति रूप में प्राप्त होंगे। अब तपस्या छोड़कर घर लौट जाओ। जल्द ही तुम्हारे पिता तुम्हें बुलाने आ रहे हैं।
+                <br/>
+                <br/>
+    दुर्गा पूजा के दूसरे दिन देवी के इसी स्वरूप की उपासना की जाती है। इस देवी की कथा का सार यह है कि जीवन के कठिन संघर्षों में भी मन विचलित नहीं होना चाहिए। मां ब्रह्मचारिणी देवी की कृपा से सर्व सिद्धि प्राप्त होती है।
+            </p>
+       
+      
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

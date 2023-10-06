@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> नवरात्रि माता चंद्रघंटा की पूजा : Navratri Chandraghanta ki Puja
+    </h4> <br><br>
+   <img src="./goddess-Chandraghanta.webp" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1> नवरात्रि माता चंद्रघंटा की पूजा : Navratri Chandraghanta ki Puja </h1>
+
+            
+                        <p>नवरात्री  दुर्गा पूजा तीसरे तिथि – माता चंद्रघंटा की पूजा
+                            <br/>
+                देवी दुर्गाजी की तीसरी शक्ति का नाम चंद्रघंटा है. दुर्गा पूजा के तीसरे दिन आदि-शक्ति दुर्गा के तृतीय स्वरूप माँ  चंद्रघंटा की पूजा होती है.  देवी चन्द्रघण्टा भक्त को सभी प्रकार की बाधाओं एवं संकटों से उबारने वाली हैं. इस दिन का दुर्गा पूजा में विशेष महत्व बताया गया है तथा इस दिन इन्हीं के विग्रह का पूजन किया जाता है. माँ चंद्रघंटा की कृपा से अलौकिक एवं दिव्य सुगंधित वस्तुओं के दर्शन तथा अनुभव होते हैं, इस दिन साधक का मन ‘मणिपूर’ चक्र में प्रविष्ट होता है यह क्षण साधक के लिए अत्यंत महत्वपूर्ण होते हैं.
+                            <br/>
+                            <br/>
+                चंद्रघंटा – नवरात्री  की तीसरी दिन :
+                            <br/>
+                चन्द्रघंटा देवी का स्वरूप तपे हुए स्वर्ण के समान कांतिमय है. चेहरा शांत एवं सौम्य है और मुख पर सूर्यमंडल की आभा छिटक रही होती है. माता के सिर पर अर्ध चंद्रमा मंदिर के घंटे के आकार में सुशोभित हो रहा जिसके कारण देवी का नाम चन्द्रघंटा हो गया है. अपने इस रूप से माता देवगण, संतों एवं भक्त जन के मन को संतोष एवं प्रसन्न प्रदान करती हैं. मां चन्द्रघंटा अपने प्रिय वाहन सिंह पर आरूढ़ होकर अपने दस हाथों में खड्ग, तलवार, ढाल, गदा, पाश, त्रिशूल, चक्र,धनुष, भरे हुए तरकश लिए मंद मंद मुस्कुरा रही होती हैं. माता का ऐसा अदभुत रूप देखकर ऋषिगण मुग्ध होते हैं और वेद मंत्रों द्वारा देवी चन्द्रघंटा की स्तुति करते हैं.
+                            <br/>
+                            <br/>
+                माँ चन्द्रघंटा की कृपा से समस्त पाप और बाधाएँ विनष्ट हो जाती हैं. देवी चंद्रघंटा की मुद्रा सदैव युद्ध के लिए अभिमुख रहने की होती हैं, इनका उपासक सिंह की तरह पराक्रमी और निर्भय हो जाता है इनकी अराधना सद्य: फलदायी है, समस्त भक्त जनों को देवी चंद्रघंटा की वंदना करते हुए कहना चाहिए ” या देवी सर्वभूतेषु चन्द्रघंटा रूपेण संस्थिता. नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:”.. अर्थात देवी ने चन्द्रमा को अपने सिर पर घण्टे के सामान सजा रखा है उस महादेवी, महाशक्ति चन्द्रघंटा को मेरा प्रणाम है, बारम्बार प्रणाम है. इस प्रकार की स्तुति एवं प्रार्थना करने से देवी चन्द्रघंटा की प्रसन्नता प्राप्त होती है.
+                            <br/>
+                            <br/>
+                            <br/>
+                देवी चंद्रघंटा पूजा विधि :
+                            <br/>
+                देवी चन्द्रघंटा की भक्ति से आध्यात्मिक और आत्मिक शक्ति प्राप्त होती है. जो व्यक्ति  माँ चंद्रघंटा की श्रद्धा एवं भक्ति भाव सहित पूजा करता है उसे मां की कृपा प्राप्त होती है जिससे वह संसार में यश, कीर्ति एवं सम्मान प्राप्त करता है. मां के भक्त के शरीर से अदृश्य उर्जा का विकिरण होता रहता है जिससे वह जहां भी होते हैं वहां का वातावरण पवित्र और शुद्ध हो जाता है, इनके घंटे की ध्वनि सदैव भक्तों की प्रेत-बाधा आदि से रक्षा करती है तथा उस स्थान से भूत, प्रेत एवं अन्य प्रकार की सभी बाधाएं दूर हो जाती है.
+                            <br/>
+                            <br/>
+                जो साधक योग साधना कर रहे हैं उनके लिए यह दिन इसलिए भी महत्वपूर्ण है कि इस दिन कुण्डलनी जागृत करने हेतु स्वाधिष्ठान चक्र (Swadhisthan Chakra) से एक चक्र आगे बढ़कर मणिपूरक चक्र (Manipurak Chakra) का अभ्यास करते हैं. इस दिन साधक का मन ‘मणिपूर’ चक्र में प्रविष्ट होता है . इस देवी की पंचोपचार सहित पूजा करने के बाद उनका आशीर्वाद प्राप्त कर योग का अभ्यास करने से साधक को अपने प्रयास में आसानी से सफलता मिलती है.
+                            <br/>
+                            <br/>
+                तीसरे दिन की पूजा का विधान भी लगभग उसी प्रकार है जो दूसरे दिन की पूजा का है. इस दिन भी आप सबसे पहले कलश और उसमें उपस्थित देवी-देवता, तीर्थों, योगिनियों, नवग्रहों, दशदिक्पालों, ग्रम एवं नगर देवता की पूजा अराधना करें फिर माता के परिवार के देवता, गणेश (Ganesh), लक्ष्मी (Lakshmi), विजया (Vijya), कार्तिकेय (Kartikey), देवी सरस्वती(Saraswati), एवं जया (Jaya) नामक योगिनी की पूजा करें फिर देवी चन्द्रघंटा की पूजा अर्चना करें.
+                            <br/>
+                            <br/>
+                            <br/>
+                चन्द्रघंटा की मंत्र :
+                            <br/>
+                या देवी सर्वभू‍तेषु माँ चंद्रघंटा रूपेण संस्थिता।
+                            <br/>
+                नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                            <br/>
+                            <br/>
+                पिण्डज प्रवरारूढ़ा चण्डकोपास्त्रकैर्युता।
+                            <br/>
+                प्रसादं तनुते महयं चन्द्रघण्टेति विश्रुता।।
+                            <br/>
+                            <br/>
+                चन्द्रघंटा की  ध्यान :
+                            <br/>
+                            <br/>
+                वन्दे वांछित लाभाय चन्द्रार्धकृत शेखरम्।
+                            <br/>
+                सिंहारूढा चंद्रघंटा यशस्वनीम्॥
+                            <br/>
+                            <br/>
+                मणिपुर स्थितां तृतीय दुर्गा त्रिनेत्राम्।
+                            <br/>
+                खंग, गदा, त्रिशूल,चापशर,पदम कमण्डलु माला वराभीतकराम्॥
+                            <br/>
+                            <br/>
+                पटाम्बर परिधानां मृदुहास्या नानालंकार भूषिताम्।
+                            <br/>
+                मंजीर हार केयूर,किंकिणि, रत्नकुण्डल मण्डिताम॥
+                            <br/>
+                            <br/>
+                प्रफुल्ल वंदना बिबाधारा कांत कपोलां तुगं कुचाम्।
+                            <br/>
+                कमनीयां लावाण्यां क्षीणकटि नितम्बनीम्॥
+                            <br/>
+                            <br/>
+                चन्द्रघंटा की   स्तोत्र पाठ :
+                            <br/>
+                आपदुध्दारिणी त्वंहि आद्या शक्तिः शुभपराम्।
+                            <br/>
+                अणिमादि सिध्दिदात्री चंद्रघटा प्रणमाभ्यम्॥
+                            <br/>
+                            <br/>
+                चन्द्रमुखी इष्ट दात्री इष्टं मन्त्र स्वरूपणीम्।
+                            <br/>
+                धनदात्री, आनन्ददात्री चन्द्रघंटे प्रणमाभ्यहम्॥
+                            <br/>
+                            <br/>
+                नानारूपधारिणी इच्छानयी ऐश्वर्यदायनीम्।
+                            <br/>
+                सौभाग्यारोग्यदायिनी चंद्रघंटप्रणमाभ्यहम्॥
+                            <br/>
+                            <br/>
+                चन्द्रघंटा की   कवच :
+                            <br/>
+                रहस्यं श्रुणु वक्ष्यामि शैवेशी कमलानने।
+                            <br/>
+                श्री चन्द्रघन्टास्य कवचं सर्वसिध्दिदायकम्॥
+                            <br/>
+                            <br/>
+                बिना न्यासं बिना विनियोगं बिना शापोध्दा बिना होमं।
+                            <br/>
+                स्नानं शौचादि नास्ति श्रध्दामात्रेण सिध्दिदाम॥
+                            <br/>
+                            <br/>
+                कुशिष्याम कुटिलाय वंचकाय निन्दकाय च न दातव्यं न दातव्यं न दातव्यं कदाचितम्॥
+                            <br/>
+                            <br/>
+                नवरात्री में दुर्गा सप्तशती पाठ किया जाता हैं –  दुर्गा सप्तशती पाठ विधि
+                            <br/>
+                            <br/>
+                भोले शंकर को पति रूप में प्राप्त करने के लिए माता ने महान व्रत किया उस महादेव की पूजा भी आदर पूर्वक करें क्योंकि इनकी पूजा न होने से देवी की कृपा नहीं मिलती है ||
+                            <br/>
+                            <br/>
+                सबसे अंत में ब्रह्मा जी के नाम से जल, फूल, अक्षत, सहित सभी सामग्री हाथ में लेकर “ॐ ब्रह्मणे नम:” कहते हुए सामग्री भूमि पर रखें और दोनों हाथ जोड़कर सभी देवी देवताओं को प्रणाम करें.
+                            <br/>
+                            <br/>
+                            <br/>
+                नवरात्रि तीसरा दिन माँ चन्द्रघंटा की पूजा
+                            <br/>
+                पिण्डज प्रवरारुढ़ा चण्डकोपास्त्र कैर्युता |
+                            <br/>
+                प्रसादं तनुते मह्यं चंद्र घंष्टेति विश्रुता ||
+                            <br/>
+                            <br/>
+                नवरात्र के तीसरे दिन माता चंद्रघंटा की पूजा-वंदना इस मंत्र के द्वारा की जाती है-
+                            <br/>
+                मां दुर्गा की 9 शक्तियों की तीसरी स्वरूपा भगवती चंद्रघंटा की पूजा नवरात्र के तीसरे दिन की जाती है। माता के माथे पर घंटे आकार का अर्धचन्द्र है, जिस कारण इन्हें चन्द्रघंटा कहा जाता है। इनका रूप परम शांतिदायक और कल्याणकारी है। माता का शरीर स्वर्ण के समान उज्जवल है। इनका वाहन सिंह है और इनके दस हाथ हैं जो की विभिन्न प्रकार के अस्त्र-शस्त्र से सुशोभित रहते हैं। सिंह पर सवार मां चंद्रघंटा का रूप युद्ध के लिए उद्धत दिखता है और उनके घंटे की प्रचंड ध्वनि से असुर और राक्षस भयभीत करते हैं।
+                            <br/>
+                            <br/>
+                भगवती चंद्रघंटा की उपासना करने से उपासक आध्यात्मिक और आत्मिक शक्ति प्राप्त करता है और जो श्रद्धालु इस दिन श्रद्धा एवं भक्ति पूर्वक दुर्गा सप्तसती का पाठ करता है, वह संसार में यश, कीर्ति एवं सम्मान को प्राप्त करता है। माता चंद्रघंटा की पूजा-अर्चना भक्तो को सभी जन्मों के कष्टों और पापों से मुक्त कर इसलोक और परलोक में कल्याण प्रदान करती है और भगवती अपने दोनों हाथो से साधकों को चिरायु, सुख सम्पदा और रोगों से मुक्त होने का वरदान देती हैं।
+                            <br/>
+                            <br/>
+                मनुष्य को निरंतर माता चंद्रघंटा के पवित्र विग्रह को ध्यान में रखते हुए साधना की ओर अग्रसर होने का प्रयास करना चाहिए और इस दिन महिलाओं को घर पर बुलाकर आदर सम्मान पूर्वक उन्हें भोजन कराना चाहिए और कलश या मंदिर की घंटी उन्हें भेंट स्वरुप प्रदान करना चाहिए। इससे भक्त पर सदा भगवती की कृपा दृष्टि बनी रहती है।
+                        </p>
+                   
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

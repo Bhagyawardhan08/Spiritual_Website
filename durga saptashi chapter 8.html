@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> Durga-Saptashti- 8 दुर्गा सप्तशती आठवा अध्याय
+    </h4> <br><br>
+   <img src="./durga saptashati adhyay-8.png" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1>Durga-Saptashti-8 दुर्गा सप्तशती आठवा अध्याय </h1>
+
+            <p>(रक्तबीज वध )
+                <br/>
+    महर्षि मेघा ने कहा- चण्ड और मुण्ड नामक असुरों के मारे जाने से और बहुत सी सेना का नष्ट हो जाने से असुरों के राजा, प्रतापी शुम्भ ने क्रोध युक्त होकर अपनी सम्पूर्ण सेना को युद्ध के लिए तैयार होने की आज्ञा दी । उसने कहा- अब उदायुध नामक छियासी असुर सेनापति अपनी सेनाओं के साथ युद्ध के लिए जाये और कम्बू नामक चौरासी सेनापति भी युद्ध के लिए जाये और कोटि वीर्य नामक पचास सेनापति और धौम्रकुल नाम के सौ सेनापति प्रस्थान करें, कालक, दोह्र्द, मोर्य और कालकेय यह दैत्य भी मेरी आज्ञा से सजाकर युद्ध के लिए कूँच करें, भयानक शासन करने वाला असुरों का स्वामी शुम्भ इस प्रकार आज्ञा देकर बहुत बड़ी सेना के साथ युद्ध के लिए चला। उसका सेना को अपनी ओर आता देखकर चण्डिका ने अपनी धनुष की टंकोर से पृथ्वी और आकाश के बीच का भाग गूंजा दिया। हे राजन ! इसके पश्चात देवी के सिंह ने दहाडनय दैत्यों के नाश के लिए और देवताओं के हित के लिए ब्रम्हा, शिव, कार्तिकेय, विष्णु तथा इंद्र आदि देवों शक्तियां जो अत्यंत पराक्रम और  से सम्पन थीं, उनके शरीर से निकल कर उसी रूप में चण्डिका देवी  पास गई। जिस देवता का जैसा रूप था, जैसे आभूषण थे और जैसा वाहन था, वैसा ही रूप, आभूषण और वाहन लेकर, उन देवताओं की शक्तिया दैत्यों से युद्ध करने के लिए आई। 
+                <br/>
+                <br/>
+                <br/>
+    वृषभ पर सवार होकर, हाथ में त्रिशूल लेकर, महानाग का कंकण पहन कर और चंद्ररेखा से भूषित होकर भगवान शंकर की शक्ति रसिंह भी आई, उसकी गर्दन के झटकों से आकाश के तारे टूट पड़ते थे और इसी प्रकार देवराज इंद्र की शक्ति ऐन्द्री भी ऐरावत के ऊपर सवार होकर आई, पश्चात इन देवशक्तियों से घिरे हुए भगवान शंकर ने चंडिका से कहा- मेरी प्रसन्नता के लिए तुम शीघ्र ही इन असुरों को मारो। इसके पश्चात देवी के शरीर में से अत्यंत उग्र रूप वाली और सैकड़ों गीदड़ियों के समान आवाज़ करने वाली चंडिका शक्ति प्रकट हुई, उस अपराजिता देवी ने धूमिल जटा वाले भगवन शंकर जी से कहा- हे प्रभो! आप मेरी ओर से दूत बनकर शुम्भ और निशुम्भ के पास जाइये और उन अत्यंत गर्वीले दैत्यों से कहिये तथा उनके अतिरिक्त और भी जो दैत्य वहाँ युद्ध के लिए उपस्थित हों, उनसे भी कहिये- जो तुम्हें अपने जीवित रहने की इच्छा हो तो त्रिलोकी का राज्य इंद्र को दे दो, देवताओं को उनका यज्ञ भाग मिलना आरंभ हो जाय और तुम पाताल को लौटे जाओ, किन्तु यदि बल के गर्व से तुम्हारी लड़ने की इच्छा हो तो फिर आ जाओ, तुम्हारे माँस से मेरी, योगिनियां तृप्त होगीं, चूँकि उस देवी ने भगवान शंकर को दूत के कार्य में नियुक्त किया था, इसलिए वह संसार में शिवदूती के नाम से विख्यात हुई। भगवान शंकर से देवी का सन्देश पाकर उन दैत्यों के क्जिस तरफ दौड़ती थी, उसी तरफ अपने कमण्डलु का जल छिड़क कर दैत्यों के वीर्य व बल को नष्ट कर देती थी और इसी प्रकार माहेश्वरी त्रिशूल से, वैष्णवी चक्र से और अत्यंत कोपवाली कौमारी शक्ति द्वारा असुरों को मार रही थी और ऐन्द्री के बाजु के प्रहार से सैकड़ों दैत्य रक्त की नदियाँ बहाते हुए पृथवी पर सो गए । 
+                <br/>
+                <br/>
+                <br/>
+    वाराही ने कितने ही राक्षसों को अपनी थूथन द्वारा मृत्यु के घाट उतार दिया, दाढ़ों के अग्रभाग से कितने ही राक्षसों की छाती को चीर डाला और चक्र की चोट से कितनों ही को विदर्ण करके धरती पर डाल दिया । बड़े -२ राक्षसों को नारसिंही अपने नखों से विदर्ण करके भक्षण रही थी, शिवदूती के प्रचंड अट्टहास से कितने ही दैत्य भयभीत होकर पृथ्वी पर गिर पड़े और उनके गिरते ही वह उनको भक्षण कर गई। इस तरह क्रोध में भरे हुए मातृगणों द्वारा नाना प्रकार के उपायों से बड़े-बड़े असुरों को मरते हुए देखकर राक्षसी सेना भाग खड़ी हुई और उनको इस प्रकार भागता देखकर रक्तबीज नामक महा पराक्रमी राक्षस क्रोध में भरकर युद्ध के लिए आगे बढ़ा। उसके शरीर से रक्त की बूँदें पृथ्वी पर जिसे ही गिरती थीं तुरन्त वैसे ही शरीर वाला तथा वैसा ही बलवान दैत्य पृथ्वी से उत्पन्न हो जाता था। रक्तबीज गदा हाथ में लेकर इंद्री के साथ युद्ध करने लगा, जब इंद्रिशाक्ति ने अपने वज्र से उसको मारा तो घायल होने के कारण उसके शरीर से बहुत सा रक्त बहने लगा और उनकी प्रत्येक बूँद से उसके सामन ही बलवान तथा महा पराक्रमी अनेकों दैत्य भयंकर रूप से प्रकट हो गए, वह सब के सब दैत्य बीज के सामान ही बलवान तेज वाले थे, वह भी भयंकर अस्त्र-शस्त्र लेकर देवियो के साथ लड़ने लगे| जब इंद्री के वज्र प्रहार से उनके मस्तक पर चोट लगी और रक्त बहने लगा तो उसमे से हज़ारों हो पुरुष उत्पन्न हो गए| वैष्णवी ने चक्र से और इंद्री ने गदा से रक्तबीज को चोट पहुचाई और वैष्णवी के चक्र से घायल होने पर उनके शरीर से जो रक्त बहा, उससे हजारों महा आसुर उत्पन्न हुए, जिनके द्वारा यह सम्पूर्ण जगत व्याप्त हो गया, कौमारी ने शक्ति, से वाराही ने खड्ग से अरु माहेश्वरी ने त्रिशूल से उसको घायल किया| इस प्रकार क्रोध में भरकर उस महादैत्य से सब मातृ शकितयों पर पृथक-पृथक गदा से प्रहार किया, और माताओं ने शक्ति तथा शूल इत्यादि से उसको जो बार-बार घायल किया, उससे सैकड़ों महादैत्य उत्पन्न हुए और इस प्रकार उस रक्तबीज के रुधिर से उत्पन्न हुए असुरों से सम्पूर्ण जगत व्याप्त हो गया जिससे देवताओं को भय हुआ, देवताओं को भयभीत देखर चंडिका ने काली से कहा- हे चामुण्डे ! अपने मुख को बड़ा करो और मेरे शास्त्र घात से उतपन्न हुए रक्त बिंदुओं तथा रक्त बिंदुओं से उत्पन्न हुए महा- असुरों को तुम अपने इस मुख से भक्षण करती जाओ| इस प्रकार रक्त बिंदुओं से उत्पन्न हुए महादैत्यों को भक्षण करती हुई तुम रण भूमि में विचरो| इस प्रकार रक्त कम होने से यह दैत्य नष्ट हो जावेगे, तुम्हारे  भक्षण करने के कारण अन्य दैत्य उत्पन्न नहीं होगें| काली से इस प्रकार कहकर चंडिका देवी ने रक्तबीज पर अपने त्रिशूल  किया और काली देवी ने अपने मुख में उसका रक्त ले लिया, तब उसने गदा से चंडिका पर प्रहार किया, प्रहार से चंडिका को तनिक भी कष्ट न हुआ, किन्तु रक्तबीज के शरीर से बहुत सा रक्त बहने लगा, लेकिन उसके गिरने के साथ ही काली ने उसको अपने मुख में ले लिया| काली के मुख में उस रक्त से जो असुर उतपन्न हुए, उनको उसने  भक्षण कर लिया और रक्त को पीती गई, तदन्तर देवी ने रक्तबीज को जिसका की खून काली ने पिया था, चंडिका  दैत्य को वज्र,बाण, खंडग और ऋष्टि इत्यादि से मार डाला| हे राजन ! अनेक प्रकार के शस्त्रों से मारा हुआ और खून से वंचित वह महादैत्य रक्तबीज पृथ्वी पर गिर पड़ा| हे राजन ! उसके गिरने से देवता अत्यंत प्रसन्न हुए और माताएं उन असुरों का रक्त पिने के पश्चात उद्धत हो कर नृत्य करने लगी| 
+            </p>
+       
+      
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>

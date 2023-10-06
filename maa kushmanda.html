@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chalisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+    <!-- header -->
+   .
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+@media (max-width: 625px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.containerheader{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    
+}
+
+
+@media (max-width: 625px) {
+    .containerheader{
+        display: flex;
+        padding: 0 1.2rem;
+        margin-bottom: -45px;
+    }
+}
+
+/* header */
+header{
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+@media (max-width: 625px) {
+    .navbar-nav{
+        margin-left: 220px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        
+    }
+}
+
+/* @media (max-width: 625px) {
+    .navbar-nav .toggle{
+        padding-bottom: 10px;
+        
+    }
+} */
+
+@media (max-width: 625px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 625px) {
+    .containerheader .navbar-brand a{
+        padding-bottom: 35px;
+        
+    }
+}
+
+
+@media (max-width: 493px) {
+    .navbar-brand{
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-brand{
+        padding-bottom: 15px;
+        overflow-x: hidden;
+        font-size: 0.8rem;
+    }
+}
+
+
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #fff; */
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    /* top: 10px; */
+    left: 10px;
+    background: var(--exDark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--exDark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background: var(--exDark);
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--exDark);
+}
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        /* margin-top: 1.4rem;
+        width: 80%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: black;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+  
+}
+
+#logo img {
+  max-width: 100px; /* Set the maximum width for the logo */
+  height: auto; /* Maintain the logo's aspect ratio */
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	/* float: left; */
+	background-color: black;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		/* background-color: black; */
+		/* padding:14px 20px;	 */
+    padding-bottom: -10px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+    
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+} 
+            </style>
+            <!-- <a href = "">home</a>
+            <a href = "">design</a>
+            <a href = "">blog</a>
+            <a href = "">about</a>
+          </div> -->
+        <!-- </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span></span> Aatmgyaan
+          </h1>
+          <p>everything that you want to know about Spirituality</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your food . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </header>
+   <div id="ramchalish" style="margin: 0px 0px 60px; padding: 0px 15px;">
+    <br>
+    <h4><a href="index.html">Home »</a> <a href="./Festivals.html">Navratri »</a> नवरात्रि माता कूष्माण्डा
+    </h4> <br><br>
+   <img src="./photo-of-Maa-Kushmanda-devi.webp" style="width: 480px; height: 360px;">
+    <br><br>
+    <h1> नवरात्रि माता कूष्माण्डा </h1>
+
+   
+            <p>नवरात्रि माता कूष्माण्डा की पूजा : 
+                <br/>
+    नवरात्री  दुर्गा पूजा चौथे तिथि – माता कूष्माण्डा की पूजा :
+                <br/>
+    मां दुर्गा के नव रूपों में चौथा रूप है कूष्माण्डा देवी का (Durga Devi Chaturth Roop Devi Kushmanda). दुर्गा पूजा के चौथे दिन देवी कूष्माण्डा जी की पूजा का विधान है.  देवी कूष्माण्डा अपनी मन्द मुस्कान से अण्ड अर्थात ब्रह्माण्ड को उत्पन्न करने के कारण इन्हें कूष्माण्डा देवी के नाम से जाना जाता है.
+                <br/>
+                <br/>
+    इस दिन भक्त का मन ‘अनाहत’ चक्र में स्थित होता है, अतः इस दिन उसे अत्यंत पवित्र और शांत मन से कूष्माण्डा देवी के स्वरूप को ध्यान में रखकर पूजा करनी चाहिए. संस्कृत भाषा में कूष्माण्ड कूम्हडे को कहा जाता है, कूम्हडे की बलि इन्हें प्रिय है, इस कारण भी इन्हें कूष्माण्डा के नाम से जाना जाता है.
+                <br/>
+                <br/>
+    देवी कुष्मांडा पूजा विधि :
+                <br/>
+    जो साधक कुण्डलिनी जागृत करने की इच्छा से देवी अराधना में समर्पित हैं उन्हें दुर्गा पूजा के चौथे दिन माता कूष्माण्डा की सभी प्रकार से विधिवत पूजा अर्चना करनी चाहिए फिर मन को अनहत चक्र (Anhat chakra) में स्थापित करने हेतु मां का आशीर्वाद लेना चाहिए और साधना में बैठना चाहिए. इस प्रकार जो साधक प्रयास करते हैं उन्हें भगवती कूष्माण्डा सफलता प्रदान करती हैं जिससे व्यक्ति सभी प्रकार के भय से मुक्त हो जाता है और मां का अनुग्रह प्राप्त करता है.
+                <br/>
+                <br/>
+    दुर्गा पूजा के चौथे दिन देवी कूष्माण्डा की पूजा का विधान उसी प्रकार है जिस प्रकार देवी ब्रह्मचारिणी और चन्द्रघंटा की पूजा की जाती है. इस दिन भी आप सबसे पहले कलश और उसमें उपस्थित देवी देवता की पूजा करें फिर माता के परिवार में शामिल देवी देवता की पूजा करें जो देवी की प्रतिमा के दोनों तरफ विरजामन हैं. इनकी पूजा के पश्चात देवी कूष्माण्डा की पूजा करे: पूजा की विधि शुरू करने से पहले हाथों में फूल लेकर देवी को प्रणाम कर इस मंत्र का ध्यान करें “सुरासम्पूर्णकलशं रूधिराप्लुतमेव च. दधाना हस्तपद्माभ्यां कूष्माण्डा शुभदास्तु मे..”
+                <br/>
+                <br/>
+                <br/>
+    कुष्मांडा की मंत्र :
+                <br/>
+    या देवी सर्वभू‍तेषु माँ कूष्माण्डा रूपेण संस्थिता।
+                <br/>
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नम:।।
+                <br/>
+                <br/>
+    माँ कूष्मांडा का उपासना मंत्र :
+                <br/>
+    “कुत्सित: कूष्मा कूष्मा-त्रिविधतापयुत: संसार:, स अण्डे मांसपेश्यामुदररूपायां यस्या: सा कूष्मांडा”
+                <br/>
+                <br/>
+    कुष्मांडा की ध्यान :
+                <br/>
+    वन्दे वांछित कामर्थे चन्द्रार्घकृत शेखराम्।
+                <br/>
+    सिंहरूढ़ा अष्टभुजा कूष्माण्डा यशस्वनीम्॥
+                <br/>
+                <br/>
+    भास्वर भानु निभां अनाहत स्थितां चतुर्थ दुर्गा त्रिनेत्राम्।
+                <br/>
+    कमण्डलु, चाप, बाण, पदमसुधाकलश, चक्र, गदा, जपवटीधराम्॥
+                <br/>
+                <br/>
+    पटाम्बर परिधानां कमनीयां मृदुहास्या नानालंकार भूषिताम्।
+                <br/>
+    मंजीर, हार, केयूर, किंकिणि रत्नकुण्डल, मण्डिताम्॥
+                <br/>
+                <br/>
+    प्रफुल्ल वदनांचारू चिबुकां कांत कपोलां तुंग कुचाम्।
+                <br/>
+    कोमलांगी स्मेरमुखी श्रीकंटि निम्ननाभि नितम्बनीम्॥
+                <br/>
+                <br/>
+     कुष्मांडा की स्तोत्र पाठ :
+                <br/>
+    दुर्गतिनाशिनी त्वंहि दरिद्रादि विनाशनीम्।
+                <br/>
+    जयंदा धनदा कूष्माण्डे प्रणमाम्यहम्॥
+                <br/>
+                <br/>
+    जगतमाता जगतकत्री जगदाधार रूपणीम्।
+                <br/>
+    चराचरेश्वरी कूष्माण्डे प्रणमाम्यहम्॥
+                <br/>
+                <br/>
+    त्रैलोक्यसुन्दरी त्वंहिदुःख शोक निवारिणीम्।
+                <br/>
+    परमानन्दमयी, कूष्माण्डे प्रणमाभ्यहम्॥
+                <br/>
+                <br/>
+    कुष्मांडा की कवच :
+                <br/>
+    हंसरै में शिर पातु कूष्माण्डे भवनाशिनीम्।
+                <br/>
+    हसलकरीं नेत्रेच, हसरौश्च ललाटकम्॥
+                <br/>
+                <br/>
+    कौमारी पातु सर्वगात्रे, वाराही उत्तरे तथा,पूर्वे पातु वैष्णवी इन्द्राणी दक्षिणे मम।
+                <br/>
+    दिगिव्दिक्षु सर्वत्रेव कूं बीजं सर्वदावतु॥
+                <br/>
+                <br/>
+    नवरात्री में दुर्गा सप्तशती पाठ किया जाता हैं –  
+                <br/>
+    भोले शंकर को पति रूप में प्राप्त करने के लिए माता ने महान व्रत किया उस महादेव की पूजा भी आदर पूर्वक करें क्योंकि इनकी पूजा न होने से देवी की कृपा नहीं मिलती है || श्री हरि की पूजा देवी लक्ष्मी के साथ ही करनी चाहिए ||
+                <br/>
+                <br/>
+    सबसे अंत में ब्रह्मा जी के नाम से जल, फूल, अक्षत, सहित सभी सामग्री हाथ में लेकर “ॐ ब्रह्मणे नम:” कहते हुए सामग्री भूमि पर रखें और दोनों हाथ जोड़कर सभी देवी देवताओं को प्रणाम करें.
+                <br/>
+                <br/>
+    देवी कुष्मांडा कथा :
+                <br/>
+    दुर्गा सप्तशती के कवच में लिखा है कुत्सित: कूष्मा कूष्मा-त्रिविधतापयुत: संसार:, स अण्डे मांसपेश्यामुदररूपायां यस्या: सा कूष्मांडा. इसका अर्थ है वह देवी जिनके  उदर में त्रिविध तापयुक्त संसार स्थित है वह कूष्माण्डा हैं. देवी कूष्माण्डा इस चराचार जगत की अधिष्ठात्री हैं. जब सृष्टि की रचना नहीं हुई थी उस समय अंधकार का साम्राज्य था
+                <br/>
+                <br/>
+    देवी कुष्मांडा जिनका मुखमंड सैकड़ों सूर्य की प्रभा से प्रदिप्त है उस समय प्रकट हुई उनके मुख पर बिखरी मुस्कुराहट से सृष्टि की पलकें झपकनी शुरू हो गयी और जिस प्रकार फूल में अण्ड का जन्म होता है उसी प्रकार कुसुम अर्थात फूल के समान मां की हंसी से सृष्टि में ब्रह्मण्ड का जन्म हुआ. इस देवी का निवास सूर्यमण्डल के मध्य में है और यह सूर्य मंडल को अपने संकेत से नियंत्रित रखती हैं.
+                <br/>
+                <br/>
+    देवी कूष्मांडा अष्टभुजा से युक्त हैं अत: इन्हें देवी अष्टभुजा के नाम से भी जाना जाता है. देवी अपने इन हाथों में क्रमश: कमण्डलु, धनुष, बाण, कमल का फूल, अमृत से भरा कलश, चक्र तथा गदा है. देवी के आठवें हाथ में बिजरंके (कमल फूल का बीज) का माला है है, यह माला भक्तों को सभी प्रकार की ऋद्धि सिद्धि देने वाला है. देवी अपने प्रिय वाहन सिंह पर सवार हैं. जो भक्त श्रद्धा पूर्वक इस देवी की उपासना दुर्गा पूजा के चौथे दिन करता है उसके सभी प्रकार के कष्ट रोग, शोक का अंत होता है और आयु एवं यश की प्राप्ति होती है
+                <br/>
+                <br/>
+    नवरात्रि चौथा दिन माँ कूष्मांडा की पूजा
+                <br/>
+    भगवती माँ दुर्गा जी के चौथे स्वरुप का नाम कूष्मांडा है ! अपनी मंद हल्की हसीं द्वारा अंड अर्थात ब्रह्माण्ड को उत्पन्न करने के कारण इन्हें कुष्मांडा देवी के नाम से अभिहित किया गया है। जब सृष्टि का अस्तित्व नहीं था , चारों ओर अन्धकार ही अंधकार व्याप्त था, तब माँ कुष्मांडा ने ही अपनी हास्य से ब्रह्माण्ड कि रचना की थी। अतः यही सृष्टि की आदि – स्वरूपा आदि शक्ति है।
+                <br/>
+                <br/>
+    इनके पूर्व ब्रह्माण्ड का अस्तित्व था ही नहीं। इनका निवास सूर्य मंडल के भीतर के लोक में है। सूर्य लोक में निवास सूर्य मंडल के भीतर के लोक में है। सूर्य लोक में निवास कर सकने की क्षमता और शक्ति केवल इन्ही में है। इनके शरीर की कान्ति और प्रभा भी सूर्य के समान ही दीप्तिमान और भास्कर है। इनके तेज की तुलना इन्ही से की जा सकती है। अन्य कोई भी देवी – देवता इनके तेज और प्रभाव की समता नहीं कर सकते। इन्ही के तेज और प्रकाश से दसों दिशाएं प्रकाशित हो रही है। ब्रह्माण्ड की सभी वस्तुओं और प्राणियों में अवस्थित तेज इन्ही की छाया है। इनकी आठ भुजाएं है। अतः ये अष्ट भुजी देवी के नाम से भी विख्यात है। इनके सात हाथो में क्रमशः कमण्डलु , धनुष – बाण , कमल पुष्प , अमृत पूर्ण कलश , चक्र , तथा गदा है ! आठवें हाथ में सभी सिद्धियों और निधियों को देने वाली जपमाला है। इनका वाहन सिंह है। इस कारण से भी कुष्मांडा कही जाती है।
+                <br/>
+                <br/>
+    नवरात्री – पूजन के चौथे दिन कुष्मांडा देवी के स्वरुप की ही पूजा उपासना की जाती है। इस दिन साधक का मन अनाहत चक्र में अवस्थित होता है। अतः इस दिन उसे अत्यंत पवित्र और अचल मन से कुष्मांडा देवी के स्वरुप को ध्यान में रख कर पूजा उपासना के कार्य में लगना चाहिए। माँ कुष्मांडा की उपासना से भक्तों के समस्त रोग – शोक विनष्ट हो जाते है ! इनकी भक्ति से आयु , यश , बल , और आरोग्य की वृद्धि होती है। माँ कुष्मांडा अत्यल्प सेवा और भक्ति से भी प्रसन्न होने वाली है। यदि मनुष्य सच्चे ह्रदय से इनका शरणागत बन जाये तो फिर उसे अत्यंत सुगमता से परम पद की प्राप्ति हो सकती है।
+                <br/>
+                <br/>
+    हमे चाहिए की हम वेद पुराणों में वर्णित विधि – विधान पूर्वक माँ दुर्गा की पूजा – उपासना और भक्ति के मार्ग पर अग्रसर हो। माँ के भक्ति मार्ग पर कुछ ही कदम आगे बढ़ने पर भक्त साधक को उनकी कृपा का सुक्ष्म अनुभव होने लगता है। यह दुःख स्वरुप संसार उसके लिए अत्यंत सुखद और सुगम बन जाता है। माँ की उपासना मनुष्य को सहज भाव से भवसागर से पार उतारने के लिए सर्वाधिक सुगम व् श्रेयस्कर मार्ग है। माता की उपासना मनुष्य को आँधियों – व्याधियों से सर्वथा विमुक्त करके उसे सुख – समृद्धि और उन्नति की ओर ले जाने वाली है। माँ कुष्मांडा देवी के श्री चरणों में सत सत नमन।
+            </p>
+     
+     
+       
+   </div>
+    
+    <!-- end of header -->
+    
+   
+     <!-- footer start -->
+  .
+  <!-- footer end -->
+<style>
+  
+/* footer start */
+/* .container{
+	max-width: 1170px;
+	margin:auto;
+} */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 100px;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+  </body>
+</html>
