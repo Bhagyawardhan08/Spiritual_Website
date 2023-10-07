@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aatmgyaan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <style>
+     body {
+			background: #ece8e8;
+			color: #000;
+			
+			
+			
+		}
+
+		body * {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			border: 0;
+			margin-left: auto;
+			margin-right: auto;
+			letter-spacing: -.3px;
+			font-size: 14px;
+			overflow-y: hidden;
+			
+		}
+
+		a img,
+		:link img,
+		:visited img {
+			border: none;
+            width: 29%;
+      
+		}
+
+		a {
+			text-decoration: none;
+			color: #265C98;
+      
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #ff0000;
+		}
+
+		html,
+		body,
+		div,
+		span,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		a,
+		em,
+		img,
+		strong,
+		b,
+		u,
+		i,
+		center,
+		ol,
+		ul,
+		li,
+		form,
+		label,
+		article,
+		aside,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section,
+		td {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+      overflow-x: hidden;
+		}
+
+		i {
+			font: inherit;
+		}
+
+		b {
+			font-weight: bold;
+		}
+
+		textarea {
+			font-size: small;
+		}
+
+		main {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.tCenter {
+			text-align: center;
+			padding: 5px;
+		}
+
+		header {
+			width: 100%;
+			background: black;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.vd {
+			width: 100%;
+		}
+
+		.bg {
+			background: #fff;
+		}
+
+		input[type=submit],
+		input[type=text] {
+			padding: 2px;
+			border: 1px solid #cdcdcd;
+			border-color: rgba(0, 0, 0, .15);
+			border-radius: 3px;
+			background-color: #eee;
+			margin: 0px;
+		}
+
+		.l {
+			padding: 5px;
+		}
+
+		.cnt {
+			background: #b0abab;
+		}
+
+		.track-icon::before {
+			content: '\266B';
+			color: #DB0707;
+			font-size: 40px;
+		}
+
+		.nw {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		ul.breadcrumb,
+		ul.breadcrumb a {
+			color: #333;
+		}
+
+		ul.breadcrumb li {
+			display: inline;
+			font-size: 18px;
+			padding: 0 !important;
+			background: transparent !important;
+			color: #666;
+			font-size: 15px;
+		}
+
+		ul.breadcrumb li a {
+			color: #333;
+			text-decoration: none;
+			font-size: 15px;
+		}
+
+		ul.breadcrumb li+li:before {
+			color: black;
+			content: "\203A";
+			padding-right: 4px;
+			position: relative;
+			top: 1px;
+			padding-left: 4px;
+			font-size: 19px;
+		}
+
+		.list li a {
+			display: block
+		}
+
+		.gy A:link,
+		.gy A:visited,
+		.gy A:active,
+		.gy A:hover {
+			color: #5a5a5a;
+			outline: 0;
+			text-decoration: none;
+		}
+
+		.list {
+			list-style: none;
+			clear: both;
+		}
+
+		.list li {
+			color: #333;
+			border-bottom: 1px solid #d8d1d1;
+			margin: 3px 3px 0px 3px;
+			padding: 0px 15px 0px 2px;
+			overflow: hidden;
+		}
+
+		.list li:hover {
+			box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.45);
+			cursor: pointer;
+		}
+
+		.list>img {
+			width: 100%;
+			display: inline-flex;
+			margin: -9px 0px 0px 0px;
+		}
+
+		.list li img {
+			display: block;
+			width: 80px;
+			height: 80px;
+			display: block;
+			margin: 2px 10px 3px 0px;
+			border: 0;
+			float: left;
+			border-radius: 5px
+		}
+
+		.block {
+			display: inline-block;
+			width: 100%;
+			box-sizing: border-box;
+			background: #fff;
+			margin: 0px 0 0px;
+		}
+
+		.form-wrapper {
+			width: 91%;
+			margin-top: 6px;
+			float: right;
+		}
+
+		.form-wrapper input {
+			width: 66%;
+			height: 30px;
+			float: left;
+			padding: 0px 10px;
+			border: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.form-wrapper input focus {
+			outline: 0;
+			background: #fff;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+		}
+
+		.form-wrapper input {
+			font-size: 17px;
+		}
+
+		.form-wrapper button {
+			position: relative;
+			font-size: 15px;
+			margin-top: -1px;
+			width: 65px;
+			height: 31px;
+			border: 0;
+			padding: 0;
+			cursor: pointer;
+			color: #fff;
+			background: #DB0707;
+			border-radius: 0 3px 3px 0;
+		}
+
+		nav {
+			display: inline-table;
+			width: 100%;
+			background: black;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 17px;
+		}
+
+		nav a {
+			width: 33.33%;
+			background: black;
+			text-align: center;
+			color: #fefefe;
+			padding: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			border: 1px solid #666;
+			border-bottom: 0;
+			border-right: 0;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+
+		nav i {
+			width: 15px;
+			margin-left: -6px;
+			float: left;
+		}
+
+		.search-bar {
+			width: 99.5%;
+			padding-top: 15px;
+			height: 50px;
+			background: black;
+			border: 1px solid #666;
+			float: left;
+      
+		}
+
+		.xl {
+			font-size: 18px
+		}
+
+		.ht {
+			font-size: 17px;
+		}
+
+		.xxl {
+			font-size: 20px;
+		}
+
+		.c {
+			text-align: center
+		}
+
+		.tr {
+			width: 100%;
+			display: inline-table;
+		}
+
+		.td {
+			width: 22%;
+			max-width: 120px;
+		}
+
+		tr.tr td {
+			border-bottom: 1px solid #d8cdd5;
+			padding: 3px;
+		}
+
+		.mpan {
+			padding: 10px;
+			background: #fff;
+			margin: 4px 0 2px 0;
+		}
+
+		@supports (-webkit-overflow-scrolling: touch) {
+			body {
+				font-size: 15px;
+				line-height: 1.3;
+			}
+		}
+
+		@media only screen and (max-width:320px) {
+			body {
+				font-size: 13.5px;
+				min-width: 200px;
+			}
+
+			nav {
+				width: 100%;
+				font-size: 13px;
+			}
+
+			.form-wrapper input {
+				width: 50%;
+			}
+
+			.vd {
+				width: 250px;
+				height: 160px
+			}
+
+			.search-bar {
+				width: 99%;
+			}
+
+			.form-wrapper {
+				width: 93%;
+			}
+
+			nav a {
+				width: 50%;
+			}
+
+			.icon {
+				display: none
+			}
+
+			.heading {
+				font-size: 15px;
+			}
+
+			tr.tr td {
+				width: 100%;
+				float: left
+			}
+
+			.td {
+				width: 100%;
+				max-width: 100%
+			}
+
+			.imgs {
+				width: 100%;
+				height: auto;
+			}
+
+			.expend+.smalldesc {
+				max-height: 240px;
+			}
+		}
+
+		@media only screen and (min-width:768px) {
+			header {
+				width: 100%;
+				background: black;
+			}
+
+			nav {
+				width: 100%;
+				font-size: 15px;
+			}
+
+			nav a {
+				width: 16.666%;
+			}
+
+			.vd {
+				width: 520px;
+			}
+
+			.form-wrapper {
+				width: 84%;
+			}
+
+			.form-wrapper input {
+				width: 68%;
+			}
+
+			.form-wrapper button {
+				height: 31px;
+				top: 0px
+			}
+
+			.search-bar {
+				width: 99.8%;
+			}
+
+			.list li {
+				display: inline-table;
+				width: 47%;
+			}
+
+			.tab {
+				width: 30%
+			}
+
+			.imgs {
+				display: table;
+				margin: 20px 15px 0 10px;
+				float: left;
+			}
+
+			table {
+				display: block;
+				min-height: 207px;
+			}
+
+			.cd {
+				text-align: left
+			}
+
+			.mpan {
+				padding: 0px;
+				background: #fff;
+				margin: 0;
+			}
+
+			.heading {
+				font-size: 17px;
+			}
+
+			.xxxl {
+				font-size: 26px;
+			}
+
+			.expend+.smalldesc {
+				max-height: 220px;
+			}
+		}
+
+		@media only screen and (min-width:1024px) {
+			header {
+				/* max-width: 1049px; */
+				width: 100%;
+			}
+
+			main {
+				max-width: 1049px;
+				width: 81%
+			}
+
+			nav {
+				display: flex;
+				/* max-width: 1049px; */
+				width: 100%;
+				font-size: 14px
+			}
+
+			nav a {
+				width: 35%;
+			}
+
+			.search-bar {
+				width: 96%;
+				padding-top: 0px;
+				height: 42px;
+			}
+
+			.form-wrapper {
+				width: 96%;
+			}
+
+			.form-wrapper input {
+				width: 60%;
+			}
+		}
+
+    .pjain{
+      position: relative;
+    }
+
+    .pjain .center{
+      position: relative;
+      left: 34%;
+    }
+  </style>
+  <body>
+
+    <!-- loader-start -->
+
+    <div id="pre-loader"></div>
+
+    <!-- header -->
+    <header class="pjain">
+      <a href="index.html" class="center"><img width="194" height="55" alt="Logo"src="Aatmgyaan (1).png" /></a>
+    </header>
+    <nav>
+       <a href="./index.html">Home</a>
+      <a href="./aarti.html">Aarti</a>
+      <a href="./bhajan.html">Bhajan</a>
+      <a href="./chalisa.html">Chalisa</a>
+      <a href="./strotam.html">Strotam</a>
+      <a href="./Mantra.html">Mantra</a>
+      <a href="./FesTival.html">Festivals</a>
+	  <a href="./mandir.html">Mandir</a>
+	  <a href="./blog.html">Blog</a>
+	  <a href="./vrat katha.html">Vrat Katha</a>
+	  <a href="./12 jyotiling.html">12 Jyotirlinga</a>
+	  <a href="./about.html">About</a>
+	  
+      
+      <!-- <div class="search-bar"> -->
+        <!-- <form class="form-wrapper" method="get" action="/files/singer"> -->
+          <!-- <table> -->
+            <!-- <tr> -->
+              <!-- <td> -->
+                <!-- <input type="text" placeholder="Search Name..." required name="search" size="25" -->
+                  <!-- maxlength="255" onfocus="if(this.value==this.defaultValue)this.value=''; " -->
+                  <!-- onblur="if(this.value=='')this.value=this.defaultValue; " /> -->
+                <!-- <button type="submit">Search</button> -->
+              <!-- </td> -->
+            <!-- </tr> -->
+          <!-- </table> -->
+        <!-- </form> -->
+      <!-- </div> -->
+    </nav>
+
+
+    <!-- blog -->
+    <section class = "blog" id = "blog">
+      <div class = "container">
+        <div class = "title">
+          <h2>Diwali</h2>
+          <!-- <p>recent blogs about art & desi</p> -->
+        </div>
+        <div class = "blog-content">
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./importance of diwali.jpg" alt = "">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>दिवाली का आध्यात्मिक महत्व</h2>
+              <p><strong>दिवाली का आध्यात्मिक महत्व: दीपावली के आध्यात्मिक महत्व और महत्व की गहन आध्यात्मिक अर्थ का अन्वेषण करें, जो अंधकार पर प्रकाश और अज्ञान पर ज्ञान की जीत का आदान-प्रदान बताता है।..</strong></p>
+              <a href = "./Importance of diwali.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./diwali story.jpg" alt = "">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>दिवाली की कहानी - पौराणिक पृष्ठभूमि</h2>
+              <p><b>दिवाली की कहानी - पौराणिक पृष्ठभूमि: दीपावली से जुड़ी पौराणिक कथाओं और लोककथाओं की साझा करें, जैसे श्रीराम का अयोध्या लौटना और भगवान कृष्ण का नरकासुर पर विजय।..</b></p>
+              <a href = "./diwali story.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./diwali puja.jpg" alt = "" style="width: 363px; height: 270px;">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>पवित्र दिवाली पूजा विधि,मंत्र और चैन्ट्स</h2>
+              <p><b>पवित्र दिवाली मंत्र और चैन्ट्स: दिवाली के दौरान प्रभावी मंत्र और चैन्ट्स के बारे में जानकारी प्रदान करें, जो आध्यात्मिक ऊर्जा को बढ़ावा देने और दिव्य आशीर्वादों को आमंत्रित करने के लिए प्रयुक्त किए जाते हैं।</b></p>
+              <a href = "./diwali mantra.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./tamso.jpg" alt = "">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>प्रकाश और दीयों के प्रति राहतों की प्रतिष्ठा</h2>
+              <p><b>प्रकाश और दीयों के प्रति राहतों की प्रतिष्ठा: दिवाली के दौरान लैंप, मोमबत्ती और दीयों के प्रति प्रतिष्ठा का प्रतिष्ठान बताने का प्रतिष्ठान बताएं, जो यहाँ तक कि आत्मिक जागरूकता और आंतरिक प्रकाशन के साथ जोड़ा जा सकता है।</b></p>
+              <a href = "./tamso maa jyoti.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./diwali 2023.jpg" alt = "">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>दिवाली के रीति-रिवाज और परंपराएं</h2>
+              <p><b>दिवाली के रीति-रिवाज और परंपराएं: दिवाली के विभिन्न रीति-रिवाज, परंपराओं और रस्मों पर चर्चा करें, इनके आध्यात्मिक महत्व और प्रासंगिकता को महत्वपूर्णता दें।.</b></p>
+              <a href = "./rituals of diwali.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "./bhai dooj.jpg" alt = "">
+              <!-- <span><i class = "far fa-heart"></i></span> -->
+            </div>
+            <div class = "blog-text">
+              <!-- <span>20 January, 2020</span> -->
+              <h2>भाई दूज 2023</h2>
+              <p><b>भाई दूज, जिसे भाई फोटा भी कहते हैं, एक प्रमुख हिन्दू त्योहार है जो भारत में मनाया जाता है। यह त्योहार भाई-बहन के प्यार और बंधन को मनाने के लिए होता है, और यह हर साल दूसरे दिन पूर्णिमा के बाद मनाया जाता है, जो कार्तिक मास के शुक्ल पक्ष के द्वादशी तिथि पर आता है। 
+                </b></p>
+              <a href = "./bhai ddoj.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+    <!-- end of blog -->
+
+        
+     <!-- footer start -->
+	 <footer class="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="footer-col">
+			  <h4>Aatmgyaan</h4>
+			  <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<!-- <li><a href="#">afiliate</a></li> -->
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h4>Legal Stuff</h4>
+			  <ul>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms and conditions</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h4>reconnoitre</h4>
+			  <ul>
+				<li><a href="comming soon.html">E-Book</a></li>
+				<li><a href="comming soon.html">Recommended books</a></li>
+				<li><a href="comming soon.html">Spiritual Articles</a></li>
+			  </ul>
+			</div>
+	
+			<div class="footer-col">
+			  <h4>Get in Touch</h4>
+			  <div class="social-links">
+				<a href="https://www.facebook.com/profile.php?id=61551974915585"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com/aatmgyaan08"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/aatmgyaan08/"><i class="fab fa-instagram"></i></a>
+				<a href="mailto: aatmgyaan08@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	 </footer>
+ <div class="footer-bottom">
+  <p>Copyright &copy;2023 Aatmgyaan. All right resevered  </p>
+  Design and Developed by <a href="https://www.linkedin.com/in/pranjul-jain-programming-enthusiastic">&#10077; &#64; Pranjul</a> &#10073; <a href="https://www.linkedin.com/in/bhagyawardhan-singh-karnot-901405222/">&#64; Bhagyawardhan &#10078;</a>
+ </div> 
+
+  <!-- footer end -->
+<style>
+
+.footer-bottom p, a{
+	text-decoration: none;
+	color: white;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+	margin-top: -28px;
+	margin-bottom: 20px;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+	
+	font-weight:500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	/* left: 10px; */
+	justify-content: center;
+	bottom: -20px;
+	background-color: #e91e63;
+	height: 25px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    overflow-x: hidden;
+}
+}
+
+  .footer-bottom {
+ background-color: #24262b;
+ color: #ffffff;
+}
+
+.footer-bottom p:hover{
+	color: #ffffff;
+	padding-left: 5px;
+  transition: all 0.3s ease;
+}
+</style>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+
+
+    <script>
+      var loader = document.getElementById("pre-loader");
+
+      window.addEventListener("load", function(){
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
